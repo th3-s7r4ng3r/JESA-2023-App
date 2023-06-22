@@ -2,15 +2,23 @@ import "../css/Navigation.css";
 
 const Navigation = () => {
   return (
-    <div className="header">
-      <div className="nav-bar">
-        <button className="nav-btn">Home</button>
-        <button className="nav-btn">Awards</button>
-        <button className="nav-btn" id="hall-of-fame">
-          Hall of Fame
-        </button>
+    <>
+      <div className="header">
+        <div className="nav-bar">
+          <a className="nav-btn" href="#home">
+            Home
+          </a>
+          <a className="nav-btn" href="#awards">
+            Awards
+          </a>
+          <a className="nav-btn" href="hall-of-fame">
+            Hall of Fame
+          </a>
+        </div>
       </div>
-    </div>
+      {/* Spacer for the nav bar */}
+      <div className="spacer" id="home"></div>
+    </>
   );
 };
 

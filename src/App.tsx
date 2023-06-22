@@ -1,16 +1,14 @@
 import "./css/App.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import HomePage from "./components/HomePage";
 
 const App = () => {
   return (
     <>
       <Navigation />
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
-      <h1>Test</h1>
+
+      <HomePage />
 
       <Footer />
     </>

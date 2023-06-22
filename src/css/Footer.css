@@ -11,10 +11,11 @@
     box-sizing: border-box;
     padding: 1.5rem;
     border-radius: 2vw;
+    margin: auto;
   }
   
   .footer-image {
-    width: 40vw;
+    width: 45vw;
     object-fit: scale-down;
     margin: 2vh 3vh;
   }
@@ -66,6 +67,7 @@
     color: #2b2b2b;
     text-align: center;
     font-weight: normal;
+    text-wrap: balance;
     margin: 2vh 0vh 3vh;
   }
   .copyright span {
@@ -81,16 +83,16 @@
   /* Making Responsive */
   @media all and (max-width : 600px) {
     .footer {
-      border-radius: 10vw 10vw 0px 0px;
+      border-radius: 1.5rem;
     }
   
     .footer-image {
-      width: 90vw;
+      width: 70vw;
       margin: 3vh;
     }
   
     .contact-us {
-      width: 100%;
+      width: 90%;
       font-size: 1.8rem;
     }
   
@@ -101,8 +103,8 @@
   
   @media all and (max-width : 1200px) {
     .footer-image {
-      width: 90vw;
-      margin: 5vh;
+      width: 70vw;
+      margin: 4vh;
     }
   
     .contact-us {
@@ -111,7 +113,7 @@
     }
   
     .contact-us p {
-      width: 90%;
+      width: 95%;
       font-size: 1.15rem;
     }
     .contact-us p p {

@@ -1,0 +1,41 @@
+/* HomePage Component */
+
+.container {
+    margin: 10vh auto 3rem;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    /* background-color: rgb(243, 243, 243); */
+    border-radius: 2vw;
+}
+
+.description {
+    margin: 20vh 0rem;
+    font-size: 1.5rem;
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 2vw;
+    box-shadow:0 0 5rem #0000001e;
+    scroll-margin-top: 15vh;
+}
+.description-logo {
+    width: 30vw;
+    margin: 2rem 3rem;
+    filter: drop-shadow(0 20px 0.6rem #00000075);
+}
+.description-text {
+    font-size: 1.25rem;
+    width: 35vw;
+}
+.description-title{
+    font-size: 3rem;
+    text-align: left;
+    font-weight: bold
+}

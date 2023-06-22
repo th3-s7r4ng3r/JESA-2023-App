@@ -29,14 +29,18 @@
 
 
 /* Coding Begin here */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
 * {
   box-sizing: border-box;
   /* outline: 1px solid red; */
+  transition: 0.2s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1 {
   font-size: 3.5rem;
 }
-
-
-

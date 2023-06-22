@@ -3,20 +3,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    padding: 10px;
+    width: 100%;
     position:fixed;
     left: 0;
     top: 0;
-    margin-top: 0.5rem;
+    z-index: 1000;
+    margin-top: 1rem;
   }
   .nav-bar {
-    padding: 7px 3px;
+    padding: 17px 3px;
     border-radius: 5rem;
     box-shadow: 0 10px 5rem rgba(0, 0, 0, 0.363);
     background-color: rgb(255, 255, 255);
   }
   .nav-btn {
+    text-decoration: none;
+    color: black;
     padding: 10px 25px;
     min-width: 120px;
     border: none;
@@ -28,10 +30,6 @@
     transition: all 0.25s ease-in-out;
   }
   .nav-btn:hover {
-    background-color: rgb(217, 230, 255);
-    color: rgb(0, 0, 0);
-  }
-  #hall-of-fame:hover {
-    background-color: rgb(255, 235, 217);
+    background-color: rgba(194, 194, 194, 0.5);
     color: rgb(0, 0, 0);
   }
