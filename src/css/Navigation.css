@@ -1,0 +1,37 @@
+/* Header CSS */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 10px;
+    position:fixed;
+    left: 0;
+    top: 0;
+    margin-top: 0.5rem;
+  }
+  .nav-bar {
+    padding: 7px 3px;
+    border-radius: 5rem;
+    box-shadow: 0 10px 5rem rgba(0, 0, 0, 0.363);
+    background-color: rgb(255, 255, 255);
+  }
+  .nav-btn {
+    padding: 10px 25px;
+    min-width: 120px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: auto 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.25s ease-in-out;
+  }
+  .nav-btn:hover {
+    background-color: rgb(217, 230, 255);
+    color: rgb(0, 0, 0);
+  }
+  #hall-of-fame:hover {
+    background-color: rgb(255, 235, 217);
+    color: rgb(0, 0, 0);
+  }
