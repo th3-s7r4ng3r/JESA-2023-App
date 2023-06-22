@@ -1,73 +1,74 @@
 /* Carousel Component */
 
-.carousel-image-holder{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    scroll-margin-top: 5rem;
+.carousel-image-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  scroll-margin-top: 5rem;
 }
 .carousel-image {
-    width: 85vw;
-    height: 80vh;
-    border-radius: 2vw;
-    object-fit: cover;
-    transition: fade-in 0.5s;
-    z-index: -5;
+  width: 85vw;
+  height: 80vh;
+  border-radius: 2vw;
+  object-fit: cover;
+  transition: fade-in 0.5s;
+  z-index: 0;
+  background-color: black;
 }
-.transitioning{
-    pointer-events: none;
+.transitioning {
+  pointer-events: none;
 }
 
-.prev-btn,.next-btn {
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    border-radius: 50px;
-    border: none;
-    color: rgb(138, 137, 137);
-    font-size: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.164);
-    cursor: pointer;
+.prev-btn,
+.next-btn {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50px;
+  border: none;
+  color: rgb(138, 137, 137);
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.164);
+  cursor: pointer;
+  z-index: 5;
 }
 .prev-btn {
-    transform:translateX(+40vw);
+  transform: translateX(+40vw);
 }
 
-.next-btn{
-    transform:translateX(-40vw);
+.next-btn {
+  transform: translateX(-40vw);
 }
-.scroll-btn{
-    padding: 10px 25px;
-    background-color: white;
-    border-radius: 50px;
-    position: absolute;
-    text-decoration: none;
-    color: rgb(63, 63, 63);
-    transform:translateY(+40vh);
-    box-shadow: 0 0 5rem #0000007e;
-    transition: .2s ease-in-out;
+.scroll-btn {
+  padding: 12px 25px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+  transform: translateY(+40vh);
+  box-shadow: 0 0 5rem #0000007e;
+  transition: 0.3s ease-out;
+  z-index: 10;
 }
-.scroll-btn:hover{
-    padding: 10px 75px;
+.scroll-btn:hover {
+  padding: 12px 50px;
 }
-
-
-
 
 @keyframes fade-in {
-    0% {
-        opacity: 75%;
-    }
-    100% {
-        opacity: 100%;
-    }
+  0% {
+    opacity: 80%;
   }
+  100% {
+    opacity: 100%;
+  }
+}
 
-  @media (prefers-reduced-motion: no-preference) {
-    .transitioning{
-      animation: fade-in 0.5s;
-    }
-  } 
+@media (prefers-reduced-motion: no-preference) {
+  .transitioning {
+    animation: fade-in 0.5s;
+  }
+}

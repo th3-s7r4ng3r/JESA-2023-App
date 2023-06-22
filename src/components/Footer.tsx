@@ -14,9 +14,9 @@ const Footer = () => {
           <div className="contacts">
             <p>
               <p>For More Details</p>
-              <b>Induwara</b> : 071 893 8256
+              <b>Naveen T Hewage</b> : 071 176 6662
               <br />
-              <b>Naveen</b> : 071 176 6662
+              <b>Induwara Gamage</b> : 071 893 8256
             </p>
           </div>
         </div>

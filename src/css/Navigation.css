@@ -1,35 +1,35 @@
 /* Header CSS */
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position:fixed;
-    left: 0;
-    top: 0;
-    z-index: 1000;
-    margin-top: 1rem;
-  }
-  .nav-bar {
-    padding: 17px 3px;
-    border-radius: 5rem;
-    box-shadow: 0 10px 5rem rgba(0, 0, 0, 0.363);
-    background-color: rgb(255, 255, 255);
-  }
-  .nav-btn {
-    text-decoration: none;
-    color: black;
-    padding: 10px 25px;
-    min-width: 120px;
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
-    margin: auto 5px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: all 0.25s ease-in-out;
-  }
-  .nav-btn:hover {
-    background-color: rgba(194, 194, 194, 0.5);
-    color: rgb(0, 0, 0);
-  }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  margin-top: 1rem;
+}
+.nav-bar {
+  padding: 17px 6px;
+  border-radius: 5rem;
+  box-shadow: 0 10px 5rem rgba(0, 0, 0, 0.363);
+  background-color: rgb(255, 255, 255);
+}
+.nav-btn {
+  text-decoration: none;
+  color: black;
+  padding: 10px 25px;
+  min-width: 120px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  margin: auto 2px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+.nav-btn:hover {
+  background-color: rgba(194, 194, 194, 0.5);
+  color: rgb(0, 0, 0);
+}

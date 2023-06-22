@@ -1,11 +1,14 @@
 import "../css/HomePage.css";
+import AwardCard from "./AwardCard";
 import Carousel from "./Carousel";
 
 const HomePage = () => {
   return (
     <div className="container" id="home">
+      {/* Carousel section of the home page */}
       <Carousel />
 
+      {/* About section of the home page */}
       <div className="description" id="about">
         <img
           src="./images/jesa-logo.png"
@@ -30,6 +33,12 @@ const HomePage = () => {
             diverse institutions compete for the coveted Best Innovator Award.
           </p>
         </div>
+      </div>
+
+      {/* Award section of the home page */}
+      <div className="award-section" id="awards">
+        <div className="award-topic">JESA Awards</div>
+        <AwardCard />
       </div>
     </div>
   );

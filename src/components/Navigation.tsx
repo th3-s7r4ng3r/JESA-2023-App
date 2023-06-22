@@ -11,7 +11,7 @@ const Navigation = () => {
           <a className="nav-btn" href="#awards">
             Awards
           </a>
-          <a className="nav-btn" href="hall-of-fame">
+          <a className="nav-btn" href="#hall-of-fame">
             Hall of Fame
           </a>
         </div>

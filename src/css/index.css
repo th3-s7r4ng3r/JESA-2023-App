@@ -1,5 +1,7 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.87);
   background-color: #ffffff;
   font-synthesis: none;
@@ -17,4 +19,7 @@ body {
   min-width: 320px;
   flex-wrap: wrap;
   min-height: 100vh;
+  background-color: #ffffff;
+  background-image: radial-gradient(#bfbfbf4d 1.35px, #ffffff 1.35px);
+  background-size: 25px 25px;
 }
