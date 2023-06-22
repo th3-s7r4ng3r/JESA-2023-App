@@ -43,7 +43,6 @@
 .award-section {
   scroll-margin-top: 15vh;
   margin: 5vh 0vh;
-  padding: 1rem;
   border: 2px solid rgba(0, 0, 0, 0.178);
   border-radius: 2rem;
   width: 85vw;
@@ -52,9 +51,10 @@
   font-size: 3rem;
   text-align: center;
   font-weight: bold;
-  transform: translateY(-7.5vh);
+  transform: translateY(-5.5vh);
   padding: 5px 2.5rem;
   background-color: white;
   border-radius: 100px;
   width: fit-content;
+  margin-left: 1rem;
 }

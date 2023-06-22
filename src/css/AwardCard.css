@@ -6,14 +6,14 @@
   width: 85vw;
 }
 .award-card-image {
-  height: 60vh;
+  height: 50vh;
   object-fit: cover;
   margin: 1rem 2.5rem 1rem 4rem;
   filter: drop-shadow(0 0 1.5rem #0000009a) blur(2px);
   transition: 0.4s;
 }
 .award-card-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
   filter: drop-shadow(0 50px 2.5rem #00000081) blur(0px);
 }
 
