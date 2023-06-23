@@ -1,4 +1,5 @@
 import "../css/HomePage.css";
+import AwardDetails from "./AwardDetails";
 import AwardCard from "./AwardCard";
 import Carousel from "./Carousel";
 
@@ -38,7 +39,16 @@ const HomePage = () => {
       {/* Award section of the home page */}
       <div className="award-section" id="awards">
         <div className="award-topic">JESA Awards</div>
-        <AwardCard />
+        <AwardDetails />
+        <div className="other-awards">
+          <AwardCard />
+          <AwardCard />
+          <AwardCard />
+          <AwardCard />
+          <AwardCard />
+          <AwardCard />
+          <AwardCard />
+        </div>
       </div>
     </div>
   );

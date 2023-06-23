@@ -2,22 +2,13 @@ import "../css/AwardCard.css";
 
 const AwardCard = () => {
   return (
-    <div className="award-card">
+    <div className="awd-card">
       <img
-        src="./images/awards/best-innovator.png"
-        className="award-card-image"
-        alt="award image"
+        className="awd-card-image"
+        src="/images/awards/best-leader.png"
+        alt="best leader award"
       />
-      <div className="award-details">
-        <h1 className="award-card-title">Best Innovator</h1>
-        <p className="award-card-description">
-          Dedicated to motivating young inventors and this year onwards it’s
-          open to brilliant young innovators from other universities too. The
-          ability of a competitor to do an invention successfully and
-          implementation to fit the task is conferred as well.
-        </p>
-        <div className="award-tag">UGC Approved</div>
-      </div>
+      <div className="awd-card-title">Best Leader</div>
     </div>
   );
 };

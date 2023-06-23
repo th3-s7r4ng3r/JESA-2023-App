@@ -58,3 +58,13 @@
   width: fit-content;
   margin-left: 1rem;
 }
+.other-awards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh 0vh;
+  padding: 1rem;
+  width: 85vw;
+  flex-wrap: wrap;
+}

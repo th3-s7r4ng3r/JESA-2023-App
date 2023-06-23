@@ -1,45 +1,50 @@
-.award-card {
+.awd-card {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 85vw;
+  justify-content: center;
+  margin: 1rem;
+  padding: 0.75rem;
+  border-radius: 18px;
+  background-color: rgba(233, 233, 233, 0.815);
+  width: 16vw;
+  height: 50vh;
+  border: 0px solid rgba(117, 117, 117, 0.397);
+  transition: 0.3s ease-out;
 }
-.award-card-image {
+.awd-card-image {
+  position: absolute;
   height: 50vh;
   object-fit: cover;
-  margin: 1rem 2.5rem 1rem 4rem;
-  filter: drop-shadow(0 0 1.5rem #0000009a) blur(2px);
+  filter: drop-shadow(0 0 0.75rem #000000b2);
   transition: 0.4s;
 }
-.award-card-image:hover {
-  transform: scale(1.15);
-  filter: drop-shadow(0 50px 2.5rem #00000081) blur(0px);
-}
-
-.award-details {
-  margin: 2vh 3vw;
-  padding: 1.75rem;
-  width: 45vw;
-  background-color: #d3d3d3b0;
-  border-radius: 2rem;
-}
-.award-card-title {
-  font-size: 2.2rem;
-  padding: 5px 25px;
-  background-color: #a5a5a5b0;
-  border-radius: 15px;
-  width: fit-content;
-  margin: 0rem 0rem 2rem;
-}
-.award-card-description {
-  font-size: 1.3rem;
-}
-.award-tag {
-  font-size: 1.25rem;
-  font-weight: 400;
+.awd-card-title {
+  position: absolute;
+  width: 14vw;
+  font-size: 1.5rem;
+  font-weight: 600;
   padding: 5px 15px;
-  background-color: #ffffffe7;
-  border-radius: 15px;
-  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.836);
+  border-radius: 10px;
+  transform: translateY(+24vh);
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.awd-card:hover {
+  transform: scale(1) translateY(-2vh);
+  cursor: pointer;
+  z-index: 99;
+  border: 5px solid rgba(117, 117, 117, 0.397);
+  background-color: rgba(211, 211, 211, 0.815);
+  box-shadow: 0 2vh 2rem rgba(0, 0, 0, 0.329);
+}
+.awd-card:hover .awd-card-image {
+  transform: scale(1.07);
+  margin-bottom: 16vh;
+  filter: drop-shadow(0 0 1.5rem #0000007e);
+}
+.awd-card:hover .awd-card-title {
+  transform: translateY(+20vh);
+  opacity: 1;
 }
