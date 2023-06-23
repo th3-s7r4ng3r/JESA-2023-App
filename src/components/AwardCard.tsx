@@ -1,14 +1,11 @@
 import "../css/AwardCard.css";
 
-const AwardCard = () => {
+const AwardCard = ({ award }: any) => {
   return (
     <div className="awd-card">
-      <img
-        className="awd-card-image"
-        src="/images/awards/best-leader.png"
-        alt="best leader award"
-      />
-      <div className="awd-card-title">Best Leader</div>
+      <img className="awd-card-image" src={award.image} alt={award.name} />
+      <div className="awd-card-title">{award.name}</div>
+      {award.id === "7" && <div className="awd-besa">07 Awards</div>}
     </div>
   );
 };

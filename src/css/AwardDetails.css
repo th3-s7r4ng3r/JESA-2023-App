@@ -11,6 +11,7 @@
   margin: 1rem 2.5rem 1rem 4rem;
   filter: drop-shadow(0 0 1.5rem #0000009a) blur(2px);
   transition: 0.4s;
+  cursor: pointer;
 }
 .award-card-image:hover {
   transform: scale(1.15);
@@ -35,11 +36,36 @@
 .award-card-description {
   font-size: 1.3rem;
 }
-.award-tag {
+.innovator-class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+.award-tag,
+.become-partner {
   font-size: 1.25rem;
   font-weight: 400;
   padding: 5px 15px;
   background-color: #ffffffe7;
   border-radius: 15px;
   width: fit-content;
+  z-index: 5;
+}
+.become-partner {
+  background-color: #f0f0f0c4;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease-out;
+  opacity: 0;
+  margin-left: 1rem;
+  z-index: 1;
+  transform: translateX(-6vw);
+}
+.become-partner:hover {
+  background-color: #d8d8d8dc;
+}
+.award-card:hover .become-partner {
+  transform: translateX(0vw);
+  opacity: 1;
 }

@@ -1,22 +1,22 @@
 import "../css/AwardDetails.css";
 
-const AwardDetails = () => {
+const AwardDetails = ({ currentAward }: any) => {
   return (
     <div className="award-card">
       <img
-        src="./images/awards/best-innovator.png"
+        src={currentAward.image}
         className="award-card-image"
-        alt="award image"
+        alt={currentAward.name}
       />
       <div className="award-details">
-        <h1 className="award-card-title">Best Innovator</h1>
-        <p className="award-card-description">
-          Dedicated to motivating young inventors and this year onwards it’s
-          open to brilliant young innovators from other universities too. The
-          ability of a competitor to do an invention successfully and
-          implementation to fit the task is conferred as well.
-        </p>
-        <div className="award-tag">UGC Approved</div>
+        <h1 className="award-card-title">{currentAward.name}</h1>
+        <p className="award-card-description">{currentAward.description}</p>
+        {currentAward.id === "4" && (
+          <div className="innovator-class">
+            <div className="award-tag">UGC Approved</div>
+            <div className="become-partner">Become a partner</div>
+          </div>
+        )}
       </div>
     </div>
   );

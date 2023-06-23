@@ -29,6 +29,7 @@
   width: 30vw;
   margin: 2rem 3rem;
   filter: drop-shadow(0 20px 0.6rem #00000075);
+  transition: 0.3s ease-out;
 }
 .description-text {
   font-size: 1.25rem;
@@ -43,6 +44,7 @@
 .award-section {
   scroll-margin-top: 15vh;
   margin: 5vh 0vh;
+  padding-bottom: 5vh;
   border: 2px solid rgba(0, 0, 0, 0.178);
   border-radius: 2rem;
   width: 85vw;

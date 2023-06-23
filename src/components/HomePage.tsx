@@ -3,7 +3,7 @@ import AwardDetails from "./AwardDetails";
 import AwardCard from "./AwardCard";
 import Carousel from "./Carousel";
 
-const HomePage = () => {
+const HomePage = ({ awardsData }: any) => {
   return (
     <div className="container" id="home">
       {/* Carousel section of the home page */}
@@ -22,7 +22,8 @@ const HomePage = () => {
             JESA (J'pura Employability Skills Awards), the ultimate platform for
             honoring the accomplishments of young talents. With{" "}
             <b>13 prestigious awards</b> exclusively dedicated to undergraduates
-            of the University of Sri Jayewardenepura, and a new special award
+            of the University of Sri Jayewardenepura, and{" "}
+            <b>a new special award </b>
             open to students from other universities, JESA sets a remarkable
             standard for recognition.
           </p>
@@ -39,15 +40,12 @@ const HomePage = () => {
       {/* Award section of the home page */}
       <div className="award-section" id="awards">
         <div className="award-topic">JESA Awards</div>
-        <AwardDetails />
+        <AwardDetails currentAward={awardsData[4]} />
         <div className="other-awards">
-          <AwardCard />
-          <AwardCard />
-          <AwardCard />
-          <AwardCard />
-          <AwardCard />
-          <AwardCard />
-          <AwardCard />
+          {awardsData.map(
+            (award: any) =>
+              award.id < 8 && award.id !== "4" && <AwardCard award={award} />
+          )}
         </div>
       </div>
     </div>
