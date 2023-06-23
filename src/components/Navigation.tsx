@@ -1,6 +1,6 @@
 import "../css/Navigation.css";
 
-const Navigation = () => {
+const Navigation = ({}) => {
   return (
     <>
       <div className="header">

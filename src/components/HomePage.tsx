@@ -44,7 +44,8 @@ const HomePage = ({ awardsData }: any) => {
         <div className="other-awards">
           {awardsData.map(
             (award: any) =>
-              award.id < 8 && award.id !== "4" && <AwardCard award={award} />
+              award.id < 8 &&
+              award.id !== "4" && <AwardCard award={award} key={award.id} />
           )}
         </div>
       </div>

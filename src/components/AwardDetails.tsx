@@ -1,6 +1,6 @@
 import "../css/AwardDetails.css";
 
-const AwardDetails = ({ currentAward, isFromAwardPage = 1 }: any) => {
+const AwardDetails = ({ currentAward, isFromAwardPage = 0 }: any) => {
   return (
     <div className="award-card">
       <img
@@ -19,13 +19,15 @@ const AwardDetails = ({ currentAward, isFromAwardPage = 1 }: any) => {
           {currentAward.id === "4" && (
             <div className="innovator-class">
               <div className="award-tag">UGC Approved</div>
-              <div className="become-partner">Become a partner</div>
+              {isFromAwardPage == 0 && (
+                <div className="become-partner">Become a partner</div>
+              )}
             </div>
           )}
         </div>
 
         {/* Previous Partners section */}
-        {isFromAwardPage === 1 && (
+        {isFromAwardPage === 1 && currentAward.id !== "4" && (
           <div className="prev-partners">
             <h2>Platinum Partners</h2>
             <div className="prev-partner-container">
