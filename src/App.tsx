@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import { useState, useEffect } from "react";
+import AwardPage from "./components/AwardPage";
 
 //main application
 function App() {
@@ -28,7 +29,8 @@ function App() {
       <>
         <Navigation />
 
-        <HomePage awardsData={awardDetails} />
+        <AwardPage awardData={awardDetails} />
+        {/* <HomePage awardsData={awardDetails} /> */}
 
         <Footer />
       </>

@@ -1,123 +1,121 @@
-
 /* Footer Component */
 .footer {
-    background-color: rgb(243, 243, 243);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 85vw;
-    box-sizing: border-box;
-    padding: 1.5rem;
-    border-radius: 2vw;
-    margin: auto;
-  }
-  
-  .footer-image {
-    width: 45vw;
-    object-fit: scale-down;
-    margin: 2vh 3vh;
-  }
-  
-  .contact-us {
-    padding: 10px;
-    box-sizing: border-box;
-    width: 30vw;
-  }
-  
-  .contacts {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
-  }
-  
-  .contact-us h3 {
-    padding: 10px;
-    margin: 5px;
-    font-size: 2rem;
-    text-align: center;
-  }
-  
-  .contact-us p {
-    box-sizing: border-box;
-    font-size: 1.2rem;
-    text-align: left;
-    padding: 15px 15px;
-    width: 80%;
-    border-radius: 15px;
-    margin: 10px 0px;
-    color: rgb(34, 34, 34);
-    background-color: #d3d3d3b0;
-    min-width: 20vw;
-  }
-  
-  .contact-us p p {
-    margin-top: 0px;
-    width: 100%;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    border-radius: 10px;
-    background-color: #c9c9c9b0;
-  }
-  .copyright {
-    font-size: 1.2rem;
-    color: #2b2b2b;
-    text-align: center;
-    font-weight: normal;
-    text-wrap: balance;
-    margin: 2vh 0vh 3vh;
-  }
-  .copyright span {
-    color: rgb(229, 77, 77);
-  }
-  .github {
-    text-decoration: underline;
-    color: #2b2b2b;
-    transition: 0.2s;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 85vw;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 2vw;
+  margin: auto;
+}
+
+.footer-image {
+  width: 45vw;
+  object-fit: scale-down;
+  margin: 2vh 3vh;
+}
+
+.contact-us {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 30vw;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.contact-us h3 {
+  padding: 10px;
+  margin: 5px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-us p {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 15px 15px;
+  width: 80%;
+  border-radius: 15px;
+  margin: 10px 0px;
+  color: rgb(34, 34, 34);
+  background-color: #d3d3d3b0;
+  min-width: 20vw;
+}
+
+.contact-us p p {
+  margin-top: 0px;
+  width: 100%;
+  padding: 10px 15px;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #c9c9c9b0;
+}
+.copyright {
+  font-size: 1.2rem;
+  color: #2b2b2b;
+  text-align: center;
+  font-weight: normal;
+  text-wrap: balance;
+  margin: 2vh 0vh 3vh;
+}
+.copyright span {
+  color: rgb(229, 77, 77);
+}
+.github {
+  text-decoration: underline;
+  color: #2b2b2b;
+  transition: 0.2s;
+}
+
+/* Making Responsive */
+@media all and (max-width: 600px) {
+  .footer {
+    border-radius: 1.5rem;
   }
 
-  
-  /* Making Responsive */
-  @media all and (max-width : 600px) {
-    .footer {
-      border-radius: 1.5rem;
-    }
-  
-    .footer-image {
-      width: 70vw;
-      margin: 3vh;
-    }
-  
-    .contact-us {
-      width: 90%;
-      font-size: 1.8rem;
-    }
-  
-    .contact-us p {
-      width: 100%;
-    }
+  .footer-image {
+    width: 70vw;
+    margin: 3vh;
   }
-  
-  @media all and (max-width : 1200px) {
-    .footer-image {
-      width: 70vw;
-      margin: 4vh;
-    }
-  
-    .contact-us {
-      width: 95%;
-      font-size: 1.8rem;
-    }
-  
-    .contact-us p {
-      width: 95%;
-      font-size: 1.15rem;
-    }
-    .contact-us p p {
-      font-size: 1.3rem;
-    }
-  
+
+  .contact-us {
+    width: 90%;
+    font-size: 1.8rem;
   }
+
+  .contact-us p {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .footer-image {
+    width: 70vw;
+    margin: 4vh;
+  }
+
+  .contact-us {
+    width: 95%;
+    font-size: 1.8rem;
+  }
+
+  .contact-us p {
+    width: 95%;
+    font-size: 1.15rem;
+  }
+  .contact-us p p {
+    font-size: 1.3rem;
+  }
+}
