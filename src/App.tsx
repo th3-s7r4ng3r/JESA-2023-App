@@ -4,13 +4,15 @@ import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import { useState, useEffect } from "react";
 import AwardPage from "./components/AwardPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 //main application
 function App() {
   //storing details of each awards
   const [awardDetails, setAwardDetails] = useState([]);
-  const [selectedAward, setSelectedAward] = useState(7);
-  const [awardClickStatus, setAwardClickStatus] = useState(1);
+  const [selectedAward, setSelectedAward] = useState(4);
+  const [awardClickStatus, setAwardClickStatus] = useState(0);
+  const [hallOfFameStatus, setHallOfFameStatus] = useState(0);
 
   //reading from the data files
   useEffect(() => {
@@ -29,15 +31,20 @@ function App() {
   //handling clicking the buttons
   const handleNavHomeClick = () => {
     setAwardClickStatus(0);
+    setHallOfFameStatus(0);
   };
   const handleNavAwardsClick = () => {
     setAwardClickStatus(0);
+    setHallOfFameStatus(0);
   };
   const handleNavHallofFameClick = () => {
     setAwardClickStatus(0);
+    setHallOfFameStatus(1);
   };
   const handleAwardClick = (value: any) => {
     setSelectedAward(value);
+    setHallOfFameStatus(0);
+    setAwardClickStatus(1);
   };
 
   return (
@@ -45,15 +52,18 @@ function App() {
       <>
         <Navigation />
 
-        {awardClickStatus === 1 && (
+        {awardClickStatus === 1 && hallOfFameStatus === 0 && (
           <AwardPage
             awardData={awardDetails}
             selectedAward={selectedAward}
             awardClickStatus={awardClickStatus}
           />
         )}
-        {awardClickStatus === 0 && <HomePage awardsData={awardDetails} />}
+        {awardClickStatus === 0 && hallOfFameStatus === 0 && (
+          <HomePage awardsData={awardDetails} />
+        )}
 
+        <ScrollToTop />
         <Footer />
       </>
     )

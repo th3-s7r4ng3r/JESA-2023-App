@@ -1,6 +1,7 @@
 .besa-partners {
   width: 85vw;
   padding: 1rem;
+  scroll-margin-top: 20vh;
   margin: 5vh auto;
   border-radius: 2rem;
   box-shadow: 0 0 3rem #0000001e;

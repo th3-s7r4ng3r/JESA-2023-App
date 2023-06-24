@@ -1,0 +1,27 @@
+.scroll-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  height: 7vh;
+  width: 7vh;
+  background-color: rgb(235, 235, 235);
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.scroll-to-top:hover {
+  padding-bottom: 12px;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.1);
+}

@@ -1,8 +1,8 @@
 import "../css/BesaPartners.css";
 
-const BesaPartners = ({ selectedAward }: any) => {
+const BesaPartners = ({ selectedAward, awardid }: any) => {
   return (
-    <div className="besa-partners">
+    <div className="besa-partners" id={awardid}>
       <h2 className="faculty-name">{selectedAward.description}</h2>
       <div className="besa-partner-container">
         {/* Previous besa platinum partners section */}

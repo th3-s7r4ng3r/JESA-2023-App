@@ -10,6 +10,7 @@ const AwardPage = ({ selectedAward, awardData, awardClickStatus }: any) => {
       <AwardDetails
         currentAward={awardData[selectedAward]}
         isFromAwardPage={awardClickStatus}
+        awardData={awardData}
       />
 
       <div className="current-partners">
@@ -22,7 +23,9 @@ const AwardPage = ({ selectedAward, awardData, awardClickStatus }: any) => {
         {selectedAward === 7 &&
           awardData.map(
             (award: any) =>
-              award.id > 7 && <BesaPartners selectedAward={award} />
+              award.id > 7 && (
+                <BesaPartners selectedAward={award} awardid={award.id} />
+              )
           )}
 
         {/* Inviting for paterns */}
