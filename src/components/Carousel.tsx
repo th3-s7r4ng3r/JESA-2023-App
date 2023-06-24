@@ -2,31 +2,42 @@ import { useState, useEffect } from "react";
 import "../css/Carousel.css";
 
 const Carousel = () => {
-  //storing links and data of the images
-  const items = [
-    { id: 1, link: "./images/carousel/image1.png", description: "Image 01" },
-    { id: 2, link: "./images/carousel/image2.png", description: "Image 02" },
-    { id: 3, link: "./images/carousel/image3.png", description: "Image 03" },
-  ];
-
   //declaring the state variables
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [imagItems, setImagItems] = useState([]);
+  const [clickedDirection, setClickedDirection] = useState("right" as any);
+
+  //getting links and data of the images
+  useEffect(() => {
+    const readCarouselFile = async () => {
+      try {
+        const carouselContent = await fetch("./data/carousel.json");
+        const carouselContentText = await carouselContent.json();
+        setImagItems(carouselContentText);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    readCarouselFile();
+  }, []);
 
   //handling the previous and next button actions
   const handlePrevious = () => {
     if (!isTransitioning) {
       setIsTransitioning(true);
+      setClickedDirection("left");
       setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? items.length - 1 : prevIndex - 1
+        prevIndex === 0 ? imagItems.length - 1 : prevIndex - 1
       );
     }
   };
   const handleNext = () => {
     if (!isTransitioning) {
       setIsTransitioning(true);
+      setClickedDirection("right");
       setCurrentIndex((prevIndex) =>
-        prevIndex === items.length - 1 ? 0 : prevIndex + 1
+        prevIndex === imagItems.length - 1 ? 0 : prevIndex + 1
       );
     }
   };
@@ -35,18 +46,18 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === items.length - 1 ? 0 : prevIndex + 1
+        prevIndex === imagItems.length - 1 ? 0 : prevIndex + 1
       );
     }, 10000);
     // Clear the interval when the currentIndex changes
     return () => clearInterval(interval);
-  }, [currentIndex, items.length]);
+  }, [currentIndex, imagItems.length]);
 
   //handling the transition of the images
   useEffect(() => {
     const transitionTimeout = setTimeout(() => {
       setIsTransitioning(false);
-    }, 500);
+    }, 750);
 
     return () => {
       clearTimeout(transitionTimeout);
@@ -55,29 +66,35 @@ const Carousel = () => {
   }, [currentIndex]);
 
   //setting the selected item
-  const currentItem = items[currentIndex];
+  const currentItem = imagItems[currentIndex];
 
   return (
-    <div className="carousel-image-holder">
-      <img
-        src={currentItem.link}
-        alt={currentItem.description}
-        className={
-          isTransitioning ? "carousel-image transitioning" : "carousel-image"
-        }
-      />
-      <button
-        onClick={handlePrevious}
-        className="fa fa-angle-right prev-btn"
-      ></button>
-      <button
-        onClick={handleNext}
-        className="fa fa-angle-left next-btn"
-      ></button>
-      <a href="#about" className="scroll-btn">
-        Scroll Down
-      </a>
-    </div>
+    imagItems.length !== 0 && (
+      <div className="carousel-image-holder">
+        <img
+          src={currentItem["link"]}
+          alt={currentItem["description"]}
+          className={
+            isTransitioning
+              ? clickedDirection == "right"
+                ? "carousel-image transitioning-right"
+                : "carousel-image transitioning-left"
+              : "carousel-image"
+          }
+        />
+        <button
+          onClick={handleNext}
+          className="fa fa-angle-right prev-btn"
+        ></button>
+        <button
+          onClick={handlePrevious}
+          className="fa fa-angle-left next-btn"
+        ></button>
+        <a href="#about" className="scroll-btn">
+          Scroll Down
+        </a>
+      </div>
+    )
   );
 };
 

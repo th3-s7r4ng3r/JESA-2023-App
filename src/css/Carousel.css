@@ -15,10 +15,15 @@
   object-fit: cover;
   transition: fade-in 0.5s;
   z-index: 0;
-  background-color: black;
+  background-color: white;
 }
-.transitioning {
+.transitioning-right {
   pointer-events: none;
+  animation: fade-in-right 0.7s;
+}
+.transitioning-left {
+  pointer-events: none;
+  animation: fade-in-left 0.7s;
 }
 
 .prev-btn,
@@ -29,11 +34,12 @@
   position: absolute;
   border-radius: 50px;
   border: none;
-  color: rgb(138, 137, 137);
+  color: rgb(19, 19, 19);
   font-size: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.164);
+  background-color: rgba(228, 228, 228, 0.445);
   cursor: pointer;
   z-index: 5;
+  pointer-events: all;
 }
 .prev-btn {
   transform: translateX(+40vw);
@@ -58,17 +64,21 @@
   padding: 12px 50px;
 }
 
-@keyframes fade-in {
+@keyframes fade-in-right {
   0% {
     opacity: 80%;
+    transform: translateX(+2vw);
   }
   100% {
     opacity: 100%;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .transitioning {
-    animation: fade-in 0.5s;
+@keyframes fade-in-left {
+  0% {
+    opacity: 80%;
+    transform: translateX(-2vw);
+  }
+  100% {
+    opacity: 100%;
   }
 }

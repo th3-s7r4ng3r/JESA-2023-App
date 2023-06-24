@@ -1,0 +1,95 @@
+.hof-container {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  margin: 10vh auto 20vh;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 6rem;
+  animation: hof-fade-in 0.5s;
+}
+.hof-container h1 {
+  position: relative;
+  margin: 4rem 0rem 2.5rem;
+  font-size: 5rem;
+}
+.hof-description {
+  width: 60vw;
+  font-size: 1.5rem;
+  text-align: center;
+  text-wrap: balance;
+  margin-bottom: 1rem;
+  padding: 3rem 4rem;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0 0 3rem #50505042;
+}
+.hof-section {
+  display: flex;
+  scroll-margin-top: 7rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.hof-section h2 {
+  width: 30%;
+  text-align: center;
+  font-size: 3rem;
+  padding: 3px;
+  z-index: 5;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 500px;
+  background-color: #eeeeeeb0;
+}
+.hof-image {
+  width: 85vw;
+  border-radius: 2rem;
+  border: 5px solid rgb(255, 255, 255);
+  transition: 0.3s ease-out;
+  box-shadow: 0 0 6rem #2929298e;
+  margin-bottom: 5vh;
+}
+.hof-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50vw;
+  margin-bottom: 10vh;
+}
+.hof-tag,
+.hof-tag-disable {
+  margin: 5px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 3px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #e4e4e4e7;
+  border: 2px solid #00000000;
+  transition: 0.3s;
+}
+.hof-tag-disable {
+  color: #b3b3b3;
+  cursor: default;
+  background-color: #ffffffe7;
+  border: 2px solid #cecece;
+}
+.hof-tag:hover {
+  border: 2px solid #00000062;
+}
+
+@keyframes hof-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(+5vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-0vh);
+  }
+}

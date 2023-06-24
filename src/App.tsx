@@ -5,6 +5,7 @@ import HomePage from "./components/HomePage";
 import { useState, useEffect } from "react";
 import AwardPage from "./components/AwardPage";
 import ScrollToTop from "./components/ScrollToTop";
+import HallofFame from "./components/HallofFame";
 
 //main application
 function App() {
@@ -80,6 +81,7 @@ function App() {
           />
         )}
 
+        {hallOfFameStatus === 1 && <HallofFame />}
         <ScrollToTop />
         <Footer />
       </>
