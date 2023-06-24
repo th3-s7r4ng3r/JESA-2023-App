@@ -20,7 +20,7 @@ const AwardPage = ({ selectedAward, awardData, awardClickStatus }: any) => {
         )}
 
         {/* Partner section for BESA */}
-        {selectedAward === 7 &&
+        {selectedAward === "7" &&
           awardData.map(
             (award: any) =>
               award.id > 7 && (

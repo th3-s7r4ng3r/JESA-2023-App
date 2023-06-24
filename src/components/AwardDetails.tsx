@@ -4,7 +4,13 @@ const AwardDetails = ({
   currentAward,
   isFromAwardPage = 0,
   awardData = 0,
+  handleClick,
 }: any) => {
+  //handling clicking on an award
+  const handleAwardClick = () => {
+    handleClick(4);
+  };
+
   return (
     // Award details section
     <div className="award-card">
@@ -17,6 +23,7 @@ const AwardDetails = ({
             : "award-card-image-award-page"
         }
         alt={currentAward.name}
+        onClick={handleAwardClick}
       />
       <div className="row">
         <div className="award-details">
@@ -27,7 +34,9 @@ const AwardDetails = ({
             <div className="innovator-class">
               <div className="award-tag">UGC Approved</div>
               {isFromAwardPage == 0 && (
-                <div className="become-partner">Become a partner</div>
+                <div className="become-partner" onClick={handleAwardClick}>
+                  Become a partner
+                </div>
               )}
             </div>
           )}
@@ -72,7 +81,11 @@ const AwardDetails = ({
             awardData.map(
               (award: any) =>
                 award.id > 7 && (
-                  <a href={"#" + award.id} className="faculty-tag">
+                  <a
+                    href={"#" + award.id}
+                    className="faculty-tag"
+                    key={award.id}
+                  >
                     {award.description}
                   </a>
                 )

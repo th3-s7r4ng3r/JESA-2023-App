@@ -1,4 +1,5 @@
 import "./css/App.css";
+import "./css/AppTransitions.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
@@ -10,9 +11,10 @@ import ScrollToTop from "./components/ScrollToTop";
 function App() {
   //storing details of each awards
   const [awardDetails, setAwardDetails] = useState([]);
-  const [selectedAward, setSelectedAward] = useState(4);
+  const [selectedAward, setSelectedAward] = useState(0);
   const [awardClickStatus, setAwardClickStatus] = useState(0);
   const [hallOfFameStatus, setHallOfFameStatus] = useState(0);
+  const [animateStatus, setAnimateStatus] = useState(false);
 
   //reading from the data files
   useEffect(() => {
@@ -28,10 +30,19 @@ function App() {
     readAwardFile();
   }, []);
 
+  //handling animation
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   //handling clicking the buttons
   const handleNavHomeClick = () => {
     setAwardClickStatus(0);
     setHallOfFameStatus(0);
+    scrollToTop();
   };
   const handleNavAwardsClick = () => {
     setAwardClickStatus(0);
@@ -40,18 +51,23 @@ function App() {
   const handleNavHallofFameClick = () => {
     setAwardClickStatus(0);
     setHallOfFameStatus(1);
+    scrollToTop();
   };
   const handleAwardClick = (value: any) => {
     setSelectedAward(value);
     setHallOfFameStatus(0);
     setAwardClickStatus(1);
+    scrollToTop();
   };
 
   return (
     awardDetails.length != 0 && (
       <>
-        <Navigation />
-
+        <Navigation
+          updateNavAwardClick={handleNavAwardsClick}
+          updateNavHomeClick={handleNavHomeClick}
+          updateNavHallOfFameClick={handleNavHallofFameClick}
+        />
         {awardClickStatus === 1 && hallOfFameStatus === 0 && (
           <AwardPage
             awardData={awardDetails}
@@ -60,7 +76,10 @@ function App() {
           />
         )}
         {awardClickStatus === 0 && hallOfFameStatus === 0 && (
-          <HomePage awardsData={awardDetails} />
+          <HomePage
+            awardsData={awardDetails}
+            updateEachAwardClick={handleAwardClick}
+          />
         )}
 
         <ScrollToTop />

@@ -3,7 +3,7 @@ import AwardDetails from "./AwardDetails";
 import AwardCard from "./AwardCard";
 import Carousel from "./Carousel";
 
-const HomePage = ({ awardsData }: any) => {
+const HomePage = ({ awardsData, updateEachAwardClick }: any) => {
   return (
     <div className="container" id="home">
       {/* Carousel section of the home page */}
@@ -40,12 +40,21 @@ const HomePage = ({ awardsData }: any) => {
       {/* Award section of the home page */}
       <div className="award-section" id="awards">
         <div className="award-topic">JESA Awards</div>
-        <AwardDetails currentAward={awardsData[4]} />
+        <AwardDetails
+          currentAward={awardsData[4]}
+          handleClick={updateEachAwardClick}
+        />
         <div className="other-awards">
           {awardsData.map(
             (award: any) =>
               award.id < 8 &&
-              award.id !== "4" && <AwardCard award={award} key={award.id} />
+              award.id !== "4" && (
+                <AwardCard
+                  award={award}
+                  key={award.id}
+                  handleClick={updateEachAwardClick}
+                />
+              )
           )}
         </div>
       </div>
