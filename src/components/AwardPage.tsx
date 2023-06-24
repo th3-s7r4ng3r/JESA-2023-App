@@ -1,5 +1,6 @@
 import "../css/AwardPage.css";
 import AwardDetails from "./AwardDetails";
+import BesaPartners from "./BesaPartners";
 import DefaultPartner from "./DefaultPartner";
 
 const AwardPage = ({ selectedAward, awardData, awardClickStatus }: any) => {
@@ -13,12 +14,16 @@ const AwardPage = ({ selectedAward, awardData, awardClickStatus }: any) => {
 
       <div className="current-partners">
         {/* Default partner section */}
-        <h1 className="partner-title">2023</h1>
         {selectedAward < 7 && (
           <DefaultPartner selectedAward={selectedAward} awardData={awardData} />
         )}
 
         {/* Partner section for BESA */}
+        {selectedAward === 7 &&
+          awardData.map(
+            (award: any) =>
+              award.id > 7 && <BesaPartners selectedAward={award} />
+          )}
 
         {/* Inviting for paterns */}
         <h2 className="partner-footer">

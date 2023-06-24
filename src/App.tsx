@@ -9,7 +9,7 @@ import AwardPage from "./components/AwardPage";
 function App() {
   //storing details of each awards
   const [awardDetails, setAwardDetails] = useState([]);
-  const [selectedAward, setSelectedAward] = useState(0);
+  const [selectedAward, setSelectedAward] = useState(7);
   const [awardClickStatus, setAwardClickStatus] = useState(1);
 
   //reading from the data files

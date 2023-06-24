@@ -1,6 +1,13 @@
 .default-partners {
   margin: 10vh 0vh 5vh;
 }
+.partner-title {
+  padding: 0px 25px;
+  background-color: rgba(219, 219, 219, 0.568);
+  width: 40vw;
+  border-radius: 5rem;
+  margin: 0 auto 14vh;
+}
 .partner-cont {
   display: flex;
   flex-wrap: wrap;

@@ -3,6 +3,7 @@ import "../css/DefaultPartner.css";
 const DefaultPartner = ({ selectedAward, awardData }: any) => {
   return (
     <div className="default-partners">
+      <h1 className="partner-title">2023</h1>
       <div className="partner-cont">
         <div className="partner gold">
           <h2 className="partner-types">Gold</h2>
