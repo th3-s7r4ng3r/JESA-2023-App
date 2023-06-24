@@ -1,5 +1,4 @@
 import "./css/App.css";
-import "./css/AppTransitions.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
@@ -14,7 +13,6 @@ function App() {
   const [selectedAward, setSelectedAward] = useState(0);
   const [awardClickStatus, setAwardClickStatus] = useState(0);
   const [hallOfFameStatus, setHallOfFameStatus] = useState(0);
-  const [animateStatus, setAnimateStatus] = useState(false);
 
   //reading from the data files
   useEffect(() => {
