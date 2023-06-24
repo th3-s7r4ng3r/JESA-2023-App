@@ -1,5 +1,6 @@
 /* HomePage Component */
 
+/* default styling */
 .container {
   margin: 10vh auto 3rem;
   display: flex;
@@ -7,10 +8,10 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  /* background-color: rgb(243, 243, 243); */
   border-radius: 2vw;
 }
 
+/* styling for about section */
 .description {
   margin: 20vh 0rem 15vh;
   font-size: 1.5rem;
@@ -41,6 +42,7 @@
   font-weight: bold;
 }
 
+/* styling for awards section */
 .award-section {
   scroll-margin-top: 15vh;
   margin: 5vh 0vh;

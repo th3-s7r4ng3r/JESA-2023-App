@@ -29,7 +29,7 @@ function App() {
     readAwardFile();
   }, []);
 
-  //handling animation
+  //handling animation with buttons
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -59,21 +59,18 @@ function App() {
     scrollToTop();
   };
 
+  //render the main application
   return (
     awardDetails.length != 0 && (
       <>
+        {/* always display the navigation bar */}
         <Navigation
           updateNavAwardClick={handleNavAwardsClick}
           updateNavHomeClick={handleNavHomeClick}
           updateNavHallOfFameClick={handleNavHallofFameClick}
         />
-        {awardClickStatus === 1 && hallOfFameStatus === 0 && (
-          <AwardPage
-            awardData={awardDetails}
-            selectedAward={selectedAward}
-            awardClickStatus={awardClickStatus}
-          />
-        )}
+
+        {/* display Home page of the app */}
         {awardClickStatus === 0 && hallOfFameStatus === 0 && (
           <HomePage
             awardsData={awardDetails}
@@ -81,7 +78,19 @@ function App() {
           />
         )}
 
+        {/* display Awards page with the selected award */}
+        {awardClickStatus === 1 && hallOfFameStatus === 0 && (
+          <AwardPage
+            awardData={awardDetails}
+            selectedAward={selectedAward}
+            awardClickStatus={awardClickStatus}
+          />
+        )}
+
+        {/* display Hall of Fame page */}
         {hallOfFameStatus === 1 && <HallofFame />}
+
+        {/* Always display the footer and scroll to top */}
         <ScrollToTop />
         <Footer />
       </>

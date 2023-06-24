@@ -1,3 +1,5 @@
+/* AwardCard Component */
+
 .awd-card {
   display: flex;
   flex-direction: column;
@@ -43,6 +45,7 @@
   transform: translateY(+24vh);
 }
 
+/* animating the award card when hover over it*/
 .awd-card:hover {
   transform: translateY(+2vh);
   cursor: pointer;

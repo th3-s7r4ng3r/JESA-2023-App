@@ -1,3 +1,6 @@
+/* Main styling for the webpage */
+
+/* importing awesome font icon pack */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 :root {
@@ -17,6 +20,7 @@ body {
   place-items: center;
   justify-content: center;
   min-width: 320px;
+  width: 100%;
   flex-wrap: wrap;
   min-height: 100vh;
   background-color: #ffffff;

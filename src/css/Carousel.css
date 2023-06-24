@@ -17,6 +17,8 @@
   z-index: 0;
   background-color: white;
 }
+
+/* transition classes for each buttons */
 .transitioning-right {
   pointer-events: none;
   animation: fade-in-right 0.7s;
@@ -24,6 +26,12 @@
 .transitioning-left {
   pointer-events: none;
   animation: fade-in-left 0.7s;
+}
+.prev-btn {
+  transform: translateX(+40vw);
+}
+.next-btn {
+  transform: translateX(-40vw);
 }
 
 .prev-btn,
@@ -41,13 +49,8 @@
   z-index: 5;
   pointer-events: all;
 }
-.prev-btn {
-  transform: translateX(+40vw);
-}
 
-.next-btn {
-  transform: translateX(-40vw);
-}
+/* styles for scroll down button */
 .scroll-btn {
   padding: 12px 25px;
   background-color: white;
@@ -62,8 +65,10 @@
 }
 .scroll-btn:hover {
   padding: 12px 50px;
+  transform: translateY(+39vh) scale(1.1);
 }
 
+/* animation keyframes for each button action */
 @keyframes fade-in-right {
   0% {
     opacity: 80%;

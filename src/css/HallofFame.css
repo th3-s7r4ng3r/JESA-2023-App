@@ -1,3 +1,6 @@
+/* Hall of fame Component */
+
+/* default styling */
 .hof-container {
   width: 85vw;
   display: flex;
@@ -24,6 +27,8 @@
   background-color: white;
   box-shadow: 0 0 3rem #50505042;
 }
+
+/* styles for rending hall of fame for each year */
 .hof-section {
   display: flex;
   scroll-margin-top: 7rem;
@@ -37,6 +42,7 @@
   text-align: center;
   font-size: 3rem;
   padding: 3px;
+  margin-bottom: 2rem;
   z-index: 5;
   border: 5px solid rgb(255, 255, 255);
   border-radius: 500px;
@@ -50,6 +56,8 @@
   box-shadow: 0 0 6rem #2929298e;
   margin-bottom: 5vh;
 }
+
+/* displaying button links for each year */
 .hof-row {
   display: flex;
   flex-direction: row;
@@ -72,6 +80,7 @@
   background-color: #e4e4e4e7;
   border: 2px solid #00000000;
   transition: 0.3s;
+  pointer-events: all;
 }
 .hof-tag-disable {
   color: #b3b3b3;
@@ -83,6 +92,7 @@
   border: 2px solid #00000062;
 }
 
+/* animation used when loading the page */
 @keyframes hof-fade-in {
   from {
     opacity: 0;

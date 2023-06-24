@@ -1,5 +1,6 @@
 import "../css/Footer.css";
 
+// declaring the footer component
 const Footer = () => {
   return (
     <>
@@ -9,6 +10,7 @@ const Footer = () => {
           alt="footer logo"
           className="footer-image"
         />
+        {/* Displaying contact details */}
         <div className="contact-us">
           <h3>Contact Us</h3>
           <div className="contacts">
@@ -21,13 +23,27 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {/* declaring the copyright section */}
       <h4 className="copyright">
-        &#169; 2023 Career Skills Development Society | Made in{" "}
-        <span>&#10084;</span> with React | Open-sourced @
+        {/* CSDS section */}
+        <span className="csds">
+          &#169; 2023 Career Skills Development Society
+        </span>
+        {/* Author section */}
+        Developed by{" "}
+        <a
+          href="https://www.linkedin.com/in/vinura-gallage/"
+          target="_blank"
+          className="copyright-links"
+        >
+          Vinura Gallage
+        </a>{" "}
+        in <span className="copyright-heart">&#10084;</span> with React |
+        Open-sourced @
         <a
           href="https://github.com/th3-s7r4ng3r/JESA-2023-App"
           target="_blank"
-          className="github"
+          className="copyright-links"
         >
           GitHub
         </a>

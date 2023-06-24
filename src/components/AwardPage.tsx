@@ -13,17 +13,19 @@ const AwardPage = ({ selectedAward, awardData, awardClickStatus }: any) => {
         awardData={awardData}
       />
 
+      {/* Partner section */}
       <div className="current-partners">
-        {/* Default partner section */}
-        {selectedAward < 7 && (
+        {/* Default partner section (NOT for BESA award)*/}
+        {awardData[selectedAward].name !== "BESA" && (
           <DefaultPartner selectedAward={selectedAward} awardData={awardData} />
         )}
 
-        {/* Partner section for BESA */}
-        {selectedAward === "7" &&
+        {/* Partner section only for BESA */}
+        {awardData[selectedAward].name === "BESA" &&
           awardData.map(
             (award: any) =>
-              award.id > 7 && (
+              award.id > 7 &&
+              award.name === "BESA" && (
                 <BesaPartners selectedAward={award} awardid={award.id} />
               )
           )}

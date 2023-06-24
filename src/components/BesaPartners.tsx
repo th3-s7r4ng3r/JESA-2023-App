@@ -1,7 +1,10 @@
 import "../css/BesaPartners.css";
 
+// Declaring component for a single besa partner
 const BesaPartners = ({ selectedAward, awardid }: any) => {
+  // rednering the besa partners component
   return (
+    // attaching the id of the award to the div to be able to scroll to it
     <div className="besa-partners" id={awardid}>
       <h2 className="faculty-name">{selectedAward.description}</h2>
       <div className="besa-partner-container">
@@ -25,6 +28,7 @@ const BesaPartners = ({ selectedAward, awardid }: any) => {
             </div>
           </div>
         </div>
+
         {/* Current Besa partners section */}
         <div className="current-besa-partners">
           <h1>2023</h1>

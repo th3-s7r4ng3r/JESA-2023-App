@@ -1,20 +1,22 @@
 import "../css/AwardDetails.css";
 
+//declaring the award detail component
 const AwardDetails = ({
   currentAward,
   isFromAwardPage = 0,
   awardData = 0,
   handleClick,
 }: any) => {
-  //handling clicking on an award
+  //handling clicking on inventor award
   const handleAwardClick = () => {
     handleClick(4);
   };
 
+  //rendering the award details component
   return (
-    // Award details section
+    // Selecting effects based on the section currently in
     <div className="award-card">
-      {/* Selecting effects based on the section currently in */}
+      {/* selecting the image of each award according to the input */}
       <img
         src={currentAward.image}
         className={
@@ -25,6 +27,7 @@ const AwardDetails = ({
         alt={currentAward.name}
         onClick={handleAwardClick}
       />
+      {/* display the details of each selected award */}
       <div className="row">
         <div className="award-details">
           <h1 className="award-card-title">{currentAward.name}</h1>
@@ -42,7 +45,7 @@ const AwardDetails = ({
           )}
         </div>
 
-        {/* Previous Partners section */}
+        {/* Previous Partners section @ AwardPage */}
         {isFromAwardPage === 1 &&
           // Displaying previous partners section for all awards except best innovation and BESA awards
           currentAward.id !== "4" &&
@@ -52,10 +55,10 @@ const AwardDetails = ({
               <div className="prev-partner-container">
                 <div className="prev-partner">
                   <img
-                    src={currentAward.plat2020}
-                    alt="Previous Partner 2020"
+                    src={currentAward.plat2022}
+                    alt="Previous Partner 2022"
                   />
-                  <div className="prev-partner-year">2020</div>
+                  <div className="prev-partner-year">2022</div>
                 </div>
                 <div className="prev-partner">
                   <img
@@ -66,21 +69,22 @@ const AwardDetails = ({
                 </div>
                 <div className="prev-partner">
                   <img
-                    src={currentAward.plat2022}
-                    alt="Previous Partner 2022"
+                    src={currentAward.plat2020}
+                    alt="Previous Partner 2020"
                   />
-                  <div className="prev-partner-year">2022</div>
+                  <div className="prev-partner-year">2020</div>
                 </div>
               </div>
             </div>
           )}
 
-        {/* Displaying faculty names */}
+        {/* Displaying faculty names only for BESA award*/}
         <div className="faculty-names">
           {currentAward.id === "7" &&
             awardData.map(
               (award: any) =>
-                award.id > 7 && (
+                award.id > 7 &&
+                award.name === "BESA" && (
                   <a
                     href={"#" + award.id}
                     className="faculty-tag"

@@ -1,3 +1,6 @@
+/* Besa Partners Component */
+
+/* default styles */
 .besa-partners {
   width: 85vw;
   padding: 1rem;
@@ -27,6 +30,8 @@
   align-items: center;
   flex-wrap: nowrap;
 }
+
+/* styles for previous besa partners */
 .prev-besa-partners {
   width: 35vw;
   margin: 0rem 1.5vw;
@@ -78,6 +83,7 @@
   width: 6vw;
 }
 
+/* styles for current/new besa partners */
 .current-besa-partners {
   width: 45vw;
   margin: 0rem 1vw;
@@ -128,6 +134,8 @@
   margin: 0.5rem;
   transition: 0.3s ease-out;
 }
+
+/* exclusive for platinum partners */
 .besa-platinum {
   z-index: 20;
   transform: scale(1.1);
@@ -136,6 +144,19 @@
   transform: translateY(-0vh) scale(1.15);
   filter: drop-shadow(0 3vh 2rem #0000004d);
 }
+.besa-platinum img {
+  border: 7px solid #e5e4e2;
+}
+.platinum-text {
+  background-color: #e5e4e2;
+}
+.besa-platinum:hover .platinum-text {
+  transform: translateY(+5.5vw);
+  opacity: 1;
+  filter: drop-shadow(0 3vh 2rem #0000004d);
+}
+
+/* exclusive for gold partners */
 .besa-gold {
   z-index: 10;
 }
@@ -143,6 +164,19 @@
   transform: translateX(-3.5vh) scale(1.05);
   filter: drop-shadow(3vh 3vh 2rem #0000004d);
 }
+.besa-gold img {
+  border: 7px solid #fdbc3a;
+}
+.gold-text {
+  background-color: #fdbc3a;
+}
+.besa-gold:hover .gold-text {
+  transform: translateY(+5.5vw);
+  opacity: 1;
+  filter: drop-shadow(3vh 3vh 2rem #0000004d);
+}
+
+/* exclusive for silver partners */
 .besa-silver {
   z-index: 5;
 }
@@ -150,35 +184,11 @@
   transform: translateX(+3.5vh) scale(1.05);
   filter: drop-shadow(-3vh 3vh 2rem #0000004d);
 }
-.besa-platinum img {
-  border: 7px solid #e5e4e2;
-}
-.besa-gold img {
-  border: 7px solid #fdbc3a;
-}
 .besa-silver img {
   border: 7px solid #c4c4c4;
 }
-.gold-text {
-  background-color: #fdbc3a;
-}
-.platinum-text {
-  background-color: #e5e4e2;
-}
 .silver-text {
   background-color: #c4c4c4;
-}
-
-.besa-platinum:hover .platinum-text {
-  transform: translateY(+5.5vw);
-  opacity: 1;
-  filter: drop-shadow(0 3vh 2rem #0000004d);
-}
-
-.besa-gold:hover .gold-text {
-  transform: translateY(+5.5vw);
-  opacity: 1;
-  filter: drop-shadow(3vh 3vh 2rem #0000004d);
 }
 .besa-silver:hover .silver-text {
   transform: translateY(+5.5vw);

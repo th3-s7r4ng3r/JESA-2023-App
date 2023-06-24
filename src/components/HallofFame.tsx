@@ -32,7 +32,7 @@ const HallofFame = () => {
           undergraduates from the University of Sri Jayewardenepura and beyond
         </p>
         <div className="hof-row">
-          {/* display avaiable hall of fame years */}
+          {/* display hall of fame years as active if there's a link to the image. Otherwise display as disabled */}
           {hallOfFameDetails.map((item: any) => (
             <a
               href={"#" + item.id}
@@ -43,11 +43,13 @@ const HallofFame = () => {
             </a>
           ))}
         </div>
-        {/* Looping through the years */}
+
+        {/* Looping through the years to display image */}
         {hallOfFameDetails.length !== 0 &&
           hallOfFameDetails.map(
             (item: any) =>
               item.image !== "" && (
+                // attaching the id to the div to scroll to the image when the year is clicked
                 <div className="hof-section" id={item.id}>
                   <h2>{item.year}</h2>
                   <img

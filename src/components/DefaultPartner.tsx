@@ -1,5 +1,6 @@
 import "../css/DefaultPartner.css";
 
+// Declaring component for new partners except for BESA
 const DefaultPartner = ({ selectedAward, awardData }: any) => {
   return (
     <div className="default-partners">

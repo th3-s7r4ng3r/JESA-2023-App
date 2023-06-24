@@ -1,5 +1,6 @@
 import "../css/Navigation.css";
 
+// declaring navigation component
 const Navigation = ({
   updateNavAwardClick,
   updateNavHomeClick,
@@ -16,6 +17,7 @@ const Navigation = ({
     updateNavHallOfFameClick();
   };
 
+  // rendering the navigation bar
   return (
     <>
       <div className="header">

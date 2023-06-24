@@ -1,4 +1,6 @@
 /* Footer Component */
+
+/* Default styling */
 .footer {
   background-color: rgb(243, 243, 243);
   display: flex;
@@ -12,19 +14,18 @@
   border-radius: 2vw;
   margin: auto;
 }
-
 .footer-image {
   width: 45vw;
   object-fit: scale-down;
   margin: 2vh 3vh;
 }
 
+/* contact us styling */
 .contact-us {
   padding: 10px;
   box-sizing: border-box;
   width: 30vw;
 }
-
 .contacts {
   display: flex;
   flex-direction: column;
@@ -32,14 +33,12 @@
   align-content: center;
   justify-content: space-around;
 }
-
 .contact-us h3 {
   padding: 10px;
   margin: 5px;
   font-size: 2rem;
   text-align: center;
 }
-
 .contact-us p {
   box-sizing: border-box;
   font-size: 1.2rem;
@@ -52,7 +51,6 @@
   background-color: #d3d3d3b0;
   min-width: 20vw;
 }
-
 .contact-us p p {
   margin-top: 0px;
   width: 100%;
@@ -62,6 +60,8 @@
   border-radius: 10px;
   background-color: #c9c9c9b0;
 }
+
+/* Copyright section styling */
 .copyright {
   font-size: 1.2rem;
   color: #2b2b2b;
@@ -69,14 +69,22 @@
   font-weight: normal;
   text-wrap: balance;
   margin: 2vh 0vh 3vh;
+  line-height: 1.7rem;
 }
-.copyright span {
-  color: rgb(229, 77, 77);
+.csds {
+  background-color: #ececece7;
+  border-radius: 500px;
+  padding: 5px 25px;
+  width: fit-content;
+  margin: 0px 10px;
 }
-.github {
+.copyright-links,
+.copyright-links:visited {
   text-decoration: underline;
   color: #2b2b2b;
-  transition: 0.2s;
+}
+.copyright-heart {
+  color: rgb(229, 77, 77);
 }
 
 /* Making Responsive */

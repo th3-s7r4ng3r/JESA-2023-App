@@ -1,3 +1,5 @@
+/* Scroll to top component */
+
 .scroll-to-top {
   position: fixed;
   right: 40px;
@@ -15,6 +17,8 @@
 .scroll-to-top:hover {
   padding-bottom: 12px;
 }
+
+/* attaching classes for each states */
 .show {
   opacity: 1;
   visibility: visible;

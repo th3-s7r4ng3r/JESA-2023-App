@@ -42,18 +42,18 @@ const Carousel = () => {
     }
   };
 
-  // Auto-scroll to the next item every 10 seconds
+  // Auto-scroll to the next item every 7 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === imagItems.length - 1 ? 0 : prevIndex + 1
       );
-    }, 10000);
+    }, 7000);
     // Clear the interval when the currentIndex changes
     return () => clearInterval(interval);
   }, [currentIndex, imagItems.length]);
 
-  //handling the transition of the images
+  //handling the transition of the images by attaching a class to the image
   useEffect(() => {
     const transitionTimeout = setTimeout(() => {
       setIsTransitioning(false);
@@ -68,12 +68,15 @@ const Carousel = () => {
   //setting the selected item
   const currentItem = imagItems[currentIndex];
 
+  //rendering the carousel component
   return (
+    //checking if the carousel has any items and renders it
     imagItems.length !== 0 && (
       <div className="carousel-image-holder">
         <img
           src={currentItem["link"]}
           alt={currentItem["description"]}
+          // handling the transition for next and previous buttons
           className={
             isTransitioning
               ? clickedDirection == "right"
@@ -82,6 +85,7 @@ const Carousel = () => {
               : "carousel-image"
           }
         />
+        {/* Displaying the buttons */}
         <button
           onClick={handleNext}
           className="fa fa-angle-right prev-btn"

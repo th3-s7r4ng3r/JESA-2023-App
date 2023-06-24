@@ -40,14 +40,17 @@ const HomePage = ({ awardsData, updateEachAwardClick }: any) => {
       {/* Award section of the home page */}
       <div className="award-section" id="awards">
         <div className="award-topic">JESA Awards</div>
+        {/* Display BEST Innovation award exclusivly */}
         <AwardDetails
           currentAward={awardsData[4]}
           handleClick={updateEachAwardClick}
         />
+        {/* Display other awards like cards */}
         <div className="other-awards">
           {awardsData.map(
             (award: any) =>
-              award.id < 8 &&
+              // display only if the award has an image (since all awards has images except each faculty BESA award) and skip the BEST Innovation award
+              award.image !== "" &&
               award.id !== "4" && (
                 <AwardCard
                   award={award}
