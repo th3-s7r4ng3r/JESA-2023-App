@@ -224,6 +224,7 @@
   }
   .prev-partner {
     margin: 0rem 0.5rem;
+    border-radius: 15px;
   }
   .prev-partner img {
     width: 22vw;

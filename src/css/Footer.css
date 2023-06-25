@@ -69,7 +69,7 @@
   font-weight: normal;
   text-wrap: balance;
   margin: 2vh 0vh 3vh;
-  line-height: 1.7rem;
+  line-height: 1.45rem;
 }
 .csds {
   background-color: #ececece7;
@@ -116,6 +116,7 @@
   }
   .csds {
     padding: 5px 15px;
+    margin-bottom: 10px;
   }
 }
 

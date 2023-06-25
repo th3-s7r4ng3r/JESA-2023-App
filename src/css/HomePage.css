@@ -85,6 +85,7 @@
   .description {
     flex-wrap: wrap;
     width: 90vw;
+    scroll-margin-top: 12vh;
   }
   .description-logo {
     width: 85vw;

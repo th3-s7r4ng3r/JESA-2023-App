@@ -195,3 +195,95 @@
   opacity: 1;
   filter: drop-shadow(-3vh 3vh 2rem #0000004d);
 }
+
+/* Making Responsive */
+@media all and (max-width: 600px) {
+  /* default styling */
+  .besa-partners {
+    width: 90vw;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    scroll-margin-top: 11.5vh;
+    margin-bottom: 7vh;
+  }
+  .faculty-name {
+    font-size: 1.75rem;
+    width: 82.5vw;
+    padding: 7px 15px;
+  }
+  .besa-partner-container {
+    width: 100%;
+    margin: 0vh auto 3vh;
+    flex-wrap: wrap;
+  }
+
+  /* styles for previous besa partners */
+  .prev-besa-partners {
+    width: 90vw;
+    margin: 2vh 0vw 5vh;
+  }
+  .prev-besa-plat-partners {
+    width: 100%;
+    font-size: 1.25rem;
+  }
+  .prev-besa-partners-list {
+    width: 100%;
+  }
+  .prev-besa-partner {
+    margin: 0rem 0.5rem;
+    border-radius: 15px;
+  }
+  .prev-besa-partner img {
+    width: 22vw;
+    height: 22vw;
+    transform: scale(1.25);
+    object-position: 0px -0.5rem;
+  }
+  .prev-besa-partner h3 {
+    transform: translateY(+11vw);
+    padding: 5px 15px;
+    width: 17vw;
+    border-radius: 150px;
+  }
+
+  /* styles for current/new besa partners */
+  .current-besa-partners {
+    width: 90vw;
+    margin: 0rem 1vw 3vh;
+  }
+  .current-besa-partners h1 {
+    width: 100%;
+    font-size: 1.85rem;
+  }
+  .current-besa-partner {
+    margin: -0.3rem;
+  }
+  .current-besa-partner img {
+    width: 30vw;
+    height: 30vw;
+  }
+  .current-besa-partner h3 {
+    transform: translateY(+10vw);
+    font-size: 1.05rem;
+    width: 23vw;
+    padding: 2px;
+    font-weight: 500;
+  }
+  /* Reducing the animations on mobile */
+  .besa-gold:hover {
+    transform: translateX(-1.5vh) scale(1.05);
+  }
+  .besa-silver:hover {
+    transform: translateX(+1.5vh) scale(1.05);
+  }
+  /* adjusting the animations */
+  .besa-platinum:hover .platinum-text {
+    transform: translateY(+13.5vw);
+  }
+  .besa-gold:hover .gold-text {
+    transform: translateY(+13.5vw);
+  }
+  .besa-silver:hover .silver-text {
+    transform: translateY(+13.5vw);
+  }
+}

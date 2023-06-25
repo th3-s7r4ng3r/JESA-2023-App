@@ -95,7 +95,7 @@
     width: 90vw;
     margin-top: 1vh;
     border-radius: 1.5rem;
-    height: 70vh;
+    height: 72vh;
   }
   .prev-btn {
     transform: translateX(+37vw);
@@ -104,9 +104,9 @@
     transform: translateX(-37vw);
   }
   .scroll-btn {
-    transform: translateY(+35vh);
+    transform: translateY(+36vh);
   }
   .scroll-btn:hover {
-    transform: translateY(+36vh) scale(1.1);
+    transform: translateY(+37vh) scale(1.1);
   }
 }
