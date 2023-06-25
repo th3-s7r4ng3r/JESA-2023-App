@@ -74,9 +74,9 @@
 .csds {
   background-color: #ececece7;
   border-radius: 500px;
+  margin: 5px auto 2px;
   padding: 5px 25px;
   width: fit-content;
-  margin: 0px 10px;
 }
 .copyright-links,
 .copyright-links:visited {
@@ -91,39 +91,45 @@
 @media all and (max-width: 600px) {
   .footer {
     border-radius: 1.5rem;
+    width: 90vw;
+    padding: 1rem;
   }
 
   .footer-image {
-    width: 70vw;
-    margin: 3vh;
+    width: 82vw;
   }
 
   .contact-us {
-    width: 90%;
+    padding: 5px;
+    width: 100%;
     font-size: 1.8rem;
+    padding-bottom: 0px;
   }
 
   .contact-us p {
     width: 100%;
   }
+  .copyright {
+    font-size: 1.05rem;
+    width: 90%;
+    margin: 2vh auto 3vh;
+  }
+  .csds {
+    padding: 5px 15px;
+  }
 }
 
 @media all and (max-width: 1200px) {
-  .footer-image {
-    width: 70vw;
-    margin: 4vh;
-  }
-
   .contact-us {
-    width: 95%;
+    width: 100%;
     font-size: 1.8rem;
   }
 
   .contact-us p {
-    width: 95%;
-    font-size: 1.15rem;
+    width: 100%;
+    font-size: 1.1rem;
   }
   .contact-us p p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 }

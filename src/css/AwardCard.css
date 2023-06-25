@@ -67,3 +67,44 @@
   transform: translateY(+27vh);
   opacity: 1;
 }
+
+/* Making Responsive */
+@media all and (max-width: 600px) {
+  /* default styling */
+  .awd-card {
+    width: 40vw;
+    height: 55vw;
+    margin: 1rem 0.3rem 8.5vh;
+    padding: 0rem;
+  }
+  .awd-card-image {
+    height: 53vw;
+    filter: drop-shadow(0 0 0.75rem #000000b2) blur(0px);
+  }
+  .awd-card-title,
+  .awd-besa {
+    width: 40vw;
+    border-radius: 15px;
+    transform: translateY(+36vw);
+    opacity: 1;
+    font-size: 1.2rem;
+  }
+  .awd-besa {
+    transform: translateY(+43vw);
+  }
+  /* reducing animations */
+  .awd-card:hover {
+    transform: translateY(+1vh);
+    border: 3px solid rgba(117, 117, 117, 0.397);
+  }
+  .awd-card:hover .awd-card-image {
+    transform: scale(1.1);
+    margin-bottom: 5vh;
+  }
+  .awd-card:hover .awd-card-title {
+    transform: translateY(+36vw);
+  }
+  .awd-card:hover .awd-besa {
+    transform: translateY(+43vw);
+  }
+}
