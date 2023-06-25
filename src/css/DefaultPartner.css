@@ -76,3 +76,47 @@
 .silver img {
   border: 10px solid #c4c4c4;
 }
+
+/* Making Responsive */
+@media all and (max-width: 600px) {
+  /* default styling */
+  .default-partners {
+    margin: 15vh 0vh 5vh;
+  }
+  .partner-title {
+    width: 90vw;
+    font-size: 2.3rem;
+    margin: 0 auto 15vh;
+  }
+  .partner {
+    width: 30vw;
+    margin: -0.3rem;
+  }
+  .partner img {
+    width: 32vw;
+    height: 32vw;
+  }
+  .partner-types {
+    font-size: 1.5rem;
+    width: 30vw;
+    font-weight: 600;
+  }
+
+  /* Reducing the animations on mobile */
+  .gold:hover img {
+    transform: translateX(-1.5vh) scale(1.05);
+  }
+  .silver:hover img {
+    transform: translateX(+1.5vh) scale(1.05);
+  }
+  /* Exclusive styling */
+  .platinum img {
+    border: 7px solid #e5e4e2;
+  }
+  .gold img {
+    border: 7px solid #fdbc3a;
+  }
+  .silver img {
+    border: 7px solid #c4c4c4;
+  }
+}

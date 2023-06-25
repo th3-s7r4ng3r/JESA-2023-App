@@ -26,9 +26,9 @@ const Footer = () => {
       {/* declaring the copyright section */}
       <h4 className="copyright">
         {/* CSDS section */}
-        <span className="csds">
+        <div className="csds">
           &#169; 2023 Career Skills Development Society
-        </span>
+        </div>
         {/* Author section */}
         Developed by{" "}
         <a

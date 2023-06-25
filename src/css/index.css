@@ -20,7 +20,6 @@ body {
   place-items: center;
   justify-content: center;
   min-width: 320px;
-  width: 100%;
   flex-wrap: wrap;
   min-height: 100vh;
   background-color: #ffffff;
