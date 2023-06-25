@@ -89,8 +89,6 @@
   }
   .description-logo {
     width: 85vw;
-    height: 30vh;
-    object-fit: cover;
     margin: 0rem 0rem 1rem;
   }
   .description-text {
