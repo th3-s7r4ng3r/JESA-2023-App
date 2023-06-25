@@ -33,11 +33,12 @@
   margin: 2vh 3vw;
   padding: 1.75rem;
   width: 45vw;
-  background-color: #ffecfc9c;
+  background-color: #ffd3f89c;
   border-radius: 2rem;
 }
 .award-card-title {
   font-size: 2.2rem;
+  color: #a70270;
   padding: 5px 25px;
   background-color: #ffc7eea1;
   border-radius: 15px;
@@ -83,6 +84,7 @@
 .become-partner {
   background-color: #ffe3f5b2;
   cursor: pointer;
+  color: #a70270;
   font-weight: 500;
   transition: 0.3s ease-out;
   opacity: 0;
@@ -110,13 +112,14 @@
   font-size: 1.2rem;
   cursor: pointer;
   text-decoration: none;
-  color: #000000;
-  background-color: #f5f5f5e7;
-  border: 1px solid #00000000;
+  color: #a70270;
+
+  border: 1px solid #a702707a;
   transition: 0.3s;
 }
 .faculty-tag:hover {
-  border: 1px solid #00000062;
+  background-color: #ffdff9ab;
+  border: 1px solid #a702707a;
 }
 
 /* Used when in the Award Page */
@@ -126,6 +129,7 @@
 }
 .prev-partners h2 {
   font-size: 1.7rem;
+  color: #a70270;
   margin: 1.5rem 0rem 1rem;
 }
 .prev-partner-container {
@@ -152,6 +156,7 @@
   height: 10vw;
   object-fit: cover;
   transform: scale(1.2);
+  background-color: #ffffff;
   object-position: 0px -0.75rem;
 }
 .prev-partner-year {

@@ -2,7 +2,7 @@
 
 /* Default styling */
 .footer {
-  background-color: #ffecfc9c;
+  background-color: #ebebeb9c;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,6 +36,7 @@
 .contact-us h3 {
   padding: 10px;
   margin: 5px;
+  color: #a70270;
   font-size: 2rem;
   text-align: center;
 }
@@ -50,11 +51,14 @@
   background-color: #fc3dd51c;
   min-width: 20vw;
 }
+.contact-us b {
+  font-weight: 600;
+}
 .contact-us p p {
   margin-top: 0px;
   width: 100%;
   padding: 10px 15px;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 10px;
   background-color: #fa12cc1c;
 }
@@ -73,12 +77,13 @@
   border-radius: 500px;
   padding: 5px 25px;
   width: fit-content;
+  color: #a70270;
   margin: 0px 10px;
 }
 .copyright-links,
 .copyright-links:visited {
   text-decoration: underline;
-  color: #a70270;
+  color: #2e2e2e;
 }
 .copyright-heart {
   color: rgb(229, 77, 77);
