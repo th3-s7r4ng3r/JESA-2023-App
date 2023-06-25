@@ -36,8 +36,12 @@
   font-size: 1.25rem;
   width: 35vw;
 }
+.description-text b {
+  color: #a70270;
+}
 .description-title {
   font-size: 3rem;
+  color: #a70270;
   text-align: left;
   font-weight: bold;
 }
@@ -47,7 +51,7 @@
   scroll-margin-top: 15vh;
   margin: 5vh 0vh;
   padding-bottom: 5vh;
-  border: 2px solid rgba(0, 0, 0, 0.178);
+  border: 2px solid #a7027052;
   border-radius: 2rem;
   width: 85vw;
 }
@@ -57,6 +61,7 @@
   font-weight: bold;
   transform: translateY(-5.5vh);
   padding: 5px 2.5rem;
+  color: #a70270;
   background-color: white;
   border-radius: 100px;
   width: fit-content;

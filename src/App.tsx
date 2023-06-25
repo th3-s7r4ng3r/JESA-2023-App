@@ -36,6 +36,14 @@ function App() {
       behavior: "smooth",
     });
   };
+  //making sure that the awards section is loaded before scrolling
+  const scrollToAwards = () => {
+    setTimeout(() => {
+      const awardsSection = document.getElementById("awards");
+      if (awardsSection != null)
+        awardsSection.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
 
   //handling clicking the buttons
   const handleNavHomeClick = () => {
@@ -46,6 +54,7 @@ function App() {
   const handleNavAwardsClick = () => {
     setAwardClickStatus(0);
     setHallOfFameStatus(0);
+    // scrollToAwards();
   };
   const handleNavHallofFameClick = () => {
     setAwardClickStatus(0);
