@@ -2,7 +2,7 @@
 
 /* Default styling */
 .footer {
-  background-color: #ebebeb9c;
+  background-color: #a70270;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,7 +36,7 @@
 .contact-us h3 {
   padding: 10px;
   margin: 5px;
-  color: #a70270;
+  color: #fdf9fc;
   font-size: 2rem;
   text-align: center;
 }
@@ -46,9 +46,10 @@
   text-align: left;
   padding: 15px 15px;
   width: 80%;
+  color: #fdf9fc;
   border-radius: 15px;
   margin: 10px 0px;
-  background-color: #fc3dd51c;
+  background-color: #ffffff25;
   min-width: 20vw;
 }
 .contact-us b {
@@ -59,8 +60,9 @@
   width: 100%;
   padding: 10px 15px;
   font-weight: 700;
+  color: #fdf9fc;
   border-radius: 10px;
-  background-color: #fa12cc1c;
+  background-color: #ffffff21;
 }
 
 /* Copyright section styling */
@@ -73,13 +75,13 @@
   line-height: 1.45rem;
 }
 .csds {
-  background-color: #ffecfc9c;
+  background-color: #ffceefbe;
   border-radius: 500px;
   margin: 5px auto 5px;
   padding: 5px 25px;
   width: fit-content;
-  color: #a70270;
-  margin: 0px 10px;
+  color: #0f0f0f;
+  text-align: center;
 }
 .copyright-links,
 .copyright-links:visited {
@@ -107,6 +109,9 @@
     width: 100%;
     font-size: 1.8rem;
     padding-bottom: 0px;
+  }
+  .contact-us h3 {
+    margin-top: 2vh;
   }
 
   .contact-us p {

@@ -6,7 +6,7 @@
 }
 .partner-title {
   padding: 0px 25px;
-  background-color: #ffc7eea1;
+  background-color: #ffdbf4;
   width: 40vw;
   color: #a70270;
   border-radius: 5rem;
@@ -18,7 +18,7 @@
   width: 35vw;
   font-size: 2rem;
   border-radius: 5rem;
-  border: 2px solid rgba(233, 233, 233);
+  border: 2px solid #ffdbf4;
   margin: 0 auto 0vh;
   font-weight: 400;
   transform: translateY(+15px);

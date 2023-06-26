@@ -29,8 +29,8 @@
   font-size: 1.25rem;
   font-weight: 600;
   padding: 5px 15px;
-  color: #a70270;
-  background-color: #b3008f1c;
+  color: #fffbfe;
+  background-color: #a70270;
   border-radius: 10px;
   transform: translateY(+24vh);
   opacity: 0;
@@ -96,7 +96,7 @@
   /* reducing animations */
   .awd-card:hover {
     transform: translateY(+1vh);
-    border: 3px solid rgba(117, 117, 117, 0.397);
+    border: 3px solid #a70270bd;
   }
   .awd-card:hover .awd-card-image {
     transform: scale(1.1);

@@ -110,7 +110,7 @@
 @media all and (max-width: 600px) {
   /* default styling */
   .hof-container {
-    margin: 7vh auto 10vh;
+    margin: 7vh auto 8vh;
     scroll-margin-top: 14vh;
     width: 90vw;
   }

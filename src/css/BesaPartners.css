@@ -14,9 +14,9 @@
   width: max-content;
   min-width: 45%;
   text-align: left;
-  color: #a70270;
+  color: #ffebfc;
   margin: 0.5rem;
-  background-color: #ffd3f89c;
+  background-color: #a70270dc;
   padding: 7px 2.5rem;
   border-radius: 15px;
   font-size: 2.5rem;
@@ -106,6 +106,7 @@
   font-size: 1.6rem;
   border-radius: 5rem;
   margin: 0rem auto 0vh;
+  color: #a70270;
   transform: translateY(+15px);
   font-weight: 600;
 }
@@ -217,6 +218,7 @@
     padding: 0.5rem;
     scroll-margin-top: 11.5vh;
     margin-bottom: 8vh;
+    box-shadow: 0 0 3rem #00000050;
   }
   .faculty-name {
     font-size: 1.75rem;
@@ -233,6 +235,7 @@
   .prev-besa-partners {
     width: 90vw;
     margin: 2vh 0vw 5vh;
+    filter: drop-shadow(0 0px 0.5rem #00000027);
   }
   .prev-besa-plat-partners {
     width: 100%;
