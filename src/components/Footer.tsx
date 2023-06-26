@@ -33,14 +33,29 @@ const Footer = () => {
               : 071 893 8256
             </p>
           </div>
+          <div className="footer-links">
+            <a href="http://careerskills.sjp.ac.lk/" target="_blank">
+              <i className="fa fa-globe"></i>
+            </a>
+            <a href="https://facebook.com/jesa2022" target="_blank">
+              <i className="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/jesa_2023/" target="_blank">
+              <i className="fa fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/showcase/j-pura-employability-skills-awards/"
+              target="_blank"
+            >
+              <i className="fa fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
       {/* declaring the copyright section */}
       <h4 className="copyright">
-        {/* CSDS section */}
-        <div className="csds">
-          &#169; 2023 Career Skills Development Society
-        </div>
+        {/* Footer links section */}
+        <h3>&#169; 2023 Career Skills Development Society</h3>
         {/* Author section */}
         Developed by{" "}
         <a

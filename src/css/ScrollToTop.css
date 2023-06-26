@@ -89,10 +89,12 @@
     top: 500px;
     height: 50px;
     width: 170px;
+    border: 1px solid #8f005f;
     padding: 26px 10px 5px;
     transition: 0.2s ease-out;
   }
   .partnership-button a {
+    font-weight: 500;
     font-size: 1rem;
   }
   .partnership-button-show {

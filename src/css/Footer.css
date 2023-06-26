@@ -83,15 +83,35 @@
   margin: 2vh 0vh 3vh;
   line-height: 1.45rem;
 }
-.csds {
+.copyright h3 {
   background-color: #ffceefbe;
   border-radius: 500px;
   margin: 5px auto 5px;
+  font-weight: 400;
+  font-size: 1.2rem;
   padding: 5px 25px;
   width: fit-content;
-  color: #0f0f0f;
-  text-align: center;
 }
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer-links a {
+  color: #0f0f0f;
+  margin: 5px 10px 5px;
+  text-decoration: none;
+  text-align: center;
+  height: 2rem;
+  padding: 2px;
+  color: #ffdaf3be;
+  font-size: 1.3rem;
+  width: 2rem;
+  border-radius: 500px;
+}
+
 .copyright-links,
 .copyright-links:visited {
   text-decoration: underline;
@@ -135,9 +155,14 @@
     width: 90%;
     margin: 2vh auto 2vh;
   }
-  .csds {
-    padding: 5px 15px;
-    margin-bottom: 10px;
+  .copyright h3 {
+    font-size: 1.05rem;
+  }
+  .footer-links a {
+    font-size: 1.3rem;
+    padding: 5px;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 }
 

@@ -147,12 +147,12 @@
     font-size: 2rem;
     padding: 0px;
     margin-bottom: 1.25rem;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid #a702701f;
   }
   .hof-image {
     width: 90vw;
     border-radius: 1rem;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid #a70270bd;
     margin-bottom: 8vh;
   }
   .hof-image:hover {
