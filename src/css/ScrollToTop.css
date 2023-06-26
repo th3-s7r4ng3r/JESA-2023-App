@@ -30,3 +30,16 @@
   visibility: hidden;
   transform: scale(0.1);
 }
+
+/* Making Responsive */
+@media all and (max-width: 600px) {
+  .scroll-to-top {
+    right: 15px;
+    bottom: 15px;
+    height: 5vh;
+    width: 5vh;
+  }
+  .scroll-to-top:hover {
+    padding-bottom: 0px;
+  }
+}

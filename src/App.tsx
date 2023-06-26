@@ -54,7 +54,7 @@ function App() {
   const handleNavAwardsClick = () => {
     setAwardClickStatus(0);
     setHallOfFameStatus(0);
-    // scrollToAwards();
+    scrollToAwards();
   };
   const handleNavHallofFameClick = () => {
     setAwardClickStatus(0);

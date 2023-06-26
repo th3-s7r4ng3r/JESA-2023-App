@@ -11,6 +11,17 @@
   color: #a70270;
   border-radius: 5rem;
   margin: 0 auto 14vh;
+  z-index: 50;
+}
+.partner-subtitle {
+  padding: 2px 25px 20px;
+  width: 35vw;
+  font-size: 2rem;
+  border-radius: 5rem;
+  border: 2px solid rgba(233, 233, 233);
+  margin: 0 auto 0vh;
+  font-weight: 400;
+  transform: translateY(+15px);
 }
 .partner-cont {
   display: flex;
@@ -76,4 +87,55 @@
 }
 .silver img {
   border: 10px solid #c4c4c4;
+}
+
+/* Making Responsive */
+@media all and (max-width: 600px) {
+  /* default styling */
+  .default-partners {
+    margin: 15vh 0vh 5vh;
+  }
+  .partner-title {
+    width: 90vw;
+    font-size: 2.3rem;
+    margin: 0 auto 15vh;
+  }
+  .partner-subtitle {
+    padding: 5px 25px 15px;
+    width: 83vw;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    transform: translateY(+7px);
+  }
+  .partner {
+    width: 30vw;
+    margin: -0.3rem;
+  }
+  .partner img {
+    width: 32vw;
+    height: 32vw;
+  }
+  .partner-types {
+    font-size: 1.5rem;
+    width: 30vw;
+    font-weight: 600;
+  }
+
+  /* Reducing the animations on mobile */
+  .gold:hover img {
+    transform: translateX(-1.5vh) scale(1.05);
+  }
+  .silver:hover img {
+    transform: translateX(+1.5vh) scale(1.05);
+  }
+  /* Exclusive styling */
+  .platinum img {
+    border: 7px solid #e5e4e2;
+  }
+  .gold img {
+    border: 7px solid #fdbc3a;
+  }
+  .silver img {
+    border: 7px solid #c4c4c4;
+  }
 }

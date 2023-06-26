@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  border-radius: 2vw;
+  border-radius: 2rem;
 }
 
 /* styling for about section */
@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  border-radius: 2vw;
+  border-radius: 2rem;
   box-shadow: 0 0 5rem #0000001e;
   scroll-margin-top: 15vh;
   background-color: white;
@@ -76,4 +76,49 @@
   padding: 1rem;
   width: 85vw;
   flex-wrap: wrap;
+}
+
+/* Making Responsive */
+@media all and (max-width: 600px) {
+  /* default styling */
+  .container {
+    padding: 0rem;
+    border-radius: 1.5rem;
+  }
+  /* styling for about section */
+  .description {
+    flex-wrap: wrap;
+    width: 90vw;
+    scroll-margin-top: 12vh;
+  }
+  .description-logo {
+    width: 85vw;
+    margin: 0rem 0rem 1rem;
+  }
+  .description-text {
+    width: 80vw;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .description-title {
+    font-size: 2.7rem;
+    text-align: center;
+  }
+
+  /* styling for award section */
+  .award-section {
+    margin: 5vh 0vh;
+    padding-bottom: 0vh;
+    width: 91vw;
+  }
+  .award-topic {
+    font-size: 2.25rem;
+    transform: translateY(-3.5vh);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .other-awards {
+    padding: 0.5rem;
+    width: 90vw;
+  }
 }

@@ -55,10 +55,10 @@ const AwardDetails = ({
               <div className="prev-partner-container">
                 <div className="prev-partner">
                   <img
-                    src={currentAward.plat2022}
-                    alt="Previous Partner 2022"
+                    src={currentAward.plat2019}
+                    alt="Previous Partner 2019"
                   />
-                  <div className="prev-partner-year">2022</div>
+                  <div className="prev-partner-year">2019</div>
                 </div>
                 <div className="prev-partner">
                   <img
@@ -69,10 +69,10 @@ const AwardDetails = ({
                 </div>
                 <div className="prev-partner">
                   <img
-                    src={currentAward.plat2020}
-                    alt="Previous Partner 2020"
+                    src={currentAward.plat2022}
+                    alt="Previous Partner 2022"
                   />
-                  <div className="prev-partner-year">2020</div>
+                  <div className="prev-partner-year">2022</div>
                 </div>
               </div>
             </div>

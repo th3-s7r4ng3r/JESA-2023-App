@@ -70,11 +70,12 @@
   font-weight: normal;
   text-wrap: balance;
   margin: 2vh 0vh 3vh;
-  line-height: 1.7rem;
+  line-height: 1.45rem;
 }
 .csds {
   background-color: #ffecfc9c;
   border-radius: 500px;
+  margin: 5px auto 5px;
   padding: 5px 25px;
   width: fit-content;
   color: #a70270;
@@ -93,39 +94,38 @@
 @media all and (max-width: 600px) {
   .footer {
     border-radius: 1.5rem;
+    width: 90vw;
+    padding: 1rem;
   }
 
   .footer-image {
-    width: 70vw;
-    margin: 3vh;
+    width: 82vw;
   }
 
   .contact-us {
-    width: 90%;
+    padding: 5px;
+    width: 100%;
     font-size: 1.8rem;
+    padding-bottom: 0px;
   }
 
   .contact-us p {
     width: 100%;
+    font-size: 1.1rem;
+  }
+  .copyright {
+    font-size: 1.05rem;
+    width: 90%;
+    margin: 2vh auto 3vh;
+  }
+  .csds {
+    padding: 5px 15px;
+    margin-bottom: 10px;
   }
 }
 
 @media all and (max-width: 1200px) {
-  .footer-image {
-    width: 70vw;
-    margin: 4vh;
-  }
-
-  .contact-us {
-    width: 95%;
-    font-size: 1.8rem;
-  }
-
-  .contact-us p {
-    width: 95%;
-    font-size: 1.15rem;
-  }
   .contact-us p p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
 }

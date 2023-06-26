@@ -90,3 +90,26 @@
     opacity: 100%;
   }
 }
+
+/* Making Responsive */
+@media all and (max-width: 600px) {
+  /* default styling */
+  .carousel-image {
+    width: 90vw;
+    margin-top: 1vh;
+    border-radius: 1.5rem;
+    height: 72vh;
+  }
+  .prev-btn {
+    transform: translateX(+37vw);
+  }
+  .next-btn {
+    transform: translateX(-37vw);
+  }
+  .scroll-btn {
+    transform: translateY(+36vh);
+  }
+  .scroll-btn:hover {
+    transform: translateY(+37vh) scale(1.1);
+  }
+}

@@ -34,3 +34,10 @@
 .nav-btn:hover {
   background-color: #ffc7ee93;
 }
+
+/* Making Responsive */
+@media all and (max-width: 600px) {
+  .nav-btn {
+    font-size: 1rem;
+  }
+}

@@ -15,8 +15,8 @@ const BesaPartners = ({ selectedAward, awardid }: any) => {
           </h2>
           <div className="prev-besa-partners-list">
             <div className="prev-besa-partner">
-              <img src={selectedAward.plat2020} alt="Platinum Partner 2020" />
-              <h3>2020</h3>
+              <img src={selectedAward.plat2019} alt="Platinum Partner 2019" />
+              <h3>2019</h3>
             </div>
             <div className="prev-besa-partner">
               <img src={selectedAward.plat2021} alt="Platinum Partner 2021" />
@@ -31,6 +31,7 @@ const BesaPartners = ({ selectedAward, awardid }: any) => {
 
         {/* Current Besa partners section */}
         <div className="current-besa-partners">
+          <h3 className="besa-partner-subtitle">Who will be the partners of</h3>
           <h1>2023</h1>
           <div className="current-besa-partners-list">
             <div className="current-besa-partner besa-gold">
