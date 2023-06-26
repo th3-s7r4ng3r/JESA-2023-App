@@ -22,7 +22,7 @@
 
 /* contact us styling */
 .contact-us {
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
   width: 30vw;
 }
@@ -45,16 +45,24 @@
   font-size: 1.2rem;
   text-align: left;
   padding: 15px 15px;
-  width: 80%;
+  width: 90%;
   color: #fdf9fc;
   border-radius: 15px;
   margin: 10px 0px;
   background-color: #ffffff25;
   min-width: 20vw;
+  line-height: 1.75rem;
 }
 .contact-us a {
   font-weight: 600;
   color: #fdf9fc;
+  text-decoration: none;
+  padding: 0px 10px;
+  background-color: #ffffff1a;
+  border-radius: 10px;
+}
+.contact-us a:hover {
+  background-color: #ffffff38;
 }
 .contact-us p p {
   margin-top: 0px;
@@ -106,9 +114,9 @@
   }
 
   .contact-us {
-    padding: 5px;
+    padding: 3px;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding-bottom: 0px;
   }
   .contact-us h3 {
@@ -117,7 +125,10 @@
 
   .contact-us p {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+  .contact-us a {
+    padding: 3px 10px;
   }
   .copyright {
     font-size: 1.05rem;

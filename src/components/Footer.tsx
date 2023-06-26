@@ -20,7 +20,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/naveen-hewage/"
                 target="_blank"
               >
-                Naveen T Hewage
+                <i className="fa fa-linkedin"></i> : Naveen T Hewage
               </a>{" "}
               : 071 176 6662
               <br />
@@ -28,7 +28,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/induwara-gamage/"
                 target="_blank"
               >
-                Induwara Gamage
+                <i className="fa fa-linkedin"></i> : Induwara Gamage
               </a>{" "}
               : 071 893 8256
             </p>

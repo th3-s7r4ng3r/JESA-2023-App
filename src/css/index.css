@@ -23,6 +23,6 @@ body {
   flex-wrap: wrap;
   min-height: 100vh;
   background-color: #ffffff;
-  background-image: radial-gradient(#bfbfbf4d 1.35px, #ffffff 1.35px);
-  background-size: 25px 25px;
+  /* background-image: radial-gradient(#bfbfbf4d 1.35px, #ffffff 1.35px);
+  background-size: 25px 25px; */
 }
