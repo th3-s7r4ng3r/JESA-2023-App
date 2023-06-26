@@ -19,7 +19,7 @@
 }
 .nav-btn {
   text-decoration: none;
-  color: black;
+  color: #8f005f;
   padding: 10px 25px;
   min-width: 120px;
   border: none;
@@ -29,11 +29,10 @@
   font-size: 1.1rem;
   pointer-events: all;
   font-weight: 600;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-out;
 }
 .nav-btn:hover {
-  background-color: rgba(194, 194, 194, 0.5);
-  color: rgb(0, 0, 0);
+  background-color: #ffc7ee93;
 }
 
 /* Making Responsive */

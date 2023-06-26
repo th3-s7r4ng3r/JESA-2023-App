@@ -8,7 +8,7 @@
   margin: 0.75rem;
   padding: 0.75rem;
   border-radius: 18px;
-  background-color: rgba(233, 233, 233, 0.815);
+  background-color: #eeeeeec7;
   width: 16vw;
   height: 50vh;
   border: 0px solid rgba(117, 117, 117, 0.397);
@@ -29,7 +29,8 @@
   font-size: 1.25rem;
   font-weight: 600;
   padding: 5px 15px;
-  background-color: rgba(255, 255, 255, 0.836);
+  color: #a70270;
+  background-color: #b3008f1c;
   border-radius: 10px;
   transform: translateY(+24vh);
   opacity: 0;
@@ -39,7 +40,7 @@
   width: 13vw;
   font-size: 1.75rem;
   padding: 5px 15px;
-  color: #00000063;
+  color: #b3008fa6;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 100px;
   transform: translateY(+24vh);
@@ -50,8 +51,8 @@
   transform: translateY(+2vh);
   cursor: pointer;
   z-index: 99;
-  border: 5px solid rgba(117, 117, 117, 0.397);
-  background-color: rgba(211, 211, 211, 0.815);
+  border: 5px solid #a70270bd;
+  background-color: #ffe9fbaf;
   box-shadow: 0 2vh 2rem rgba(0, 0, 0, 0.329);
 }
 .awd-card:hover .awd-card-image {

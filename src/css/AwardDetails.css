@@ -33,13 +33,14 @@
   margin: 2vh 3vw;
   padding: 1.75rem;
   width: 45vw;
-  background-color: #d3d3d3b0;
+  background-color: #ffd3f89c;
   border-radius: 2rem;
 }
 .award-card-title {
   font-size: 2.2rem;
+  color: #a70270;
   padding: 5px 25px;
-  background-color: #a5a5a5b0;
+  background-color: #ffc7eea1;
   border-radius: 15px;
   width: fit-content;
   margin: 0rem 0rem 2rem;
@@ -71,13 +72,19 @@
   font-weight: 400;
   padding: 5px 15px;
   background-color: #ffffffe7;
-  border-radius: 15px;
+  border-radius: 50px;
   width: fit-content;
+  pointer-events: all;
   z-index: 5;
 }
+.award-tag {
+  border: 1px solid #a7027054;
+  padding: 5px 25px;
+}
 .become-partner {
-  background-color: #f0f0f0c4;
+  background-color: #ffe3f5b2;
   cursor: pointer;
+  color: #a70270;
   font-weight: 500;
   transition: 0.3s ease-out;
   opacity: 0;
@@ -86,7 +93,7 @@
   transform: translateX(-6vw);
 }
 .become-partner:hover {
-  background-color: #d8d8d8dc;
+  background-color: #fcc9e9b2;
 }
 .award-card:hover .become-partner {
   transform: translateX(0vw);
@@ -105,13 +112,14 @@
   font-size: 1.2rem;
   cursor: pointer;
   text-decoration: none;
-  color: #000000;
+  color: #a70270;
+  border: 1px solid #a702707a;
   background-color: #eeeeeee7;
-  border: 1px solid #00000000;
   transition: 0.3s;
 }
 .faculty-tag:hover {
-  border: 1px solid #00000062;
+  background-color: #ffdff9ab;
+  border: 1px solid #a702707a;
 }
 
 /* Used when in the Award Page */
@@ -121,6 +129,7 @@
 }
 .prev-partners h2 {
   font-size: 1.7rem;
+  color: #a70270;
   margin: 1.5rem 0rem 1rem;
 }
 .prev-partner-container {
@@ -147,6 +156,7 @@
   height: 10vw;
   object-fit: cover;
   transform: scale(1.2);
+  background-color: #ffffff;
   object-position: 0px -0.75rem;
 }
 .prev-partner-year {

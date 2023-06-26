@@ -2,7 +2,7 @@
 
 /* Default styling */
 .footer {
-  background-color: rgb(243, 243, 243);
+  background-color: #ebebeb9c;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,6 +36,7 @@
 .contact-us h3 {
   padding: 10px;
   margin: 5px;
+  color: #a70270;
   font-size: 2rem;
   text-align: center;
 }
@@ -47,24 +48,24 @@
   width: 80%;
   border-radius: 15px;
   margin: 10px 0px;
-  color: rgb(34, 34, 34);
-  background-color: #d3d3d3b0;
+  background-color: #fc3dd51c;
   min-width: 20vw;
+}
+.contact-us b {
+  font-weight: 600;
 }
 .contact-us p p {
   margin-top: 0px;
   width: 100%;
   padding: 10px 15px;
-  color: rgb(51, 51, 51);
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 10px;
-  background-color: #c9c9c9b0;
+  background-color: #fa12cc1c;
 }
 
 /* Copyright section styling */
 .copyright {
   font-size: 1.2rem;
-  color: #2b2b2b;
   text-align: center;
   font-weight: normal;
   text-wrap: balance;
@@ -72,16 +73,18 @@
   line-height: 1.45rem;
 }
 .csds {
-  background-color: #ececece7;
+  background-color: #ffecfc9c;
   border-radius: 500px;
   margin: 5px auto 5px;
   padding: 5px 25px;
   width: fit-content;
+  color: #a70270;
+  margin: 0px 10px;
 }
 .copyright-links,
 .copyright-links:visited {
   text-decoration: underline;
-  color: #2b2b2b;
+  color: #2e2e2e;
 }
 .copyright-heart {
   color: rgb(229, 77, 77);

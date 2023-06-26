@@ -14,8 +14,9 @@
   width: max-content;
   min-width: 45%;
   text-align: left;
+  color: #a70270;
   margin: 0.5rem;
-  background-color: #e7e7e7b0;
+  background-color: #ffd3f89c;
   padding: 7px 2.5rem;
   border-radius: 15px;
   font-size: 2.5rem;
@@ -39,6 +40,7 @@
 }
 .prev-besa-plat-partners {
   width: 90%;
+  color: #a70270;
   margin: 1rem auto;
   padding: 5px 20px;
   border-radius: 15px;
@@ -92,6 +94,7 @@
   width: 80%;
   margin: 1rem auto;
   padding: 5px 20px;
+  color: #a70270;
   border-radius: 15px;
   font-size: 2rem;
   font-weight: 700;

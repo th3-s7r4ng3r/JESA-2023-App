@@ -15,6 +15,7 @@
   position: relative;
   margin: 4rem 0rem 2.5rem;
   font-size: 5rem;
+  color: #a70270;
 }
 .hof-description {
   width: 60vw;
@@ -22,6 +23,7 @@
   text-align: center;
   text-wrap: balance;
   margin-bottom: 1rem;
+  color: #a70270;
   padding: 3rem 4rem;
   border-radius: 2rem;
   background-color: white;
@@ -38,20 +40,20 @@
   flex-wrap: nowrap;
 }
 .hof-section h2 {
-  width: 30%;
+  width: fit-content;
   text-align: center;
   font-size: 3rem;
-  padding: 3px;
+  padding: 3px 50px;
   margin-bottom: 2rem;
   z-index: 5;
-  border: 5px solid rgb(255, 255, 255);
+  color: #a70270;
   border-radius: 500px;
-  background-color: #eeeeeeb0;
+  background-color: #a702701f;
 }
 .hof-image {
   width: 85vw;
   border-radius: 2rem;
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid #a70270bd;
   transition: 0.3s ease-out;
   box-shadow: 0 0 6rem #2929298e;
   margin-bottom: 5vh;
@@ -76,20 +78,20 @@
   padding: 3px 25px;
   border-radius: 50px;
   text-decoration: none;
-  color: #000000;
-  background-color: #e4e4e4e7;
+  color: #a70270;
+  background-color: #ffbff2ab;
   border: 2px solid #00000000;
   transition: 0.3s;
   pointer-events: all;
 }
 .hof-tag-disable {
-  color: #b3b3b3;
+  color: #a7027052;
   cursor: default;
   background-color: #ffffffe7;
-  border: 2px solid #cecece;
+  border: 2px solid #a7027038;
 }
 .hof-tag:hover {
-  border: 2px solid #00000062;
+  border: 2px solid #a702707a;
 }
 
 /* animation used when loading the page */
