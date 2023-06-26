@@ -42,7 +42,7 @@ function App() {
       const awardsSection = document.getElementById("awards");
       if (awardsSection != null)
         awardsSection.scrollIntoView({ behavior: "smooth" });
-    }, 100);
+    }, 200);
   };
 
   //handling clicking the buttons

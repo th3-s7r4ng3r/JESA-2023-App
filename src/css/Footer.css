@@ -52,8 +52,9 @@
   background-color: #ffffff25;
   min-width: 20vw;
 }
-.contact-us b {
+.contact-us a {
   font-weight: 600;
+  color: #fdf9fc;
 }
 .contact-us p p {
   margin-top: 0px;
@@ -121,7 +122,7 @@
   .copyright {
     font-size: 1.05rem;
     width: 90%;
-    margin: 2vh auto 3vh;
+    margin: 2vh auto 2vh;
   }
   .csds {
     padding: 5px 15px;

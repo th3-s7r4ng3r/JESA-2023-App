@@ -19,6 +19,47 @@
   padding-bottom: 12px;
 }
 
+/* Partner with us button */
+.partnership-button {
+  position: fixed;
+  left: 0;
+  top: 45%;
+  height: 47px;
+  width: 200px;
+  padding: 15px 10px 5px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #ffffff;
+  pointer-events: all;
+  border: 2px solid #8f005f;
+  cursor: pointer;
+  z-index: 9999;
+  text-align: center;
+  transition: 0.3s ease-out;
+}
+.partnership-button a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #8f005f;
+  text-decoration: none;
+}
+.partnership-button:hover {
+  background-color: #8f005f;
+  transform: translateX(-5.5vw) rotate(-90deg);
+}
+.partnership-button:hover a {
+  color: white;
+}
+.partnership-button-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-6vw) rotate(-90deg);
+}
+.partnership-button-hide {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-7vw) rotate(-90deg);
+}
+
 /* attaching classes for each states */
 .show {
   opacity: 1;
@@ -41,5 +82,27 @@
   }
   .scroll-to-top:hover {
     padding-bottom: 0px;
+  }
+  .partnership-button {
+    position: fixed;
+    left: 0;
+    top: 500px;
+    height: 50px;
+    width: 170px;
+    padding: 27px 10px 5px;
+    transition: 0.2s ease-out;
+  }
+  .partnership-button a {
+    font-size: 1rem;
+  }
+  .partnership-button-show {
+    transform: translateX(-21vw) rotate(-90deg);
+  }
+  .partnership-button-hide {
+    opacity: 0;
+    transform: translateX(-25vw) rotate(-90deg);
+  }
+  .partnership-button:hover {
+    transform: translateX(-20vw) rotate(-90deg);
   }
 }

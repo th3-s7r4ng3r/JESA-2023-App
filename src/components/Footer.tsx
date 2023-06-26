@@ -16,9 +16,21 @@ const Footer = () => {
           <div className="contacts">
             <p>
               <p>For More Details</p>
-              <b>Naveen T Hewage</b> : 071 176 6662
+              <a
+                href="https://www.linkedin.com/in/naveen-hewage/"
+                target="_blank"
+              >
+                Naveen T Hewage
+              </a>{" "}
+              : 071 176 6662
               <br />
-              <b>Induwara Gamage</b> : 071 893 8256
+              <a
+                href="https://www.linkedin.com/in/induwara-gamage/"
+                target="_blank"
+              >
+                Induwara Gamage
+              </a>{" "}
+              : 071 893 8256
             </p>
           </div>
         </div>
