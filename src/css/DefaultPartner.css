@@ -90,7 +90,7 @@
 }
 
 /* Making Responsive */
-@media all and (max-width: 600px) {
+@media all and (max-width: 810px) {
   /* default styling */
   .default-partners {
     margin: 15vh 0vh 5vh;
@@ -137,5 +137,28 @@
   }
   .silver img {
     border: 7px solid #c4c4c4;
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  .partner-title {
+    font-size: 3rem;
+    width: 45vw;
+  }
+  .partner-subtitle {
+    width: 40vw;
+    font-size: 1.75rem;
+    transform: translateY(+15px);
+  }
+  .partner {
+    width: 20vw;
+    margin: -0.75rem;
+  }
+  .partner img {
+    width: 19vw;
+    height: 19vw;
+  }
+  .partner-types {
+    width: 25vw;
   }
 }

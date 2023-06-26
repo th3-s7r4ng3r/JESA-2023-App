@@ -36,7 +36,7 @@
 }
 
 /* Making Responsive */
-@media all and (max-width: 600px) {
+@media all and (max-width: 810px) {
   .nav-btn {
     font-size: 1rem;
   }

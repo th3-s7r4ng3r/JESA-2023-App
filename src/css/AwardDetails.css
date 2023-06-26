@@ -170,7 +170,7 @@
 }
 
 /* Making Responsive */
-@media all and (max-width: 600px) {
+@media all and (max-width: 810px) {
   /* default styling */
   .award-card {
     width: 90vw;
@@ -250,5 +250,47 @@
   /* Exclusive for BESA award */
   .faculty-names {
     width: 80vw;
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  /* default styling */
+  .award-details {
+    margin: 3.5vh 1vw;
+    width: 50vw;
+    text-wrap: balance;
+  }
+  .award-card-title {
+    font-size: 2.15rem;
+  }
+  .become-partner {
+    margin-left: 0.5rem;
+  }
+
+  /* styling when open in Award */
+  .prev-partners h2 {
+    font-size: 1.6rem;
+  }
+  .prev-partner {
+    margin: 0rem 0.75rem;
+  }
+  .prev-partner img {
+    width: 11vw;
+    height: 11vw;
+  }
+  .prev-partner-year {
+    transform: translateY(+5.5vw);
+    padding: 4px 15px;
+  }
+
+  /* Exclusive for the BESA awards */
+  .faculty-names {
+    width: 45vw;
+    transform: translateY(-0.5rem);
+  }
+  .faculty-tag {
+    margin: 2.5px;
+    font-size: 1.2rem;
+    padding: 4px 15px;
   }
 }

@@ -73,7 +73,7 @@
 }
 
 /* Making Responsive */
-@media all and (max-width: 600px) {
+@media all and (max-width: 810px) {
   .scroll-to-top {
     right: 15px;
     bottom: 15px;
@@ -83,6 +83,7 @@
   .scroll-to-top:hover {
     padding-bottom: 0px;
   }
+  /* for partnership button */
   .partnership-button {
     position: fixed;
     left: 0;
@@ -106,5 +107,35 @@
   }
   .partnership-button:hover {
     transform: translateX(-20vw) rotate(-90deg);
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  .scroll-to-top {
+    right: 20px;
+    bottom: 25px;
+    height: 6vh;
+    width: 6vh;
+  }
+  .scroll-to-top:hover {
+    padding-bottom: 10px;
+  }
+  /* for partnership button */
+  .partnership-button {
+    position: fixed;
+    left: -25px;
+    top: 450px;
+    height: 50px;
+    width: 170px;
+    padding: 20px 10px 5px;
+  }
+  .partnership-button-show {
+    transform: translateX(-5.5vw) rotate(-90deg);
+  }
+  .partnership-button-hide {
+    transform: translateX(-8vw) rotate(-90deg);
+  }
+  .partnership-button:hover {
+    transform: translateX(-5vw) rotate(-90deg);
   }
 }

@@ -91,7 +91,7 @@
 }
 
 /* Making Responsive */
-@media all and (max-width: 600px) {
+@media all and (max-width: 810px) {
   /* default styling */
   .carousel-image {
     width: 90vw;
@@ -110,5 +110,26 @@
   }
   .scroll-btn:hover {
     transform: translateY(+37vh) scale(1.1);
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  /* default styling */
+  .carousel-image {
+    margin-top: 3vh;
+    border-radius: 1.5rem;
+    height: 80vh;
+  }
+  .prev-btn {
+    transform: translateX(+38vw);
+  }
+  .next-btn {
+    transform: translateX(-38vw);
+  }
+  .scroll-btn {
+    transform: translateY(+41vh);
+  }
+  .scroll-btn:hover {
+    transform: translateY(+39.5vh) scale(1.1);
   }
 }
