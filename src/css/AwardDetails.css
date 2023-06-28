@@ -13,13 +13,13 @@
   height: 50vh;
   object-fit: cover;
   margin: 1rem 2.5rem 1rem 4rem;
-  filter: drop-shadow(0 0 1.5rem #0000009a) blur(2px);
+  filter: drop-shadow(0 0 1.5rem #0000009a);
   transition: 0.4s;
   cursor: pointer;
 }
 .award-card-image:hover {
   transform: scale(1.15);
-  filter: drop-shadow(0 50px 2.5rem #00000081) blur(0px);
+  filter: drop-shadow(0 50px 2.5rem #00000081);
 }
 .row {
   display: flex;
@@ -33,14 +33,14 @@
   margin: 2vh 3vw;
   padding: 1.75rem;
   width: 45vw;
-  background-color: #ffd3f89c;
+  background-color: #dbdbdb86;
   border-radius: 2rem;
 }
 .award-card-title {
   font-size: 2.2rem;
-  color: #a70270;
+  color: #ffebfc;
   padding: 5px 25px;
-  background-color: #ffc7eea1;
+  background-color: #a70270dc;
   border-radius: 15px;
   width: fit-content;
   margin: 0rem 0rem 2rem;
@@ -78,11 +78,11 @@
   z-index: 5;
 }
 .award-tag {
-  border: 1px solid #a7027054;
   padding: 5px 25px;
+  color: #a70270;
 }
 .become-partner {
-  background-color: #ffe3f5b2;
+  background-color: #dbdbdb00;
   cursor: pointer;
   color: #a70270;
   font-weight: 500;
@@ -114,7 +114,6 @@
   text-decoration: none;
   color: #a70270;
   border: 1px solid #a702707a;
-  background-color: #eeeeeee7;
   transition: 0.3s;
 }
 .faculty-tag:hover {
@@ -171,7 +170,7 @@
 }
 
 /* Making Responsive */
-@media all and (max-width: 600px) {
+@media all and (max-width: 810px) {
   /* default styling */
   .award-card {
     width: 90vw;
@@ -182,7 +181,7 @@
     height: 35vh;
     object-fit: scale-down;
     width: 90vw;
-    filter: drop-shadow(0 0 1.5rem #0000009a) blur(0px);
+    filter: drop-shadow(0 0 1.5rem #0000009a);
   }
   .row {
     width: 90vw;
@@ -251,5 +250,47 @@
   /* Exclusive for BESA award */
   .faculty-names {
     width: 80vw;
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  /* default styling */
+  .award-details {
+    margin: 3.5vh 1vw;
+    width: 50vw;
+    text-wrap: balance;
+  }
+  .award-card-title {
+    font-size: 2.15rem;
+  }
+  .become-partner {
+    margin-left: 0.5rem;
+  }
+
+  /* styling when open in Award */
+  .prev-partners h2 {
+    font-size: 1.6rem;
+  }
+  .prev-partner {
+    margin: 0rem 0.75rem;
+  }
+  .prev-partner img {
+    width: 11vw;
+    height: 11vw;
+  }
+  .prev-partner-year {
+    transform: translateY(+5.5vw);
+    padding: 4px 15px;
+  }
+
+  /* Exclusive for the BESA awards */
+  .faculty-names {
+    width: 45vw;
+    transform: translateY(-0.5rem);
+  }
+  .faculty-tag {
+    margin: 2.5px;
+    font-size: 1.2rem;
+    padding: 4px 15px;
   }
 }

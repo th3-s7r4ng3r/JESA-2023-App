@@ -19,6 +19,47 @@
   padding-bottom: 12px;
 }
 
+/* Partner with us button */
+.partnership-button {
+  position: fixed;
+  left: 0;
+  top: 65%;
+  height: 47px;
+  width: 200px;
+  padding: 15px 10px 5px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #ffffff;
+  pointer-events: all;
+  border: 2px solid #8f005f;
+  cursor: pointer;
+  z-index: 9999;
+  text-align: center;
+  transition: 0.3s ease-out;
+}
+.partnership-button a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #8f005f;
+  text-decoration: none;
+}
+.partnership-button:hover {
+  background-color: #8f005f;
+  transform: translateX(-89px) rotate(-90deg);
+}
+.partnership-button:hover a {
+  color: white;
+}
+.partnership-button-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-95px) rotate(-90deg);
+}
+.partnership-button-hide {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-150px) rotate(-90deg);
+}
+
 /* attaching classes for each states */
 .show {
   opacity: 1;
@@ -32,7 +73,7 @@
 }
 
 /* Making Responsive */
-@media all and (max-width: 600px) {
+@media all and (max-width: 810px) {
   .scroll-to-top {
     right: 15px;
     bottom: 15px;
@@ -41,5 +82,40 @@
   }
   .scroll-to-top:hover {
     padding-bottom: 0px;
+  }
+  /* for partnership button */
+  .partnership-button {
+    height: 40px;
+    width: 170px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 18px 10px 5px;
+    background-color: #8f005f;
+    border: 1px solid #8f005f;
+  }
+  .partnership-button a {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  .partnership-button:hover {
+    transform: translateX(-78px) rotate(-90deg);
+  }
+  .partnership-button-show {
+    transform: translateX(-83px) rotate(-90deg);
+  }
+  .partnership-button-hide {
+    transform: translateX(-100px) rotate(-90deg);
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  .scroll-to-top {
+    right: 20px;
+    bottom: 25px;
+    height: 6vh;
+    width: 6vh;
+  }
+  .scroll-to-top:hover {
+    padding-bottom: 10px;
   }
 }

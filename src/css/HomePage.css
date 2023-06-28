@@ -79,7 +79,7 @@
 }
 
 /* Making Responsive */
-@media all and (max-width: 600px) {
+@media all and (max-width: 810px) {
   /* default styling */
   .container {
     padding: 0rem;
@@ -120,5 +120,31 @@
   .other-awards {
     padding: 0.5rem;
     width: 90vw;
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  .container {
+    padding: 0rem;
+  }
+  .description {
+    scroll-margin-top: 13vh;
+  }
+  .description-logo {
+    width: 32vw;
+    margin: 1rem;
+  }
+  .description-text {
+    width: 45vw;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .description-title {
+    text-align: center;
+  }
+
+  /* styling for awards section */
+  .award-section {
+    scroll-margin-top: 17vh;
   }
 }

@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className="footer">
         <img
-          src="./images/footer-image.png"
+          src="./images/footer-image-white.png"
           alt="footer logo"
           className="footer-image"
         />
@@ -16,19 +16,46 @@ const Footer = () => {
           <div className="contacts">
             <p>
               <p>For More Details</p>
-              <b>Naveen T Hewage</b> : 071 176 6662
+              <a
+                href="https://www.linkedin.com/in/naveen-hewage/"
+                target="_blank"
+              >
+                <i className="fa fa-linkedin"></i> : Naveen T Hewage
+              </a>{" "}
+              : 071 176 6662
               <br />
-              <b>Induwara Gamage</b> : 071 893 8256
+              <a
+                href="https://www.linkedin.com/in/induwara-gamage/"
+                target="_blank"
+              >
+                <i className="fa fa-linkedin"></i> : Induwara Gamage
+              </a>{" "}
+              : 071 893 8256
             </p>
+          </div>
+          <div className="footer-links">
+            <a href="http://careerskills.sjp.ac.lk/" target="_blank">
+              <i className="fa fa-globe"></i>
+            </a>
+            <a href="https://facebook.com/jesa2022" target="_blank">
+              <i className="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/jesa_2023/" target="_blank">
+              <i className="fa fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/showcase/j-pura-employability-skills-awards/"
+              target="_blank"
+            >
+              <i className="fa fa-linkedin"></i>
+            </a>
           </div>
         </div>
       </div>
       {/* declaring the copyright section */}
       <h4 className="copyright">
-        {/* CSDS section */}
-        <div className="csds">
-          &#169; 2023 Career Skills Development Society
-        </div>
+        {/* Footer links section */}
+        <h3>&#169; 2023 Career Skills Development Society</h3>
         {/* Author section */}
         Developed by{" "}
         <a
