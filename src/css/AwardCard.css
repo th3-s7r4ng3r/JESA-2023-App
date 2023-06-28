@@ -18,7 +18,7 @@
   position: absolute;
   height: 22vw;
   object-fit: cover;
-  filter: drop-shadow(0 0 0.75rem #000000b2) blur(2px);
+  filter: drop-shadow(0 0 0.75rem #000000b2);
   transition: 0.4s;
 }
 .awd-card-title,
@@ -58,7 +58,7 @@
 .awd-card:hover .awd-card-image {
   transform: scale(1.1);
   margin-bottom: 7vw;
-  filter: drop-shadow(0 0 1.5rem #0000007e) blur(0px);
+  filter: drop-shadow(0 0 1.5rem #0000007e);
 }
 .awd-card:hover .awd-card-title {
   transform: translateY(+10.3vw);
@@ -80,7 +80,7 @@
   }
   .awd-card-image {
     height: 53vw;
-    filter: drop-shadow(0 0 0.75rem #000000b2) blur(0px);
+    filter: drop-shadow(0 0 0.75rem #000000b2);
   }
   .awd-card-title,
   .awd-besa {

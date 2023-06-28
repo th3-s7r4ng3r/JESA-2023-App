@@ -13,13 +13,13 @@
   height: 50vh;
   object-fit: cover;
   margin: 1rem 2.5rem 1rem 4rem;
-  filter: drop-shadow(0 0 1.5rem #0000009a) blur(2px);
+  filter: drop-shadow(0 0 1.5rem #0000009a);
   transition: 0.4s;
   cursor: pointer;
 }
 .award-card-image:hover {
   transform: scale(1.15);
-  filter: drop-shadow(0 50px 2.5rem #00000081) blur(0px);
+  filter: drop-shadow(0 50px 2.5rem #00000081);
 }
 .row {
   display: flex;
@@ -181,7 +181,7 @@
     height: 35vh;
     object-fit: scale-down;
     width: 90vw;
-    filter: drop-shadow(0 0 1.5rem #0000009a) blur(0px);
+    filter: drop-shadow(0 0 1.5rem #0000009a);
   }
   .row {
     width: 90vw;
