@@ -59,7 +59,7 @@ const Footer = () => {
         {/* Author section */}
         Developed by{" "}
         <a
-          href="https://www.linkedin.com/in/vinura-gallage/"
+          href="https://th3-s7r4ng3r.github.io/"
           target="_blank"
           className="copyright-links"
         >

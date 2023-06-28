@@ -9,6 +9,7 @@
   border-radius: 2rem;
   box-shadow: 0 0 3rem #0000001e;
   background-color: white;
+  border: 2px solid #600647;
 }
 .faculty-name {
   width: max-content;
@@ -16,7 +17,7 @@
   text-align: left;
   color: #fffafe;
   margin: 0.5rem;
-  background-color: #a70270dc;
+  background-color: #600647;
   padding: 7px 2.5rem;
   border-radius: 15px;
   font-size: 2.5rem;
@@ -40,7 +41,7 @@
 }
 .prev-besa-plat-partners {
   width: 90%;
-  color: #a70270;
+  color: #330424;
   margin: 1rem auto;
   padding: 5px 20px;
   border-radius: 15px;
@@ -80,6 +81,7 @@
   font-size: 1.1rem;
   font-weight: 500;
   padding: 5px 15px;
+  color: #330424;
   background-color: rgb(219, 219, 219);
   border-radius: 15px;
   width: 6vw;
@@ -91,23 +93,24 @@
   margin: 0rem 1vw;
 }
 .current-besa-partners h1 {
-  width: 80%;
+  width: 60%;
   margin: 1rem auto;
   padding: 5px 20px;
-  color: #a70270;
-  border-radius: 15px;
+  color: #600647;
+  background-color: #60064639;
+  border-radius: 150px;
   font-size: 2rem;
   font-weight: 700;
   transform: translateY(-2vh);
 }
 .besa-partner-subtitle {
   padding: 2px 25px 10px;
-  width: 75%;
+  width: 80%;
   font-size: 1.6rem;
   border-radius: 5rem;
   margin: 0rem auto 0vh;
-  color: #a70270;
-  transform: translateY(+15px);
+  color: #330424;
+  transform: translateY(+5px);
   font-weight: 600;
 }
 .current-besa-partners-list {
@@ -141,6 +144,7 @@
   transform: translateY(+4.3vw);
   border-radius: 10px;
   font-size: 1.2rem;
+  color: #330424;
   width: 9vw;
   opacity: 0;
   font-weight: 600;
@@ -266,7 +270,7 @@
     margin: 0rem 1vw 3vh;
   }
   .current-besa-partners h1 {
-    width: 100%;
+    width: 80%;
     font-size: 1.85rem;
   }
   .besa-partner-subtitle {
@@ -343,7 +347,7 @@
 
   /* styles for current/new besa partners */
   .current-besa-partners h1 {
-    width: 95%;
+    width: 65%;
     font-size: 1.85rem;
   }
   .besa-partner-subtitle {
@@ -351,7 +355,7 @@
     width: 95%;
     margin-top: 0.5rem;
     font-size: 1.35rem;
-    transform: translateY(+15px);
+    transform: translateY(+7px);
   }
   .current-besa-partner h3 {
     font-size: 1.05rem;
