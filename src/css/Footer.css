@@ -121,7 +121,7 @@
 }
 
 /* Making Responsive */
-@media all and (max-width: 600px) {
+@media all and (max-width: 810px) {
   .footer {
     border-radius: 1.5rem;
     width: 90vw;
@@ -152,7 +152,7 @@
   .copyright {
     font-size: 1.05rem;
     width: 90%;
-    margin: 2vh auto 2vh;
+    margin: 2vh auto 4.5vh;
   }
   .copyright h3 {
     font-size: 1.05rem;

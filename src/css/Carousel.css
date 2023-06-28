@@ -16,7 +16,7 @@
   transition: fade-in 0.5s;
   z-index: 0;
   background-color: white;
-  background-image: url(./images/carousel/carousel-lazyload.jpeg);
+  background-image: url(../images/carousel/carousel-lazyload.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 }

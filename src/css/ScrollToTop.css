@@ -81,26 +81,24 @@
   }
   /* for partnership button */
   .partnership-button {
-    height: 40px;
+    left: 0;
+    top: 100%;
+    height: 50px;
     width: 170px;
-    border-radius: 0px 0px 15px 15px;
-    padding: 18px 10px 5px;
-    background-color: #cbaa55;
-    border: 1px solid #cbaa55;
+    padding: 3px 10px 5px;
+    border-radius: 15px 15px 0px 0px;
   }
   .partnership-button a {
-    font-weight: 500;
-    color: #330424;
     font-size: 1rem;
   }
   .partnership-button:hover {
-    transform: translateX(-78px) rotate(-90deg);
+    transform: translateY(-35px) translateX(calc(50vw - 85px)) rotate(0deg);
   }
   .partnership-button-show {
-    transform: translateX(-83px) rotate(-90deg);
+    transform: translateY(-30px) translateX(calc(50vw - 85px)) rotate(0deg);
   }
   .partnership-button-hide {
-    transform: translateX(-100px) rotate(-90deg);
+    transform: translateY(10px) translateX(calc(50vw - 85px)) rotate(0deg);
   }
 }
 
