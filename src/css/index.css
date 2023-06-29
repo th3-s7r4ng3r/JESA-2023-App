@@ -5,7 +5,7 @@
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: rgba(0, 0, 0, 0.87);
+  color: #330424;
   background-color: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,6 +23,6 @@ body {
   flex-wrap: wrap;
   min-height: 100vh;
   background-color: #ffffff;
-  /* background-image: radial-gradient(#bfbfbf4d 1.35px, #ffffff 1.35px);
+  /* background-image: radial-gradient(#cbaa5541 1.35px, #ffffff 1.35px);
   background-size: 25px 25px; */
 }

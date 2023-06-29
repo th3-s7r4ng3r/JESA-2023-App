@@ -2,7 +2,7 @@
 
 /* Default styling */
 .footer {
-  background-color: #a70270;
+  background-color: #600647;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -79,11 +79,12 @@
   text-align: center;
   font-weight: normal;
   text-wrap: balance;
+  color: #330424;
   margin: 2vh 0vh 3vh;
   line-height: 1.45rem;
 }
 .copyright h3 {
-  background-color: #ffceefbe;
+  background-color: #6006463a;
   border-radius: 500px;
   margin: 5px auto 5px;
   font-weight: 400;
@@ -99,13 +100,12 @@
   justify-content: center;
 }
 .footer-links a {
-  color: #0f0f0f;
   margin: 5px 10px 5px;
   text-decoration: none;
   text-align: center;
   height: 2rem;
   padding: 2px;
-  color: #ffdaf3be;
+  color: #f8f8f8ac;
   font-size: 1.3rem;
   width: 2rem;
   border-radius: 500px;
@@ -114,14 +114,14 @@
 .copyright-links,
 .copyright-links:visited {
   text-decoration: underline;
-  color: #2e2e2e;
+  color: #330424;
 }
 .copyright-heart {
   color: rgb(229, 77, 77);
 }
 
 /* Making Responsive */
-@media all and (max-width: 600px) {
+@media all and (max-width: 810px) {
   .footer {
     border-radius: 1.5rem;
     width: 90vw;
@@ -152,7 +152,7 @@
   .copyright {
     font-size: 1.05rem;
     width: 90%;
-    margin: 2vh auto 2vh;
+    margin: 2vh auto 4.5vh;
   }
   .copyright h3 {
     font-size: 1.05rem;

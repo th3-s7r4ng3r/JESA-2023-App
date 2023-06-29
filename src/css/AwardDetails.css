@@ -38,15 +38,16 @@
 }
 .award-card-title {
   font-size: 2.2rem;
-  color: #ffebfc;
+  color: #ffffff;
   padding: 5px 25px;
-  background-color: #a70270dc;
+  background-color: #600647;
   border-radius: 15px;
   width: fit-content;
   margin: 0rem 0rem 2rem;
 }
 .award-card-description {
   font-size: 1.3rem;
+  color: #330424;
 }
 
 /* award details component after redirecting to award page */
@@ -79,12 +80,12 @@
 }
 .award-tag {
   padding: 5px 25px;
-  color: #a70270;
+  color: #600647;
 }
 .become-partner {
   background-color: #dbdbdb00;
   cursor: pointer;
-  color: #a70270;
+  color: #600647;
   font-weight: 500;
   transition: 0.3s ease-out;
   opacity: 0;
@@ -93,7 +94,7 @@
   transform: translateX(-6vw);
 }
 .become-partner:hover {
-  background-color: #fcc9e9b2;
+  background-color: #cbaa5592;
 }
 .award-card:hover .become-partner {
   transform: translateX(0vw);
@@ -112,13 +113,13 @@
   font-size: 1.2rem;
   cursor: pointer;
   text-decoration: none;
-  color: #a70270;
-  border: 1px solid #a702707a;
+  color: #600647;
+  border: 1px solid #600646df;
   transition: 0.3s;
 }
 .faculty-tag:hover {
-  background-color: #ffdff9ab;
-  border: 1px solid #a702707a;
+  background-color: #6006461c;
+  border: 1px solid #600646df;
 }
 
 /* Used when in the Award Page */
@@ -128,7 +129,7 @@
 }
 .prev-partners h2 {
   font-size: 1.7rem;
-  color: #a70270;
+  color: #600647;
   margin: 1.5rem 0rem 1rem;
 }
 .prev-partner-container {
@@ -137,7 +138,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  filter: drop-shadow(0 0px 5rem #0000003b);
+  filter: drop-shadow(0 0px 2rem #0000003b);
 }
 .prev-partner {
   display: flex;
@@ -163,6 +164,7 @@
   transform: translateY(+5vw);
   font-size: 1.1rem;
   font-weight: 500;
+  color: #330424;
   padding: 5px 15px;
   background-color: rgb(219, 219, 219);
   border-radius: 15px;
@@ -216,6 +218,7 @@
   }
   .become-partner {
     opacity: 1;
+    background-color: #cbaa55c7;
     margin-top: 7px;
     margin-bottom: 0.5rem;
     transform: translateX(0vw);
