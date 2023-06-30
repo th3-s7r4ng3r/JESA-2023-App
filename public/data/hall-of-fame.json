@@ -1,37 +1,37 @@
 [
   {
     "id": 1,
-    "year": "2022",
+    "year": "JESA'22",
     "image": "./images/hall-of-fame/2022.png"
   },
   {
     "id": 2,
-    "year": "2021",
+    "year": "JESA'21",
     "image": "./images/hall-of-fame/2021.jpg"
   },
   {
     "id": 3,
-    "year": "2019",
+    "year": "JESA'19",
     "image": "./images/hall-of-fame/2020.jpg"
   },
   {
     "id": 4,
-    "year": "2018",
+    "year": "JESA'18",
     "image": ""
   },
   {
     "id": 5,
-    "year": "2017",
+    "year": "JESA'17",
     "image": ""
   },
   {
     "id": 6,
-    "year": "2016",
+    "year": "JESA'16",
     "image": ""
   },
   {
     "id": 7,
-    "year": "2015",
+    "year": "JESA'15",
     "image": ""
   }
 ]

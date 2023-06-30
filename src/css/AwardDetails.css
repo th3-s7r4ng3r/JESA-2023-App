@@ -8,18 +8,19 @@
   align-items: center;
   width: 85vw;
   margin: 0 auto;
+  z-index: 5;
 }
 .award-card-image {
   height: 50vh;
   object-fit: cover;
   margin: 1rem 2.5rem 1rem 4rem;
-  filter: drop-shadow(0 0 1.5rem #0000009a);
+  filter: drop-shadow(0 0 1.5rem #000000e0);
   transition: 0.4s;
   cursor: pointer;
 }
 .award-card-image:hover {
   transform: scale(1.15);
-  filter: drop-shadow(0 50px 2.5rem #00000081);
+  filter: drop-shadow(0 50px 2.5rem #000000be);
 }
 .row {
   display: flex;
@@ -33,21 +34,21 @@
   margin: 2vh 3vw;
   padding: 1.75rem;
   width: 45vw;
-  background-color: #dbdbdb86;
+  background-color: #242424;
   border-radius: 2rem;
 }
 .award-card-title {
   font-size: 2.2rem;
   color: #ffffff;
   padding: 5px 25px;
-  background-color: #600647;
+  background-color: #3d3d3d;
   border-radius: 15px;
   width: fit-content;
   margin: 0rem 0rem 2rem;
 }
 .award-card-description {
   font-size: 1.3rem;
-  color: #330424;
+  color: #d1d1d1;
 }
 
 /* award details component after redirecting to award page */
@@ -55,7 +56,7 @@
   height: 75vh;
   object-fit: cover;
   margin: 1rem 2.5rem 1rem 4rem;
-  filter: drop-shadow(0 50px 2.5rem #00000081);
+  filter: drop-shadow(0 50px 2.5rem #000000dd);
   transition: 0.4s;
 }
 
@@ -72,20 +73,20 @@
   font-size: 1.25rem;
   font-weight: 400;
   padding: 5px 15px;
-  background-color: #ffffffe7;
+  background-color: #1e1e1e;
   border-radius: 50px;
   width: fit-content;
   pointer-events: all;
-  z-index: 5;
+  z-index: 2;
 }
 .award-tag {
   padding: 5px 25px;
-  color: #600647;
+  color: #e1e1e1;
 }
 .become-partner {
-  background-color: #dbdbdb00;
+  background-color: #cbaa55ce;
   cursor: pointer;
-  color: #600647;
+  color: #000000;
   font-weight: 500;
   transition: 0.3s ease-out;
   opacity: 0;
@@ -94,11 +95,22 @@
   transform: translateX(-6vw);
 }
 .become-partner:hover {
-  background-color: #cbaa5592;
+  background-color: #cbaa55a1;
 }
 .award-card:hover .become-partner {
   transform: translateX(0vw);
   opacity: 1;
+}
+.innovator-msg {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #cbaa55;
+  text-align: left;
+  width: fit-content;
+  border-radius: 50px;
+  padding: 5px 10px;
+  transform: translateY(-0.5rem);
+  border: 1px solid #cbaa55;
 }
 
 /* Exclusive for the BESA awards */
@@ -113,13 +125,12 @@
   font-size: 1.2rem;
   cursor: pointer;
   text-decoration: none;
-  color: #600647;
-  border: 1px solid #600646df;
+  color: #cfcfcf;
+  border: 1px solid #474747df;
   transition: 0.3s;
 }
 .faculty-tag:hover {
-  background-color: #6006461c;
-  border: 1px solid #600646df;
+  background-color: #323232df;
 }
 
 /* Used when in the Award Page */
@@ -129,7 +140,7 @@
 }
 .prev-partners h2 {
   font-size: 1.7rem;
-  color: #600647;
+  color: #ffffff;
   margin: 1.5rem 0rem 1rem;
 }
 .prev-partner-container {
@@ -138,7 +149,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  filter: drop-shadow(0 0px 2rem #0000003b);
+  filter: drop-shadow(0 0px 2rem #000000);
 }
 .prev-partner {
   display: flex;
@@ -146,9 +157,8 @@
   justify-content: center;
   align-items: center;
   margin: 0rem 1rem;
-  background-color: #ffffff;
   border-radius: 20px;
-  border: 5px solid rgb(219, 219, 219);
+  border: 5px solid rgb(175, 175, 175);
   overflow: hidden;
 }
 .prev-partner img {
@@ -164,9 +174,9 @@
   transform: translateY(+5vw);
   font-size: 1.1rem;
   font-weight: 500;
-  color: #330424;
+  color: #000000;
   padding: 5px 15px;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(175, 175, 175);
   border-radius: 15px;
   width: 8vw;
 }
@@ -183,7 +193,7 @@
     height: 35vh;
     object-fit: scale-down;
     width: 90vw;
-    filter: drop-shadow(0 0 1.5rem #0000009a);
+    filter: drop-shadow(0 0 1.5rem #000000db);
   }
   .row {
     width: 90vw;
@@ -218,10 +228,17 @@
   }
   .become-partner {
     opacity: 1;
-    background-color: #cbaa55c7;
+    background-color: #cbaa55c8;
     margin-top: 7px;
     margin-bottom: 0.5rem;
     transform: translateX(0vw);
+  }
+  .innovator-msg {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
   }
   /* styling when open in Award */
   .award-card-image-award-page {
@@ -268,6 +285,9 @@
   }
   .become-partner {
     margin-left: 0.5rem;
+  }
+  .innovator-msg {
+    font-size: 1.2rem;
   }
 
   /* styling when open in Award */

@@ -15,7 +15,7 @@
   object-fit: cover;
   transition: fade-in 0.5s;
   z-index: 0;
-  background-color: white;
+  background-color: #000000;
   background-image: url(../images/carousel/carousel-lazyload.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,9 +45,9 @@
   position: absolute;
   border-radius: 50px;
   border: none;
-  color: #330424;
+  color: #ffffff;
   font-size: 1.5rem;
-  background-color: rgba(228, 228, 228, 0.445);
+  background-color: #202020b0;
   cursor: pointer;
   z-index: 5;
   pointer-events: all;
@@ -56,23 +56,21 @@
 /* styles for scroll down button */
 .scroll-btn {
   padding: 12px 25px;
-  background-color: white;
+  background-color: #282828;
   border-radius: 50px;
-  color: #600647;
+  color: #f7f7f7;
   position: absolute;
   text-decoration: none;
   transform: translateY(+40vh);
-  box-shadow: 0 0 5rem #0000007e;
+  box-shadow: 0 0 5rem #000000fb;
   transition: 0.3s ease-out;
-  border: 1px solid #600647;
   z-index: 10;
 }
 .scroll-btn:hover {
   padding: 12px 50px;
-  color: white;
-  background-color: #600647;
+  background-color: #454545;
   font-weight: 600;
-  transform: translateY(+39vh) scale(1.1);
+  transform: translateY(+40vh) scale(1);
 }
 
 /* animation keyframes for each button action */

@@ -15,7 +15,7 @@
   position: relative;
   margin: 4rem 0rem 2.5rem;
   font-size: 5rem;
-  color: #600647;
+  color: #ffffff;
 }
 .hof-description {
   width: 60vw;
@@ -23,11 +23,11 @@
   text-align: center;
   text-wrap: balance;
   margin-bottom: 1rem;
-  color: #330424;
+  color: #c4c4c4;
   padding: 3rem 4rem;
   border-radius: 2rem;
-  background-color: white;
-  box-shadow: 0 0 3rem #50505042;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 3rem #00000085;
 }
 
 /* styles for rending hall of fame for each year */
@@ -46,16 +46,16 @@
   padding: 3px 50px;
   margin-bottom: 2rem;
   z-index: 5;
-  color: #600647;
+  color: #000000;
   border-radius: 500px;
   background-color: #cbaa55c6;
 }
 .hof-image {
   width: 85vw;
   border-radius: 2rem;
-  border: 5px solid #600647;
+  border: 5px solid #cbaa55c6;
   transition: 0.3s ease-out;
-  box-shadow: 0 0 6rem #2929298e;
+  box-shadow: 0 0 5rem #000000ac;
   margin-bottom: 5vh;
 }
 
@@ -78,20 +78,20 @@
   padding: 3px 25px;
   border-radius: 50px;
   text-decoration: none;
-  color: #600647;
+  color: #000000;
   background-color: #cbaa55c6;
   border: 2px solid #00000000;
   transition: 0.3s;
   pointer-events: all;
 }
 .hof-tag-disable {
-  color: #60064688;
+  color: #cbaa5580;
   cursor: default;
-  background-color: #ffffffe7;
-  border: 2px solid #6006466f;
+  background-color: #1e1e1e;
+  border: 2px solid #cbaa5561;
 }
 .hof-tag:hover {
-  border: 2px solid #600647;
+  border: 2px solid #cbaa55;
 }
 
 /* animation used when loading the page */
@@ -140,12 +140,11 @@
     font-size: 2rem;
     padding: 0px;
     margin-bottom: 1.25rem;
-    border: 2px solid #60064618;
   }
   .hof-image {
     width: 90vw;
     border-radius: 1rem;
-    border: 2px solid #600647;
+    border: 2px solid #cbaa55;
     margin-bottom: 8vh;
   }
   .hof-image:hover {

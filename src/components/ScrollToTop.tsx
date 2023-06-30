@@ -54,7 +54,11 @@ const ScrollToTop = () => {
             : "partnership-button-hide"
         }`}
       >
-        <a href="#" target="_blank" rel="noreferrer">
+        <a
+          href="https://forms.gle/NnJT9ZK25GuVau677"
+          target="_blank"
+          rel="noreferrer"
+        >
           Partner with us!
         </a>
       </div>
