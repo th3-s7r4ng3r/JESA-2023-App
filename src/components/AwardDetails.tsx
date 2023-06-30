@@ -53,8 +53,7 @@ const AwardDetails = ({
 
         {/* Previous Partners section @ AwardPage */}
         {isFromAwardPage === 1 &&
-          // Displaying previous partners section for all awards except best innovation and BESA awards
-          currentAward.id !== "4" &&
+          // Displaying previous partners section for all awards except BESA awards
           currentAward.id !== "7" && (
             <div className="prev-partners">
               <h2>Platinum Partners</h2>
