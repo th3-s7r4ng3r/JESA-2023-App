@@ -2,7 +2,7 @@
 
 /* Default styling */
 .footer {
-  background-color: #600647;
+  background-color: #1e1e1e;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -45,23 +45,23 @@
   text-align: left;
   padding: 15px 15px;
   width: 90%;
-  color: #fdf9fc;
+  color: #c3c3c3;
   border-radius: 15px;
   margin: 10px 0px;
-  background-color: #ffffff25;
+  background-color: #a9a9a911;
   min-width: 20vw;
   line-height: 1.75rem;
 }
 .contact-us a {
   font-weight: 600;
-  color: #fdf9fc;
+  color: #c3c3c3;
   text-decoration: none;
   padding: 0px 10px;
-  background-color: #ffffff1a;
+  background-color: #d4d4d411;
   border-radius: 10px;
 }
 .contact-us a:hover {
-  background-color: #ffffff38;
+  background-color: #d4d4d42a;
 }
 .contact-us p p {
   margin-top: 0px;
@@ -70,7 +70,7 @@
   font-weight: 700;
   color: #fdf9fc;
   border-radius: 10px;
-  background-color: #ffffff21;
+  background-color: #d4d4d422;
 }
 
 /* Copyright section styling */
@@ -79,12 +79,12 @@
   text-align: center;
   font-weight: normal;
   text-wrap: balance;
-  color: #330424;
+  color: #c7c7c7;
   margin: 2vh 0vh 3vh;
   line-height: 1.45rem;
 }
 .copyright h3 {
-  background-color: #6006463a;
+  background-color: #1e1e1e;
   border-radius: 500px;
   margin: 5px auto 5px;
   font-weight: 400;
@@ -105,7 +105,7 @@
   text-align: center;
   height: 2rem;
   padding: 2px;
-  color: #f8f8f8ac;
+  color: #c7c7c7;
   font-size: 1.3rem;
   width: 2rem;
   border-radius: 500px;
@@ -114,7 +114,10 @@
 .copyright-links,
 .copyright-links:visited {
   text-decoration: underline;
-  color: #330424;
+  color: #f8f8f8ac;
+}
+.copyright-links:hover {
+  color: white;
 }
 .copyright-heart {
   color: rgb(229, 77, 77);

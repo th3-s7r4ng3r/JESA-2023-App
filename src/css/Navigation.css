@@ -14,12 +14,12 @@
 .nav-bar {
   padding: 17px 6px;
   border-radius: 5rem;
-  box-shadow: 0 10px 5rem rgba(0, 0, 0, 0.363);
-  background-color: rgb(255, 255, 255);
+  box-shadow: 0 10px 5rem rgba(0, 0, 0, 0.915);
+  background-color: #282828;
 }
 .nav-btn {
   text-decoration: none;
-  color: #600647;
+  color: #ffffff;
   padding: 10px 25px;
   min-width: 120px;
   border: none;
@@ -32,8 +32,7 @@
   transition: all 0.25s ease-out;
 }
 .nav-btn:hover {
-  background-color: #600646de;
-  color: #ffffff;
+  background-color: #4e4e4e94;
 }
 
 /* Making Responsive */

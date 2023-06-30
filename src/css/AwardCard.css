@@ -8,7 +8,7 @@
   margin: 0.75rem;
   padding: 0.75rem;
   border-radius: 18px;
-  background-color: #eeeeeec7;
+  background-color: #1e1e1e;
   width: 16vw;
   height: 25vw;
   border: 0px solid rgba(117, 117, 117, 0.397);
@@ -18,7 +18,7 @@
   position: absolute;
   height: 22vw;
   object-fit: cover;
-  filter: drop-shadow(0 0 0.75rem #000000b2);
+  filter: drop-shadow(0 0 0.75rem #000000ee);
   transition: 0.4s;
 }
 .awd-card-title,
@@ -29,8 +29,8 @@
   font-size: 1.25rem;
   font-weight: 600;
   padding: 5px 15px;
-  color: #fffbfe;
-  background-color: #600647;
+  color: #000000;
+  background-color: #cbaa55;
   border-radius: 10px;
   transform: translateY(+13vw);
   opacity: 0;
@@ -40,7 +40,7 @@
   width: 13vw;
   font-size: 1.75rem;
   padding: 5px 15px;
-  color: #600646db;
+  color: #e1e1e1af;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 100px;
   transform: translateY(+12vw);
@@ -51,14 +51,14 @@
   transform: translateY(+1vw);
   cursor: pointer;
   z-index: 99;
-  border: 5px solid #600646db;
-  background-color: #60064615;
-  box-shadow: 0 2vh 2rem rgba(0, 0, 0, 0.329);
+  border: 5px solid #cbaa55bd;
+  background-color: #4d4d4d15;
+  box-shadow: 0 2vh 2rem rgba(0, 0, 0, 0.614);
 }
 .awd-card:hover .awd-card-image {
   transform: scale(1.1);
   margin-bottom: 7vw;
-  filter: drop-shadow(0 0 1.5rem #0000007e);
+  filter: drop-shadow(0 0 1.5rem #000000cc);
 }
 .awd-card:hover .awd-card-title {
   transform: translateY(+10.3vw);
@@ -80,7 +80,7 @@
   }
   .awd-card-image {
     height: 53vw;
-    filter: drop-shadow(0 0 0.75rem #000000b2);
+    filter: drop-shadow(0 0 0.75rem #000000df);
   }
   .awd-card-title,
   .awd-besa {
@@ -96,7 +96,7 @@
   /* reducing animations */
   .awd-card:hover {
     transform: translateY(+1vh);
-    border: 3px solid #600646db;
+    border: 3px solid #cbaa55bd;
   }
   .awd-card:hover .awd-card-image {
     transform: scale(1.1);
