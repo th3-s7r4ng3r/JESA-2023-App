@@ -6,9 +6,9 @@
 }
 .partner-title {
   padding: 0px 25px;
-  background-color: #60064639;
+  background-color: #232323;
   width: 40vw;
-  color: #600647;
+  color: #ffffff;
   border-radius: 5rem;
   margin: 0 auto 14vh;
   z-index: 50;
@@ -17,6 +17,7 @@
   padding: 2px 25px 20px;
   width: 35vw;
   font-size: 2rem;
+  color: #c2c2c2;
   border-radius: 5rem;
   margin: 0 auto 0vh;
   font-weight: 400;
@@ -58,10 +59,10 @@
 }
 .platinum:hover img {
   transform: translateY(-0vh) scale(1.1);
-  filter: drop-shadow(0 5vh 2rem #0000004d);
+  filter: drop-shadow(0 5vh 2rem #000000c3);
 }
 .platinum img {
-  border: 10px solid #e5e4e2;
+  border: 10px solid rgb(175, 175, 175);
 }
 
 /* Exclusive for gold partners */
@@ -70,10 +71,10 @@
 }
 .gold:hover img {
   transform: translateX(-5vh) scale(1.05);
-  filter: drop-shadow(2.5vh 2.5vh 2rem #0000004d);
+  filter: drop-shadow(2.5vh 2.5vh 2rem #000000c3);
 }
 .gold img {
-  border: 10px solid #fdbc3a;
+  border: 10px solid #feb72afe;
 }
 
 /* Exclusive for ssilver partners */
@@ -82,10 +83,10 @@
 }
 .silver:hover img {
   transform: translateX(+5vh) scale(1.05);
-  filter: drop-shadow(-2.5vh 2.5vh 2rem #0000004d);
+  filter: drop-shadow(-2.5vh 2.5vh 2rem #000000c3);
 }
 .silver img {
-  border: 10px solid #c4c4c4;
+  border: 10px solid rgb(125, 125, 125);
 }
 
 /* Making Responsive */
@@ -129,13 +130,13 @@
   }
   /* Exclusive styling */
   .platinum img {
-    border: 7px solid #e5e4e2;
+    border: 7px solid rgb(175, 175, 175);
   }
   .gold img {
-    border: 7px solid #fdbc3a;
+    border: 7px solid #feb72afe;
   }
   .silver img {
-    border: 7px solid #c4c4c4;
+    border: 7px solid rgb(125, 125, 125);
   }
 }
 
