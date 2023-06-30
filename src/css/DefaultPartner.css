@@ -41,7 +41,7 @@
   width: 17vw;
   height: 17vw;
   border-radius: 20px;
-  object-fit: scale-down;
+  object-fit: contain;
   transition: 0.3s ease-out;
   background-color: #ffffff;
 }

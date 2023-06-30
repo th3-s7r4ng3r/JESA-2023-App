@@ -8,6 +8,7 @@
   align-items: center;
   width: 85vw;
   margin: 0 auto;
+  z-index: 5;
 }
 .award-card-image {
   height: 50vh;
@@ -76,16 +77,16 @@
   border-radius: 50px;
   width: fit-content;
   pointer-events: all;
-  z-index: 5;
+  z-index: 2;
 }
 .award-tag {
   padding: 5px 25px;
   color: #e1e1e1;
 }
 .become-partner {
-  background-color: #cbaa55c8;
+  background-color: #cbaa55ce;
   cursor: pointer;
-  color: #202020;
+  color: #000000;
   font-weight: 500;
   transition: 0.3s ease-out;
   opacity: 0;
@@ -94,11 +95,22 @@
   transform: translateX(-6vw);
 }
 .become-partner:hover {
-  background-color: #cbaa55a8;
+  background-color: #cbaa55a1;
 }
 .award-card:hover .become-partner {
   transform: translateX(0vw);
   opacity: 1;
+}
+.innovator-msg {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #cbaa55;
+  text-align: left;
+  width: fit-content;
+  border-radius: 50px;
+  padding: 5px 10px;
+  transform: translateY(-0.5rem);
+  border: 1px solid #cbaa55;
 }
 
 /* Exclusive for the BESA awards */
@@ -221,6 +233,13 @@
     margin-bottom: 0.5rem;
     transform: translateX(0vw);
   }
+  .innovator-msg {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
   /* styling when open in Award */
   .award-card-image-award-page {
     height: 50vh;
@@ -266,6 +285,9 @@
   }
   .become-partner {
     margin-left: 0.5rem;
+  }
+  .innovator-msg {
+    font-size: 1.2rem;
   }
 
   /* styling when open in Award */

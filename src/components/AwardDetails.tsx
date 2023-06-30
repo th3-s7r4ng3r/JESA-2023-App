@@ -31,6 +31,12 @@ const AwardDetails = ({
       <div className="row">
         <div className="award-details">
           <h1 className="award-card-title">{currentAward.name}</h1>
+          {/* only for innovator award */}
+          {currentAward.id === "4" && (
+            <div className="innovator-msg">
+              Open for all the State Universities in Sri Lanka
+            </div>
+          )}
           <p className="award-card-description">{currentAward.description}</p>
           {/* Display exclusive section for best innovation award */}
           {currentAward.id === "4" && (
