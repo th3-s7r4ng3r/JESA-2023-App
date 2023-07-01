@@ -17,7 +17,8 @@
   box-shadow: 0 10px 5rem rgba(0, 0, 0, 0.915);
   background-color: #282828;
 }
-.nav-btn {
+.nav-btn,
+.reg-nav-btn {
   text-decoration: none;
   color: #ffffff;
   padding: 10px 25px;
@@ -33,6 +34,28 @@
 }
 .nav-btn:hover {
   background-color: #4e4e4e94;
+}
+/* Relevent to register for Jesa button */
+.nav-move {
+  width: 93vw;
+}
+.reg-nav-btn {
+  position: absolute;
+  color: #fdfdfd;
+  background-color: #282828;
+  padding-left: 7vw;
+  border: 7.5px solid #282828;
+  transform: translateY(-17px) translateX(-200px);
+  z-index: -1;
+  opacity: 0;
+}
+.reg-nav-btn:hover {
+  background-color: #cbaa55;
+  color: #000000;
+}
+.show-reg-btn {
+  opacity: 1;
+  transform: translateY(-17px) translateX(-6.5vw);
 }
 
 /* Making Responsive */

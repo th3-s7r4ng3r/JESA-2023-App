@@ -1,0 +1,65 @@
+/* Registration component */
+
+/* Default styling */
+.registration-section {
+  border-radius: 2rem;
+  margin: 10vh 0vh;
+  width: 85vw;
+  padding: 6vh 0vw 10vh;
+  scroll-margin-top: 14vh;
+}
+.registration-section h1 {
+  width: fit-content;
+  margin: 0rem auto 3vw;
+  border-radius: 150px;
+}
+.registration {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+.registration-text {
+  width: 40vw;
+  font-size: 1.4rem;
+  text-align: left;
+  text-align: center;
+  padding: 1.5rem 4vw;
+  border-radius: 1.5rem;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 5rem #0000009e;
+}
+
+.registration-links {
+  width: 30vw;
+  text-align: center;
+}
+.registration-btn {
+  font-weight: 700;
+  font-size: 1.6rem;
+  display: block;
+  width: fit-content;
+  margin: auto;
+  text-decoration: none;
+  border-radius: 500px;
+  padding: 10px 50px;
+  cursor: pointer;
+  background-color: #cbaa55;
+  border: none;
+  color: #000000;
+}
+.registration-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  background-color: #e2be61;
+}
+.registration-links h4 {
+  font-weight: 400;
+  width: 70%;
+  color: #8b8b8b;
+  font-size: 1.3rem;
+  margin: 4vh auto 0;
+}

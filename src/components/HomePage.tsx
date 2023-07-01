@@ -2,8 +2,13 @@ import "../css/HomePage.css";
 import AwardDetails from "./AwardDetails";
 import AwardCard from "./AwardCard";
 import Carousel from "./Carousel";
+import Registration from "./Registration";
 
-const HomePage = ({ awardsData, updateEachAwardClick }: any) => {
+const HomePage = ({
+  awardsData,
+  updateEachAwardClick,
+  updateRegistrationClick,
+}: any) => {
   return (
     <div className="container" id="home">
       {/* Carousel section of the home page */}
@@ -61,6 +66,9 @@ const HomePage = ({ awardsData, updateEachAwardClick }: any) => {
           )}
         </div>
       </div>
+
+      {/* Registration for Jesa 2023 section */}
+      <Registration handleClick={updateRegistrationClick} />
     </div>
   );
 };
