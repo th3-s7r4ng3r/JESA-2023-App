@@ -8,6 +8,7 @@ const HomePage = ({
   awardsData,
   updateEachAwardClick,
   updateRegistrationClick,
+  isRegistrationClosed = 1,
 }: any) => {
   return (
     <div className="container" id="home">
@@ -68,7 +69,10 @@ const HomePage = ({
       </div>
 
       {/* Registration for Jesa 2023 section */}
-      <Registration handleClick={updateRegistrationClick} />
+      <Registration
+        handleClick={updateRegistrationClick}
+        isRegistrationClosed={isRegistrationClosed}
+      />
     </div>
   );
 };

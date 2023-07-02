@@ -1,10 +1,10 @@
 import "../css/Registration.css";
 
 // declaring registration component
-const Registration = ({ handleClick }: any) => {
+const Registration = ({ handleClick, isRegistrationClosed = 1 }: any) => {
   // rendering registration component
   return (
-    <div className="registration-section" id="registration">
+    <div className="registration-section" id="jesa23">
       <h1>JESA'23</h1>
       <div className="registration">
         <div className="registration-text">
@@ -22,10 +22,20 @@ const Registration = ({ handleClick }: any) => {
         </div>
         {/* Only display registration page */}
         <div className="registration-links">
-          <button className="registration-btn" onClick={handleClick}>
-            REGISTER NOW
-          </button>
-          <h4>Registrations will be closed on 30th of July</h4>
+          {/* Display each button if the registration date is closed */}
+          {isRegistrationClosed === 0 ? (
+            <button className="registration-btn" onClick={handleClick}>
+              REGISTER NOW
+            </button>
+          ) : (
+            <button className="registration-btn reg-closed">
+              Registration Closed
+            </button>
+          )}
+          <h4>
+            Registrations{isRegistrationClosed === 0 ? " will be " : " were "}
+            closed on 30th of July
+          </h4>
         </div>
       </div>
     </div>

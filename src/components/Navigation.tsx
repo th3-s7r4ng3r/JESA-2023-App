@@ -7,7 +7,9 @@ const Navigation = ({
   updateNavHomeClick,
   updateNavHallOfFameClick,
   updateRegistrationClick,
+  updateJesa23Click,
   currentRegistrationPageStatus,
+  isRegistrationClosed = 1,
 }: any) => {
   //declaring the state variables
   const [regIsVisible, setRegIsVisible] = useState(false);
@@ -24,6 +26,9 @@ const Navigation = ({
   };
   const handleRegistrationClick = () => {
     updateRegistrationClick();
+  };
+  const handleJesa23Click = () => {
+    updateJesa23Click();
   };
 
   //displaying register button when scroll down 600px
@@ -44,37 +49,52 @@ const Navigation = ({
     <>
       <div
         // move the nav bar left except when the registration page is visible
+        // also hides the register button when registration date is passed
         className={`header ${
-          regIsVisible && currentRegistrationPageStatus === 0 ? "nav-move" : ""
+          regIsVisible && currentRegistrationPageStatus === 0
+            ? isRegistrationClosed === 0
+              ? "nav-move"
+              : "closed-nav-move"
+            : ""
         }`}
       >
         <div className="nav-bar">
-          <a className="nav-btn" href="#home" onClick={handleHomeClick}>
+          <a className="nav-btn" onClick={handleHomeClick}>
             Home
           </a>
-          <a className="nav-btn" href="#awards" onClick={handleAwardsClick}>
+          <a className="nav-btn" onClick={handleAwardsClick}>
             Awards
           </a>
-          <a
-            className="nav-btn"
-            href="#hall-of-fame"
-            onClick={handleHallOfFameClick}
-          >
+          <a className="nav-btn" onClick={handleHallOfFameClick}>
             Hall of Fame
           </a>
         </div>
-        <a
-          // registration button visible except when the registration page is visible
-          className={`reg-nav-btn ${
-            regIsVisible && currentRegistrationPageStatus === 0
-              ? "show-reg-btn"
-              : ""
-          }`}
-          href="#registration"
-          onClick={handleRegistrationClick}
-        >
-          Register for JESA'23
-        </a>
+
+        {/* Registration button visible except when the registration page is visible */}
+        {/* also hides the register button when registration date is passed then display jesa23 button*/}
+        {isRegistrationClosed === 0 ? (
+          <a
+            className={`reg-nav-btn ${
+              regIsVisible && currentRegistrationPageStatus === 0
+                ? "show-reg-btn"
+                : ""
+            }`}
+            onClick={handleRegistrationClick}
+          >
+            Register for JESA'23
+          </a>
+        ) : (
+          <a
+            className={`jesa23-nav-btn ${
+              regIsVisible && currentRegistrationPageStatus === 0
+                ? "show-jesa23-btn"
+                : ""
+            }`}
+            onClick={handleJesa23Click}
+          >
+            JESA'23
+          </a>
+        )}
       </div>
       {/* Spacer for the nav bar */}
       <div className="spacer" id="home"></div>

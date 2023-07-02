@@ -16,7 +16,7 @@ function App() {
   const [awardClickStatus, setAwardClickStatus] = useState(0);
   const [hallOfFameStatus, setHallOfFameStatus] = useState(0);
   const [registraionStatus, setRegistrationStatus] = useState(0);
-  // const [registrationAvailable, setRegistrationAvailable] = useState(1);
+  const [registrationClosed, setRegistrationClosed] = useState(0);
 
   //reading from the data files
   useEffect(() => {
@@ -32,6 +32,14 @@ function App() {
     readAwardFile();
   }, []);
 
+  //chekcing if the registration date is passed and updating the state
+  useEffect(() => {
+    const closingDate = new Date("2023-07-31");
+    const todayDate = new Date();
+    // automatically close the registration
+    if (todayDate > closingDate) setRegistrationClosed(1);
+  }, []);
+
   //handling animation with buttons
   const scrollToTop = () => {
     window.scrollTo({
@@ -45,15 +53,15 @@ function App() {
       const awardsSection = document.getElementById("awards");
       if (awardsSection != null)
         awardsSection.scrollIntoView({ behavior: "smooth" });
-    }, 200);
+    }, 100);
   };
   //making sure that the registration section is loaded before scrolling
   const scrollToRegistration = () => {
     setTimeout(() => {
-      const registrationSection = document.getElementById("registration");
+      const registrationSection = document.getElementById("jesa23");
       if (registrationSection != null)
         registrationSection.scrollIntoView({ behavior: "smooth" });
-    }, 200);
+    }, 100);
   };
 
   //handling clicking the buttons
@@ -94,6 +102,12 @@ function App() {
     setRegistrationStatus(1);
     scrollToTop();
   };
+  const handleJesa23Click = () => {
+    setAwardClickStatus(0);
+    setHallOfFameStatus(0);
+    setRegistrationStatus(0);
+    scrollToRegistration();
+  };
 
   //render the main application
   return (
@@ -105,7 +119,9 @@ function App() {
           updateNavHomeClick={handleNavHomeClick}
           updateNavHallOfFameClick={handleNavHallofFameClick}
           updateRegistrationClick={handleRegistrationClick}
+          updateJesa23Click={handleJesa23Click}
           currentRegistrationPageStatus={registraionStatus}
+          isRegistrationClosed={registrationClosed}
         />
 
         {/* display Home page of the app */}
@@ -116,6 +132,7 @@ function App() {
               awardsData={awardDetails}
               updateEachAwardClick={handleAwardClick}
               updateRegistrationClick={handleHomePageRegistraionClick}
+              isRegistrationClosed={registrationClosed}
             />
           )}
 
@@ -134,7 +151,9 @@ function App() {
         {hallOfFameStatus === 1 && registraionStatus === 0 && <HallofFame />}
 
         {/* display Registration Page */}
-        {registraionStatus === 1 && <RegistrationPage />}
+        {registraionStatus === 1 && (
+          <RegistrationPage isRegistrationClosed={registrationClosed} />
+        )}
 
         {/* Always display the footer and scroll to top */}
         <ScrollToTop isInRegistrationPage={registraionStatus} />

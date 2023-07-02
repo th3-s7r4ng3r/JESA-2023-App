@@ -55,6 +55,11 @@
   transform: translateY(-5px) scale(1.05);
   background-color: #e2be61;
 }
+.reg-closed {
+  background-color: #cbaa5573;
+  cursor: default;
+  pointer-events: none;
+}
 .registration-links h4 {
   font-weight: 400;
   width: 70%;

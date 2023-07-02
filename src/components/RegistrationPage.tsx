@@ -1,6 +1,8 @@
 import "../css/RegistrationPage.css";
 
-const RegistrationPage = () => {
+// declaring the registration page component
+const RegistrationPage = ({ isInRegistrationPage = 0 }: any) => {
+  // rendering the registration page
   return (
     <div className="registration-page">
       <h1>JESA'23 Registration</h1>
@@ -18,26 +20,42 @@ const RegistrationPage = () => {
         </div>
       </div>
       <h3>
-        Registrations will be closed on <span>30th of July</span>
+        {/* show correctly with registration closed */}
+        Registrations{isInRegistrationPage === 0 ? " will be " : " were "}closed
+        on <span>30th of July</span>
       </h3>
       <div className="reg-page-form-links">
         <div className="reg-link-section">
           <h2>USJ Undergrads</h2>
           <p>Compete againt all the JESA awards</p>
-          <a
-            href="https://forms.gle/HkYRdbzjn1dE3TLr5"
-            target="_blank"
-            className="jesa-reg-btn"
-          >
-            REGISTER HERE
-          </a>
+          {/* display buttons according to the date */}
+          {isInRegistrationPage === 0 ? (
+            <a
+              href="https://forms.gle/HkYRdbzjn1dE3TLr5"
+              target="_blank"
+              className="jesa-reg-btn"
+            >
+              REGISTER HERE
+            </a>
+          ) : (
+            <a className="jesa-reg-btn disable-btn">CLOSED</a>
+          )}
         </div>
         <div className="reg-link-section">
           <h2>Other Undergrads</h2>
           <p>Compete againts the Best Innovator award</p>
-          <a target="_blank" className="jesa-reg-btn disable-btn">
-            COMING SOON
-          </a>
+          {/* display buttons according to the date */}
+          {isInRegistrationPage === 0 ? (
+            <a
+              href="https://forms.gle/zdZtUWgzCv7mHRnF7"
+              target="_blank"
+              className="jesa-reg-btn"
+            >
+              REGISTER HERE
+            </a>
+          ) : (
+            <a className="jesa-reg-btn disable-btn">CLOSED</a>
+          )}
         </div>
       </div>
     </div>
