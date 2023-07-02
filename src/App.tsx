@@ -16,7 +16,7 @@ function App() {
   const [awardClickStatus, setAwardClickStatus] = useState(0);
   const [hallOfFameStatus, setHallOfFameStatus] = useState(0);
   const [registraionStatus, setRegistrationStatus] = useState(0);
-  const [registrationClosed, setRegistrationClosed] = useState(0);
+  const [registrationClosed, setRegistrationClosed] = useState(1);
 
   //reading from the data files
   useEffect(() => {
