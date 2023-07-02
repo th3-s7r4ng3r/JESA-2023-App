@@ -85,8 +85,10 @@ function App() {
   const handleRegistrationClick = () => {
     if (awardClickStatus === 0 && hallOfFameStatus === 0)
       scrollToRegistration();
-    else setRegistrationStatus(1);
-    scrollToTop();
+    else {
+      setRegistrationStatus(1);
+      scrollToTop();
+    }
   };
   const handleHomePageRegistraionClick = () => {
     setRegistrationStatus(1);
@@ -135,7 +137,7 @@ function App() {
         {registraionStatus === 1 && <RegistrationPage />}
 
         {/* Always display the footer and scroll to top */}
-        <ScrollToTop />
+        <ScrollToTop isInRegistrationPage={registraionStatus} />
         <Footer />
       </>
     )

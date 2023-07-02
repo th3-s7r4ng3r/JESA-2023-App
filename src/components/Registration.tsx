@@ -2,6 +2,7 @@ import "../css/Registration.css";
 
 // declaring registration component
 const Registration = ({ handleClick }: any) => {
+  // rendering registration component
   return (
     <div className="registration-section" id="registration">
       <h1>JESA'23</h1>
@@ -19,6 +20,7 @@ const Registration = ({ handleClick }: any) => {
             </b>
           </p>
         </div>
+        {/* Only display registration page */}
         <div className="registration-links">
           <button className="registration-btn" onClick={handleClick}>
             REGISTER NOW

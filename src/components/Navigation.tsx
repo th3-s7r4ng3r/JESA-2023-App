@@ -62,19 +62,19 @@ const Navigation = ({
           >
             Hall of Fame
           </a>
-          <a
-            // registration button visible except when the registration page is visible
-            className={`reg-nav-btn ${
-              regIsVisible && currentRegistrationPageStatus === 0
-                ? "show-reg-btn"
-                : ""
-            }`}
-            href="#registration"
-            onClick={handleRegistrationClick}
-          >
-            JESA'23
-          </a>
         </div>
+        <a
+          // registration button visible except when the registration page is visible
+          className={`reg-nav-btn ${
+            regIsVisible && currentRegistrationPageStatus === 0
+              ? "show-reg-btn"
+              : ""
+          }`}
+          href="#registration"
+          onClick={handleRegistrationClick}
+        >
+          Register for JESA'23
+        </a>
       </div>
       {/* Spacer for the nav bar */}
       <div className="spacer" id="home"></div>

@@ -37,15 +37,15 @@
 }
 /* Relevent to register for Jesa button */
 .nav-move {
-  width: 93vw;
+  width: calc(100vw - 225px);
 }
 .reg-nav-btn {
   position: absolute;
   color: #fdfdfd;
   background-color: #282828;
-  padding-left: 7vw;
+  padding-left: 120px;
   border: 7.5px solid #282828;
-  transform: translateY(-17px) translateX(-200px);
+  transform: translateX(-50px);
   z-index: -1;
   opacity: 0;
 }
@@ -55,12 +55,65 @@
 }
 .show-reg-btn {
   opacity: 1;
-  transform: translateY(-17px) translateX(-6.5vw);
+  transform: translateX(+240px);
 }
 
 /* Making Responsive */
 @media all and (max-width: 810px) {
   .nav-btn {
     font-size: 1rem;
+  }
+  /* Relevent to register for Jesa button */
+  .nav-move {
+    width: 100vw;
+  }
+  .reg-nav-btn {
+    padding: 10px 25px;
+    width: 360px;
+    display: none;
+    background-color: #cbaa55;
+    text-align: center;
+    color: #000000;
+    border: 6px solid #282828;
+    z-index: -10;
+  }
+  .show-reg-btn {
+    animation: come-in-out 15s ease-out infinite;
+    display: inline;
+  }
+}
+
+/* animation used for registration button */
+@keyframes come-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+    z-index: -10;
+  }
+  2% {
+    opacity: 1;
+    transform: translateY(0px);
+    z-index: 50;
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0px);
+    z-index: 50;
+  }
+  32% {
+    opacity: 0;
+    transform: translateY(+5px);
+    z-index: -10;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  /* Relevent to register for Jesa button */
+  .nav-move {
+    width: calc(100vw - 210px);
   }
 }
