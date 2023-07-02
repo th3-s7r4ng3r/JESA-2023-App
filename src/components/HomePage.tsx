@@ -2,7 +2,7 @@ import "../css/HomePage.css";
 import AwardDetails from "./AwardDetails";
 import AwardCard from "./AwardCard";
 import Carousel from "./Carousel";
-import Registration from "./Registration";
+import ThisYearJesa from "./ThisYearJesa";
 
 const HomePage = ({
   awardsData,
@@ -68,9 +68,9 @@ const HomePage = ({
         </div>
       </div>
 
-      {/* Registration for Jesa 2023 section */}
-      <Registration
-        handleClick={updateRegistrationClick}
+      {/* This Year JESA section */}
+      <ThisYearJesa
+        updateRegistrationClick={updateRegistrationClick}
         isRegistrationClosed={isRegistrationClosed}
       />
     </div>
