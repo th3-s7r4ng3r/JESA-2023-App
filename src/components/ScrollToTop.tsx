@@ -2,7 +2,7 @@ import "../css/ScrollToTop.css";
 import { useState, useEffect } from "react";
 
 // declaring scroll to top button's functionality
-const ScrollToTop = () => {
+const ScrollToTop = ({ isInRegistrationPage = 0 }: any) => {
   //declaring the state variables
   const [isVisible, setIsVisible] = useState(false);
   const [isPartnershipBtnVisible, setIsPartnershipBtnVisible] = useState(false);
@@ -46,22 +46,25 @@ const ScrollToTop = () => {
       >
         <i className="fa fa-chevron-up"></i>
       </div>
-      {/* Adding a fixed button to the google form */}
-      <div
-        className={`partnership-button ${
-          isPartnershipBtnVisible
-            ? "partnership-button-show"
-            : "partnership-button-hide"
-        }`}
-      >
-        <a
-          href="https://forms.gle/NnJT9ZK25GuVau677"
-          target="_blank"
-          rel="noreferrer"
+      {/* Adding a fixed button to the partnership google form */}
+      {/* Always visible except in student registration page */}
+      {isInRegistrationPage === 0 && (
+        <div
+          className={`partnership-button ${
+            isPartnershipBtnVisible
+              ? "partnership-button-show"
+              : "partnership-button-hide"
+          }`}
         >
-          Partner with us!
-        </a>
-      </div>
+          <a
+            href="https://forms.gle/NnJT9ZK25GuVau677"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Partner with us!
+          </a>
+        </div>
+      )}
     </>
   );
 };

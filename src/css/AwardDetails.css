@@ -92,7 +92,7 @@
   opacity: 0;
   margin-left: 1rem;
   z-index: 1;
-  transform: translateX(-6vw);
+  transform: translateX(-20px); /*-6vw*/
 }
 .become-partner:hover {
   background-color: #cbaa55a1;

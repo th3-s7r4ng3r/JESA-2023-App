@@ -41,7 +41,8 @@ const AwardDetails = ({
           {/* Display exclusive section for best innovation award */}
           {currentAward.id === "4" && (
             <div className="innovator-class">
-              <div className="award-tag">UGC Approved</div>
+              {/* <div className="award-tag">UGC Approved</div> // Also update
+              animation */}
               {isFromAwardPage == 0 && (
                 <div className="become-partner" onClick={handleAwardClick}>
                   Become a partner
