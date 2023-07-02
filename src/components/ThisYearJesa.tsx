@@ -1,4 +1,5 @@
 import "../css/ThisYearJesa.css";
+import OtherPartners from "./OtherPartners";
 import Registration from "./Registration";
 
 // declaring this year jesa section to show in the Home Page
@@ -18,6 +19,7 @@ const ThisYearJesa = ({
       />
 
       {/* display This year sponsor section */}
+      <OtherPartners />
 
       {/* Later add other sections as components */}
     </div>
