@@ -79,11 +79,18 @@
   background-color: #0000007a;
   margin: 0vh;
 }
-.reg-link-section p {
+.reg-link-text,
+.extended-reg {
   font-size: 1.25rem;
   margin-top: 10px;
   color: #8a8a8a;
   margin-bottom: 5vh;
+}
+.extended-reg {
+  margin-top: 3vh;
+  font-size: 1.2rem;
+  color: #cbaa55b2;
+  margin-bottom: 0vh;
 }
 .jesa-reg-btn {
   font-weight: 700;

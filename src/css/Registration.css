@@ -1,18 +1,6 @@
 /* Registration component */
 
 /* Default styling */
-.registration-section {
-  border-radius: 2rem;
-  margin: 10vh 0vh;
-  width: 85vw;
-  padding: 6vh 0vw 10vh;
-  scroll-margin-top: 14vh;
-}
-.registration-section h1 {
-  width: fit-content;
-  margin: 0rem auto 3vw;
-  border-radius: 150px;
-}
 .registration {
   display: flex;
   flex-direction: row;
@@ -71,16 +59,6 @@
 /* Making Responsive */
 @media all and (max-width: 810px) {
   /* default styling */
-  .registration-section {
-    border-radius: 1.5rem;
-    width: 90vw;
-    padding: 5vh 0vw 5vh;
-    scroll-margin-top: 14vh;
-  }
-  .registration-section h1 {
-    margin: 0rem auto 10vw;
-    font-size: 2.7rem;
-  }
   .registration {
     flex-direction: column;
     width: 90vw;
@@ -107,9 +85,6 @@
 
 @media all and (min-width: 811px) and (max-width: 1200px) {
   /* default styling */
-  .registration-section {
-    padding: 7vh 0vw 10vh;
-  }
   .registration-text {
     width: 43vw;
     padding: 1.5rem 3vw;

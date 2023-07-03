@@ -1,7 +1,7 @@
 import "../css/RegistrationPage.css";
 
 // declaring the registration page component
-const RegistrationPage = ({ isInRegistrationPage = 0 }: any) => {
+const RegistrationPage = ({ isRegistrationClosed = 0 }: any) => {
   // rendering the registration page
   return (
     <div className="registration-page">
@@ -21,15 +21,15 @@ const RegistrationPage = ({ isInRegistrationPage = 0 }: any) => {
       </div>
       <h3>
         {/* show correctly with registration closed */}
-        Registrations{isInRegistrationPage === 0 ? " will be " : " were "}closed
+        Registrations{isRegistrationClosed === 0 ? " will be " : " were "}closed
         on <span>30th of July</span>
       </h3>
       <div className="reg-page-form-links">
         <div className="reg-link-section">
           <h2>USJ Undergrads</h2>
-          <p>Compete againt all the JESA awards</p>
+          <p className="reg-link-text">Compete againt all the JESA awards</p>
           {/* display buttons according to the date */}
-          {isInRegistrationPage === 0 ? (
+          {isRegistrationClosed === 0 ? (
             <a
               href="https://forms.gle/HkYRdbzjn1dE3TLr5"
               target="_blank"
@@ -43,9 +43,11 @@ const RegistrationPage = ({ isInRegistrationPage = 0 }: any) => {
         </div>
         <div className="reg-link-section">
           <h2>Other Undergrads</h2>
-          <p>Compete againts the Best Innovator award</p>
+          <p className="reg-link-text">
+            Compete againts the Best Innovator award
+          </p>
           {/* display buttons according to the date */}
-          {isInRegistrationPage === 0 ? (
+          {isRegistrationClosed === 0 ? (
             <a
               href="https://forms.gle/zdZtUWgzCv7mHRnF7"
               target="_blank"
@@ -56,6 +58,7 @@ const RegistrationPage = ({ isInRegistrationPage = 0 }: any) => {
           ) : (
             <a className="jesa-reg-btn disable-btn">CLOSED</a>
           )}
+          {/* <p className="extended-reg">Extended till 15th of August</p> */}
         </div>
       </div>
     </div>
