@@ -73,18 +73,25 @@ const Carousel = () => {
     //checking if the carousel has any items and renders it
     imagItems.length !== 0 && (
       <div className="carousel-image-holder">
-        <img
-          src={currentItem["link"]}
-          alt={currentItem["description"]}
-          // handling the transition for next and previous buttons
-          className={
-            isTransitioning
-              ? clickedDirection == "right"
-                ? "carousel-image transitioning-right"
-                : "carousel-image transitioning-left"
-              : "carousel-image"
-          }
-        />
+        <picture>
+          {/* displaying narrow images for smaller screens */}
+          <source
+            media="(max-width: 810px)"
+            srcSet={currentItem["narrow-link"]}
+          />
+          <img
+            src={currentItem["link"]}
+            alt={currentItem["description"]}
+            // handling the transition for next and previous buttons
+            className={
+              isTransitioning
+                ? clickedDirection == "right"
+                  ? "carousel-image transitioning-right"
+                  : "carousel-image transitioning-left"
+                : "carousel-image"
+            }
+          />
+        </picture>
         {/* Displaying the buttons */}
         <button
           onClick={handleNext}
