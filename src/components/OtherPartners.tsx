@@ -22,7 +22,7 @@ const OtherPartners = () => {
   //render the Other Partners section
   return (
     <div className="other-partners-section">
-      <h1>Other JESA'23 Partners</h1>
+      <h1>JESA'23 Strategic Partners</h1>
       <div className="other-partners-list">
         {/* Looping through the other partners to display each partner */}
         {otherPartnersDetails.length !== 0 &&
