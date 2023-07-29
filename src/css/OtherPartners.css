@@ -55,6 +55,9 @@
   z-index: 50;
   margin: 0;
 }
+.other-partners-list a {
+  text-decoration: none;
+}
 .other-partner img {
   width: calc(14vw - 20px);
   height: calc(14vw - 20px);

@@ -34,18 +34,30 @@ const BesaPartners = ({ selectedAward, awardid }: any) => {
           <h3 className="besa-partner-subtitle">Who will be the partners of</h3>
           <h1>2023</h1>
           <div className="current-besa-partners-list">
-            <div className="current-besa-partner besa-gold">
+            <a
+              href={selectedAward.gold2023link}
+              target="_blank"
+              className="current-besa-partner besa-gold"
+            >
               <img src={selectedAward.gold2023} alt="Gold Partner 2023" />
               <h3 className="gold-text">Gold</h3>
-            </div>
-            <div className="current-besa-partner besa-platinum">
+            </a>
+            <a
+              href={selectedAward.plat2023link}
+              target="_blank"
+              className="current-besa-partner besa-platinum"
+            >
               <img src={selectedAward.plat2023} alt="Platinum Partner 2023" />
               <h3 className="platinum-text">Platinum</h3>
-            </div>
-            <div className="current-besa-partner besa-silver">
+            </a>
+            <a
+              href={selectedAward.silv2023link}
+              target="_blank"
+              className="current-besa-partner besa-silver"
+            >
               <img src={selectedAward.silv2023} alt="Silver Partner 2023" />
               <h3 className="silver-text">Silver</h3>
-            </div>
+            </a>
           </div>
         </div>
       </div>
