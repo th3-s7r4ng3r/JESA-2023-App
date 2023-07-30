@@ -27,10 +27,15 @@ const OtherPartners = () => {
         {/* Looping through the other partners to display each partner */}
         {otherPartnersDetails.length !== 0 &&
           otherPartnersDetails.map((item: any) => (
-            <div className="other-partner" key={item.id}>
+            <a
+              href={item.link}
+              target="_blank"
+              className="other-partner"
+              key={item.id}
+            >
               <img src={item.image} alt={item.partnership} />
               <h3 className="other-partners-title">{item.partnership}</h3>
-            </div>
+            </a>
           ))}
       </div>
       <h2 className="other-partner-footer">
