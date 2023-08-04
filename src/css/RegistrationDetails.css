@@ -1,0 +1,65 @@
+/* RegistrationDetails Component */
+
+.reg-details {
+  margin: 15vh auto 5vh;
+  scroll-margin-top: 15vh;
+}
+
+.reg-details-container {
+  width: 50vw;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 3vh 3.5vw 7vh;
+  border-radius: 1.5rem;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 5rem #000000e7;
+  border: 3px solid #cbaa559c;
+}
+.reg-details-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2vh auto 5vh;
+  color: #cbaa55;
+}
+.reg-details-container h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  margin: 7px 0px;
+}
+.reg-details-container h3 div {
+  font-weight: 200;
+  padding: 3px 25px;
+  transform: translateY(+2px);
+  color: #dadada;
+  margin-left: 10px;
+  width: 33vw;
+  background-color: #121212;
+  border-radius: 7px;
+}
+.reg-details-row-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin: 20px 0px 0px;
+}
+.candidate-tag,
+.oc-tag {
+  padding: 4px 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  transform: translateY(+3px);
+}
+.candidate-tag {
+  margin-left: 15px;
+  background-color: #cfcfcfd3;
+  color: #000000;
+}
+.oc-tag {
+  margin-left: 5px;
+  background-color: #cbaa55d3;
+  color: #000000;
+}

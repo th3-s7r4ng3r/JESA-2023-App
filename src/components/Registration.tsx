@@ -21,17 +21,23 @@ const Registration = ({ handleClick, isRegistrationClosed = 1 }: any) => {
       {/* Only display registration page */}
       <div className="registration-links">
         {/* Display each button if the registration date is closed */}
-        {isRegistrationClosed === 0 ? (
+        {isRegistrationClosed === 2 ? (
           <button className="registration-btn" onClick={handleClick}>
             REGISTER NOW
           </button>
         ) : (
-          <button className="registration-btn reg-closed">
-            Registration Closed
+          // <button className="registration-btn reg-closed">
+          //   Registration Closed
+          // </button>
+
+          // Check registration event
+          <button className="registration-btn" onClick={handleClick}>
+            Check Registration
           </button>
         )}
         <h4>
-          Registrations{isRegistrationClosed === 0 ? " will be " : " were "}
+          JESA'23 Registrations
+          {isRegistrationClosed === 0 ? " will be " : " were "}
           closed on 30th of July
         </h4>
       </div>
