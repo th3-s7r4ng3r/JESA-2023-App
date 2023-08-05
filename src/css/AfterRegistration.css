@@ -42,6 +42,7 @@
   font-size: 1.45rem;
   padding: 5vh 2.5rem;
   margin: 1rem;
+  text-wrap: balance;
   border-radius: 1.5rem;
   box-shadow: 0 0 5rem #0000007a;
 }
@@ -175,4 +176,28 @@
 }
 
 @media all and (min-width: 811px) and (max-width: 1200px) {
+  .ar-description {
+    gap: 0rem;
+  }
+  .ar-description img {
+    width: 30vw;
+    height: 45vh;
+    margin: 2.5rem 0rem;
+  }
+  .ar-subtext {
+    font-size: 1.35rem;
+    width: 50vw;
+    padding: 3vh 2.5rem 5vh;
+  }
+
+  /* Error message section */
+  .ar-error-message {
+    padding: 15px 35px;
+    font-size: 1.35rem;
+    text-align: center;
+  }
+
+  .ar-footer-text {
+    margin: 0vh;
+  }
 }
