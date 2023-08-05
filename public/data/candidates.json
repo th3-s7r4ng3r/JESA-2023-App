@@ -18,6 +18,15 @@
     "regNo": "FMSC010,BL056,BT069"
   },
   {
+    "uniRegNo": "MT/FDT/F/19/0036",
+    "name": "A.m.m. Sowfath ",
+    "contactNo": "0776660984",
+    "email": "Sowfathmohamed@gmail.com ",
+    "faculty": "University College of Matara ",
+    "isOC": "No",
+    "regNo": "BI073"
+  },
+  {
     "uniRegNo": "MC98702",
     "name": "Aamina Wadood ",
     "contactNo": "0764300512",
@@ -45,6 +54,33 @@
     "regNo": "FOE006"
   },
   {
+    "uniRegNo": "IM/2018/070",
+    "name": "Abishaa Rubanathan",
+    "contactNo": "0762811161",
+    "email": "antonyabishaa@gmail.com",
+    "faculty": "University of Kelaniya",
+    "isOC": "No",
+    "regNo": "BI084"
+  },
+  {
+    "uniRegNo": "2018/A/004",
+    "name": "Abishan",
+    "contactNo": "0772125316",
+    "email": "delftabishan@gmail.com",
+    "faculty": "University of jaffna ",
+    "isOC": "No",
+    "regNo": "BI066"
+  },
+  {
+    "uniRegNo": "UWU/ICT/21/053",
+    "name": "Abishek Haththakage",
+    "contactNo": "0765576407",
+    "email": "ict21053@std.uwu.ac.lk",
+    "faculty": "Uva Wellassa University of Sri Lanka",
+    "isOC": "No",
+    "regNo": "BI093"
+  },
+  {
     "uniRegNo": "AS106020",
     "name": "Adeesha Uddeeptha",
     "contactNo": "0712078159",
@@ -63,6 +99,15 @@
     "regNo": "FMSC042,BT095"
   },
   {
+    "uniRegNo": "AG19057",
+    "name": "Adishwara Jayasinghe ",
+    "contactNo": "0760504414",
+    "email": "jayasingheadishwara@gmail.com",
+    "faculty": "University of peradeniya",
+    "isOC": "No",
+    "regNo": "BI049"
+  },
+  {
     "uniRegNo": "MC94160",
     "name": "Agalyaa Saravanabavan ",
     "contactNo": "0727898040",
@@ -79,6 +124,15 @@
     "faculty": "Faculty of Management Studies & Commerce",
     "isOC": "No",
     "regNo": "FMSC015,BL061"
+  },
+  {
+    "uniRegNo": "222667L ",
+    "name": "Ahamed Nihal Niflee",
+    "contactNo": "0771277890",
+    "email": "ahamednihalniflee@gmail.com",
+    "faculty": "University of Moratuwa",
+    "isOC": "No",
+    "regNo": "BI080"
   },
   {
     "uniRegNo": "MC 94391",
@@ -106,6 +160,15 @@
     "faculty": "Faculty of Management Studies & Commerce",
     "isOC": "No",
     "regNo": "FMSC029"
+  },
+  {
+    "uniRegNo": "2020ms9674 ",
+    "name": "Alysha Sabana ",
+    "contactNo": "0754291227",
+    "email": "alyshashabana06@gmail.com ",
+    "faculty": "University of Colombo ",
+    "isOC": "No",
+    "regNo": "BI037"
   },
   {
     "uniRegNo": "As2022717",
@@ -223,6 +286,15 @@
     "faculty": "Faculty of Allied Health Sciences",
     "isOC": "Yes",
     "regNo": "FAHS019,BT061,BC030"
+  },
+  {
+    "uniRegNo": "2018/A/153",
+    "name": "Arulpriya Kirekaran ",
+    "contactNo": "0779478671",
+    "email": "kirekaranarul@gmail.com",
+    "faculty": "University of Jaffna ",
+    "isOC": "No",
+    "regNo": "BI076"
   },
   {
     "uniRegNo": "EN102792",
@@ -423,6 +495,15 @@
     "regNo": "FAS005"
   },
   {
+    "uniRegNo": "EN97658",
+    "name": "Chamara Ruwan ",
+    "contactNo": "0715524351",
+    "email": "chamararuwanaab@gmail.com",
+    "faculty": "University of Sri Jayewardenepura",
+    "isOC": "No",
+    "regNo": "BI052"
+  },
+  {
     "uniRegNo": "MC94177",
     "name": "Chamara Sankha",
     "contactNo": "0716942902",
@@ -504,6 +585,15 @@
     "regNo": "FMSC025,BT078,BD051"
   },
   {
+    "uniRegNo": "2022ba25833",
+    "name": "Charuka peramuna",
+    "contactNo": "0753784243",
+    "email": "Charukaperamuna17@gmail.com",
+    "faculty": "University of colombo ",
+    "isOC": "No",
+    "regNo": "BI041"
+  },
+  {
     "uniRegNo": "AR / 96079",
     "name": "Chathumi Abeywardhane ",
     "contactNo": "0772515564",
@@ -576,6 +666,15 @@
     "regNo": "BD068,BE044"
   },
   {
+    "uniRegNo": "UWU/HRD/21/101",
+    "name": "Christeen Emmaranciya Gerald Anton ",
+    "contactNo": "0742588046",
+    "email": "nithushan.h@gmail.com",
+    "faculty": "Uva Wellassa university of Srilanka ",
+    "isOC": "No",
+    "regNo": "BI087"
+  },
+  {
     "uniRegNo": "TE104697",
     "name": "Dakshana Tharindu",
     "contactNo": "0787537325",
@@ -583,6 +682,15 @@
     "faculty": "Faculty of Technology",
     "isOC": "No",
     "regNo": "BL107,BT131"
+  },
+  {
+    "uniRegNo": "ITT2020026",
+    "name": "Damithra Fernando",
+    "contactNo": "0716507322",
+    "email": "Damithrafdo@gmail.com",
+    "faculty": "Rajarata University of Sri Lanka",
+    "isOC": "No",
+    "regNo": "BI088"
   },
   {
     "uniRegNo": "TE-101249",
@@ -619,6 +727,15 @@
     "faculty": "Faculty of Medical Sciences",
     "isOC": "No",
     "regNo": "FMS004"
+  },
+  {
+    "uniRegNo": "2013/SB/122",
+    "name": "Deluxeani Kugathasan ",
+    "contactNo": "0771012379",
+    "email": "dela.kuga5@gmail.com",
+    "faculty": "University of Jaffna ",
+    "isOC": "No",
+    "regNo": "BI072"
   },
   {
     "uniRegNo": "TE101163",
@@ -684,6 +801,15 @@
     "regNo": "FOT007,BC073"
   },
   {
+    "uniRegNo": "202255E",
+    "name": "Diduli Punsara",
+    "contactNo": "0764497299",
+    "email": "didulipunsara1012@gmail.com",
+    "faculty": "University of Moratuwa",
+    "isOC": "No",
+    "regNo": "BI055"
+  },
+  {
     "uniRegNo": "EN102815",
     "name": "Dilan Bopitiya",
     "contactNo": "0774509825",
@@ -691,6 +817,15 @@
     "faculty": "Faculty of Engineering",
     "isOC": "No",
     "regNo": "BD025"
+  },
+  {
+    "uniRegNo": "ENT/2020/064",
+    "name": "Dilan Ravindu",
+    "contactNo": "0712816237",
+    "email": "dilanravindu97@gmail.com",
+    "faculty": "Rajarata University of Sri Lanka",
+    "isOC": "No",
+    "regNo": "BI092"
   },
   {
     "uniRegNo": "HS105955",
@@ -810,6 +945,15 @@
     "regNo": "BL043,BT052"
   },
   {
+    "uniRegNo": "2020s18252",
+    "name": "Dinesh Wickramasinghe",
+    "contactNo": "0768301455",
+    "email": "dineshkumaraj1999@gmail.com",
+    "faculty": "university of Colombo",
+    "isOC": "No",
+    "regNo": "BI053"
+  },
+  {
     "uniRegNo": "Mc99185",
     "name": "Dinithi Jayasuriya",
     "contactNo": "0704060258",
@@ -817,6 +961,15 @@
     "faculty": "Faculty of Management Studies & Commerce",
     "isOC": "Yes",
     "regNo": "FMSC047,BT107"
+  },
+  {
+    "uniRegNo": "Tg/2020/771",
+    "name": "Dinuka Vithanage ",
+    "contactNo": "0761334071",
+    "email": "dinukavithanage060@gmail.com",
+    "faculty": "University OF Ruhuna",
+    "isOC": "No",
+    "regNo": "BI047"
   },
   {
     "uniRegNo": "AS95559",
@@ -882,6 +1035,15 @@
     "regNo": "FMSC032,BL071,BT087"
   },
   {
+    "uniRegNo": "AH/PH/2020/277",
+    "name": "E.H.M.Damith Gunawardhana",
+    "contactNo": "0775672039",
+    "email": "damithgunawardhana135@gmail.com",
+    "faculty": "University of Ruhuna",
+    "isOC": "No",
+    "regNo": "BI042"
+  },
+  {
     "uniRegNo": "TE101314",
     "name": "Edirisinha Arachchilage Isuri chamoda dilshani ",
     "contactNo": "0704557438",
@@ -934,6 +1096,15 @@
     "faculty": "Faculty of Applied Sciences",
     "isOC": "Yes",
     "regNo": "FAS023,BL030,BC013"
+  },
+  {
+    "uniRegNo": "FDT0029",
+    "name": "Fathima Nafha ",
+    "contactNo": "0764650675",
+    "email": "fathimanafha018@gamil.com",
+    "faculty": "University college Matara ",
+    "isOC": "No",
+    "regNo": "BI077"
   },
   {
     "uniRegNo": "TE104806",
@@ -999,6 +1170,15 @@
     "regNo": "BD058"
   },
   {
+    "uniRegNo": "SEU/IS/20/EG/047",
+    "name": "Gayan jayasingha",
+    "contactNo": "0740663944",
+    "email": "gayanj56@gmail.com",
+    "faculty": "South eastern  university",
+    "isOC": "No",
+    "regNo": "BI090"
+  },
+  {
     "uniRegNo": "me93801",
     "name": "Geesarani Thirimanna",
     "contactNo": "0762670695",
@@ -1024,6 +1204,15 @@
     "faculty": "Faculty of Allied Health Sciences",
     "isOC": "No",
     "regNo": "FAHS023,CSR024"
+  },
+  {
+    "uniRegNo": "202253V ",
+    "name": "Geethma Prasadi ",
+    "contactNo": "0772411762",
+    "email": "yrgprasadi98@gmail.com ",
+    "faculty": "University of Moratuwa ",
+    "isOC": "No",
+    "regNo": "BI054"
   },
   {
     "uniRegNo": "MC103353",
@@ -1062,6 +1251,15 @@
     "regNo": "BI009,BE015"
   },
   {
+    "uniRegNo": "186507",
+    "name": "H.M. SANDUN CHAMARA",
+    "contactNo": "0719609766",
+    "email": "sandunchamarabandara226@gmail.com",
+    "faculty": "WAYAMBA UNIVERSITY OF SRI LANKA",
+    "isOC": "No",
+    "regNo": "BI082"
+  },
+  {
     "uniRegNo": "AS2022732",
     "name": "H.Vihanga Dewmi",
     "contactNo": "0717727806",
@@ -1069,6 +1267,15 @@
     "faculty": "Faculty of Applied Sciences",
     "isOC": "No",
     "regNo": "FAS026,BC016"
+  },
+  {
+    "uniRegNo": "2018.A.179 ",
+    "name": "Hamshika Lingeswaran ",
+    "contactNo": "0768569358",
+    "email": "hamshi1997@gmail.com ",
+    "faculty": "University of Jaffna ",
+    "isOC": "No",
+    "regNo": "BI063"
   },
   {
     "uniRegNo": "TE104758",
@@ -1134,6 +1341,15 @@
     "regNo": "FAHS048"
   },
   {
+    "uniRegNo": "415903760",
+    "name": "HARICHANDRA Khalingarajah ",
+    "contactNo": "0779470531",
+    "email": "Harichandrak@univ.jfn.ac.lk ",
+    "faculty": "The Open University of Sri Lanka ",
+    "isOC": "No",
+    "regNo": "BI069"
+  },
+  {
     "uniRegNo": "AR98474",
     "name": "Harini Siriwardhana ",
     "contactNo": "0775332035",
@@ -1152,6 +1368,15 @@
     "regNo": "FOE001"
   },
   {
+    "uniRegNo": "TG/2020/766",
+    "name": "Harith Madhusha",
+    "contactNo": "0754330900",
+    "email": "harithkapuge2000@gmail.com",
+    "faculty": "University of Ruhuna",
+    "isOC": "No",
+    "regNo": "BI046"
+  },
+  {
     "uniRegNo": "MC94464",
     "name": "Harsha Dananjaya",
     "contactNo": "0762798390",
@@ -1168,6 +1393,15 @@
     "faculty": "Faculty of Management Studies & Commerce",
     "isOC": "Yes",
     "regNo": "BD049"
+  },
+  {
+    "uniRegNo": "192229J",
+    "name": "Harshanee Perera",
+    "contactNo": "0766404499",
+    "email": "harshaneeperera@gmail.com",
+    "faculty": "University of Moratuwa",
+    "isOC": "No",
+    "regNo": "BI048"
   },
   {
     "uniRegNo": "MC94119",
@@ -1204,6 +1438,15 @@
     "faculty": "Faculty of Management Studies & Commerce",
     "isOC": "No",
     "regNo": "BT109,BD062"
+  },
+  {
+    "uniRegNo": "TG/2021/1186",
+    "name": "Hasini Newmindi",
+    "contactNo": "0772407300",
+    "email": "hasini_20211186@fot.ruh.ac.lk",
+    "faculty": "University of Ruhuna ",
+    "isOC": "No",
+    "regNo": "BI094"
   },
   {
     "uniRegNo": "MC104846",
@@ -1404,6 +1647,15 @@
     "regNo": "BL009,BT009"
   },
   {
+    "uniRegNo": "192673M",
+    "name": "Ishini Saparamadu",
+    "contactNo": "0774102909",
+    "email": "ishinimasha@gmail.com",
+    "faculty": "University of Moratuwa",
+    "isOC": "No",
+    "regNo": "BI071"
+  },
+  {
     "uniRegNo": "MC98706",
     "name": "Isiri Galagama ",
     "contactNo": "0769251520",
@@ -1420,6 +1672,15 @@
     "faculty": "Faculty of Technology",
     "isOC": "No",
     "regNo": "FOT016,BC077"
+  },
+  {
+    "uniRegNo": "202402E",
+    "name": "Isuru Elshan",
+    "contactNo": "0768813427",
+    "email": "isuruelshan@gmail.com",
+    "faculty": "Moratuwa University ",
+    "isOC": "No",
+    "regNo": "BI078"
   },
   {
     "uniRegNo": "TE101211",
@@ -1494,6 +1755,15 @@
     "regNo": "FMSC053,BL102,BT120"
   },
   {
+    "uniRegNo": "AR-98102 ",
+    "name": "Jayawardhana Dissanayaka Navoda Prasadani ",
+    "contactNo": "0765738104",
+    "email": "Navodaprasadani678@gmail.com ",
+    "faculty": "University of Sri Jayewardenapura ",
+    "isOC": "No",
+    "regNo": "BI085"
+  },
+  {
     "uniRegNo": "ME91223",
     "name": "Jemini Wickramanayake",
     "contactNo": "0774570642",
@@ -1528,6 +1798,15 @@
     "faculty": "Faculty of Management Studies & Commerce",
     "isOC": "No",
     "regNo": "BC060,CSR029"
+  },
+  {
+    "uniRegNo": "Tg834",
+    "name": "Jude fernando ",
+    "contactNo": "0774761015",
+    "email": "dinukaj.fernando@gmail.com",
+    "faculty": "University of Ruhuna",
+    "isOC": "No",
+    "regNo": "BI056"
   },
   {
     "uniRegNo": "ME92274",
@@ -1575,6 +1854,15 @@
     "regNo": "BL015,BT011"
   },
   {
+    "uniRegNo": "2018/A/SPI/512",
+    "name": "Kamsajini Premaraj ",
+    "contactNo": "0766668064",
+    "email": "Kamsajini09@gmail.com",
+    "faculty": "Jaffna university ",
+    "isOC": "No",
+    "regNo": "BI065"
+  },
+  {
     "uniRegNo": "MC98750",
     "name": "Kasuni Bandara ",
     "contactNo": "0773685445",
@@ -1590,7 +1878,7 @@
     "email": "kasunigamage16@gmail.com",
     "faculty": "Faculty of Technology",
     "isOC": "No",
-    "regNo": "FOT019"
+    "regNo": "FOT019,BI038"
   },
   {
     "uniRegNo": "MC99895",
@@ -1701,6 +1989,15 @@
     "regNo": "FOT028,BD071"
   },
   {
+    "uniRegNo": "EUSL/TC/IS/2019/MS/119",
+    "name": "Kishomi Ravichanthiran ",
+    "contactNo": "0753516562",
+    "email": "rkishomi20@gmail.com",
+    "faculty": "Trincomalee campus eastern university ",
+    "isOC": "No",
+    "regNo": "BI043"
+  },
+  {
     "uniRegNo": "FMS/R/4090",
     "name": "Krishan Dhammearatchi",
     "contactNo": "0713683678",
@@ -1807,6 +2104,15 @@
     "faculty": "Faculty of Applied Sciences",
     "isOC": "No",
     "regNo": "BL028,BT030"
+  },
+  {
+    "uniRegNo": "TG/2020/877",
+    "name": "M.Bigun Gimhan",
+    "contactNo": "0782621549",
+    "email": "gimhanbigun@gmail.com",
+    "faculty": "University of ruhuna ",
+    "isOC": "No",
+    "regNo": "BI044"
   },
   {
     "uniRegNo": "ELT/20/B1/55",
@@ -1953,6 +2259,15 @@
     "regNo": "FAS041,BT041"
   },
   {
+    "uniRegNo": "UWU/EAG/19/055",
+    "name": "Manoj Peiris ",
+    "contactNo": "0774426648",
+    "email": "manojpeiris931@gmail.com",
+    "faculty": "Uva wellassa university of sri lanka ",
+    "isOC": "No",
+    "regNo": "BI058"
+  },
+  {
     "uniRegNo": "EN93883",
     "name": "Manuja Dewmina",
     "contactNo": "0773354796",
@@ -1998,6 +2313,15 @@
     "regNo": "FAS009,BC007"
   },
   {
+    "uniRegNo": "224127A",
+    "name": "Mohamed Muadh",
+    "contactNo": "0725597192",
+    "email": "mohamedmuaaz2002@gmail.com",
+    "faculty": "University of moratuwa ",
+    "isOC": "No",
+    "regNo": "BI089"
+  },
+  {
     "uniRegNo": "103195",
     "name": "Mohamed Ranoos ",
     "contactNo": "0740771192",
@@ -2041,6 +2365,15 @@
     "faculty": "Faculty of Technology",
     "isOC": "Yes",
     "regNo": "FOT025,BD069"
+  },
+  {
+    "uniRegNo": "2020PM27",
+    "name": "Naseefa Nilamdeen ",
+    "contactNo": "0767707644",
+    "email": "naseefanilamudeen@gmail.com",
+    "faculty": "University of vavuniya ",
+    "isOC": "No",
+    "regNo": "BI061"
   },
   {
     "uniRegNo": "TE101435",
@@ -2115,13 +2448,22 @@
     "regNo": "FAHS051,BI025"
   },
   {
+    "uniRegNo": "2020t00591",
+    "name": "Nayana chinthaka ",
+    "contactNo": "0761443811",
+    "email": "2020t00591@stu.cmb.ac.lk",
+    "faculty": "University of colombo ",
+    "isOC": "No",
+    "regNo": "BI050"
+  },
+  {
     "uniRegNo": "AR96581",
     "name": "Nayanajith Kumara Jagodage Nanayakkara ",
     "contactNo": "0714896122",
     "email": "nayanajithku20@gmail.com",
     "faculty": "Faculty of Humanities & Social Sciences",
     "isOC": "No",
-    "regNo": "FHSS012,BL011"
+    "regNo": "FHSS012,BL011,BI040"
   },
   {
     "uniRegNo": "AS95853",
@@ -2239,6 +2581,15 @@
     "faculty": "Faculty of Technology",
     "isOC": "No",
     "regNo": "FOT023,CSR037"
+  },
+  {
+    "uniRegNo": "2017/A/236",
+    "name": "Nirmala Balasingam ",
+    "contactNo": "0767091385",
+    "email": "nimmubala6@gmail.com ",
+    "faculty": "University of Jaffna ",
+    "isOC": "No",
+    "regNo": "BI064"
   },
   {
     "uniRegNo": "EN95142",
@@ -2484,6 +2835,15 @@
     "regNo": "FMSC019,BC045"
   },
   {
+    "uniRegNo": "2018/BS/126",
+    "name": "Pirathisha Shanthakumar ",
+    "contactNo": "0767384468",
+    "email": "piratheeshakrish@gmail.com ",
+    "faculty": "University of Vavuniya ",
+    "isOC": "No",
+    "regNo": "BI059"
+  },
+  {
     "uniRegNo": "HS105855",
     "name": "PIYUMADI GUNARATHNA ",
     "contactNo": "0769175610",
@@ -2565,6 +2925,15 @@
     "regNo": "FOT008,BT124,BC074"
   },
   {
+    "uniRegNo": "AQT19039",
+    "name": "Praveen Avishka ",
+    "contactNo": "0711533175",
+    "email": "praveenrathnayaka98@gmail.com",
+    "faculty": "Uva Wellassa University ",
+    "isOC": "No",
+    "regNo": "BI086"
+  },
+  {
     "uniRegNo": "MC94329",
     "name": "Praveen Nirmal Wickramasinghe",
     "contactNo": "0769394630",
@@ -2581,6 +2950,15 @@
     "faculty": "Faculty of Applied Sciences",
     "isOC": "No",
     "regNo": "BI010"
+  },
+  {
+    "uniRegNo": "2018/A/DIS/148",
+    "name": "R. Risan kaviyarasan ",
+    "contactNo": "0764841430",
+    "email": "risankaviyarasan@gmail.com",
+    "faculty": "University of Jaffna ",
+    "isOC": "No",
+    "regNo": "BI062"
   },
   {
     "uniRegNo": "AS100155",
@@ -2698,6 +3076,15 @@
     "faculty": "Faculty of Applied Sciences",
     "isOC": "No",
     "regNo": "CSR017"
+  },
+  {
+    "uniRegNo": "222620M",
+    "name": "Rasanja charuka",
+    "contactNo": "0783636348",
+    "email": "Rasanjacharuka@icloud.com",
+    "faculty": "University of moratuwa",
+    "isOC": "No",
+    "regNo": "BI079"
   },
   {
     "uniRegNo": "AR98493",
@@ -2862,6 +3249,24 @@
     "regNo": "FAHS042,BC037"
   },
   {
+    "uniRegNo": "2018/A/299",
+    "name": "Rukshana Balasupramaniyam",
+    "contactNo": "0768702524",
+    "email": "rukshanasajee12@gmail.com",
+    "faculty": "University of jaffna",
+    "isOC": "No",
+    "regNo": "BI070"
+  },
+  {
+    "uniRegNo": "212470R",
+    "name": "Rusin Thathsara",
+    "contactNo": "0762185591",
+    "email": "rusinthathsaraofficial@gmail.com",
+    "faculty": "university of Moratuwa",
+    "isOC": "No",
+    "regNo": "BI075"
+  },
+  {
     "uniRegNo": "AR98254",
     "name": "Rusiru Galagoda ",
     "contactNo": "0752981937",
@@ -2887,6 +3292,15 @@
     "faculty": "Faculty of Engineering",
     "isOC": "No",
     "regNo": "FOE011"
+  },
+  {
+    "uniRegNo": "2020BAD304",
+    "name": "S Nadeeshan",
+    "contactNo": "0769426112",
+    "email": "sudeshnadeeshan112@gmail.com",
+    "faculty": "University Of Jaffna ",
+    "isOC": "No",
+    "regNo": "BI091"
   },
   {
     "uniRegNo": "TE209153",
@@ -2952,6 +3366,24 @@
     "regNo": "BT029,BC011"
   },
   {
+    "uniRegNo": "200160R",
+    "name": "Sajith Eranda ",
+    "contactNo": "0764477503 ",
+    "email": "sajitheranda227@gmail.com ",
+    "faculty": "University of Moratuwa ",
+    "isOC": "No",
+    "regNo": "BI095"
+  },
+  {
+    "uniRegNo": "E2048308",
+    "name": "Samali Senevirathne",
+    "contactNo": "0711701966",
+    "email": "samalisenevirathne@gmail.com",
+    "faculty": "university of moratuwa",
+    "isOC": "No",
+    "regNo": "BI060"
+  },
+  {
     "uniRegNo": "MC104322",
     "name": "Sameera Prasad",
     "contactNo": "0704020930",
@@ -3004,6 +3436,15 @@
     "faculty": "Faculty of Technology",
     "isOC": "No",
     "regNo": "FOT011,CSR036"
+  },
+  {
+    "uniRegNo": "UWU CST 21 023",
+    "name": "Sandrasekaran Thanujan ",
+    "contactNo": "0769823735",
+    "email": "cst21023@std.uwu.ac.lk",
+    "faculty": "Uva wellasa university ",
+    "isOC": "No",
+    "regNo": "BI074"
   },
   {
     "uniRegNo": "TE101172",
@@ -3067,6 +3508,15 @@
     "faculty": "Faculty of Management Studies & Commerce",
     "isOC": "No",
     "regNo": "BT004,BC002"
+  },
+  {
+    "uniRegNo": "As2021746",
+    "name": "Sarindu wijesinghe ",
+    "contactNo": "0720634158",
+    "email": "Sarinduwijesinghe@gmail.com ",
+    "faculty": "Sri Jayewardenepura University ",
+    "isOC": "No",
+    "regNo": "BI051"
   },
   {
     "uniRegNo": "AS100322",
@@ -3204,6 +3654,15 @@
     "regNo": "BL051,BD037"
   },
   {
+    "uniRegNo": "TG 2020 852 ",
+    "name": "Shashini Tharaka ",
+    "contactNo": "0767653345",
+    "email": "shashini_2020852@fot.ruh.ac.lk ",
+    "faculty": "University of Ruhuna ",
+    "isOC": "No",
+    "regNo": "BI045"
+  },
+  {
     "uniRegNo": "Mc99372",
     "name": "Shayni De Silva",
     "contactNo": "0702593393",
@@ -3247,6 +3706,24 @@
     "faculty": "Faculty of Applied Sciences",
     "isOC": "Yes",
     "regNo": "FAS006,BT023"
+  },
+  {
+    "uniRegNo": "AG/17/FT/003",
+    "name": "Shimani Umesha Attygalle",
+    "contactNo": "0763201407",
+    "email": "shimaniattygale@gmail.com",
+    "faculty": "University of Peradeniya ",
+    "isOC": "No",
+    "regNo": "BI067"
+  },
+  {
+    "uniRegNo": "222742M",
+    "name": "Sijitha Sathath ",
+    "contactNo": "0771600026",
+    "email": "sijithasathath15@gmail.com",
+    "faculty": "University of Moratuwa ",
+    "isOC": "No",
+    "regNo": "BI081"
   },
   {
     "uniRegNo": "EN97547",
@@ -3319,6 +3796,15 @@
     "faculty": "Faculty of Management Studies & Commerce",
     "isOC": "Yes",
     "regNo": "BL091,BI022"
+  },
+  {
+    "uniRegNo": "EG/2021/4717",
+    "name": "Sudeera Perera",
+    "contactNo": "0717030405",
+    "email": "mail@sudeeraperera.com",
+    "faculty": "University of Ruhuna",
+    "isOC": "No",
+    "regNo": "BI039"
   },
   {
     "uniRegNo": "MC 99339",
@@ -3402,6 +3888,15 @@
     "regNo": "FMSC051,BT115"
   },
   {
+    "uniRegNo": "2018/sb/092",
+    "name": "Thamilini selvanayagam ",
+    "contactNo": "0754127585",
+    "email": "Sthamithamilini105@gmail.com ",
+    "faculty": "University of jaffna ",
+    "isOC": "No",
+    "regNo": "BI068"
+  },
+  {
     "uniRegNo": "HS105874",
     "name": "Thamindu Sahan",
     "contactNo": "0787056370",
@@ -3438,6 +3933,15 @@
     "regNo": "FAHS011"
   },
   {
+    "uniRegNo": "2016/A/3351",
+    "name": "Tharindu Lakmal",
+    "contactNo": "0769149171",
+    "email": "tharindulakmalpushpakumara076@gmail.com",
+    "faculty": "University of colombo",
+    "isOC": "No",
+    "regNo": "BI083"
+  },
+  {
     "uniRegNo": "AR96618",
     "name": "Tharindu Liyanage",
     "contactNo": "0717721317",
@@ -3445,6 +3949,15 @@
     "faculty": "Faculty of Humanities & Social Sciences",
     "isOC": "No",
     "regNo": "BT010,BD006"
+  },
+  {
+    "uniRegNo": "TE101274",
+    "name": "Tharindu Nipun",
+    "contactNo": "0715297768",
+    "email": "tharindunipun2000@gmail.com",
+    "faculty": "University of Sri jayewardenepura",
+    "isOC": "No",
+    "regNo": "BI057"
   },
   {
     "uniRegNo": "99206",

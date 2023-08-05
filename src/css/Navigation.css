@@ -68,10 +68,10 @@
   transform: translateX(0px);
 }
 .show-jesa23-btn {
-  transform: translateX(+220px);
+  transform: translateX(+300px);
 }
 .closed-nav-move {
-  width: calc(100vw - 126px);
+  width: calc(100vw - 267px);
 }
 
 /* Making Responsive */
@@ -137,6 +137,6 @@
   }
   /* relevent to JESA 23 button */
   .closed-nav-move {
-    width: calc(100vw - 110px);
+    width: calc(100vw - 267px);
   }
 }

@@ -92,7 +92,7 @@ const Navigation = ({
             }`}
             onClick={handleJesa23Click}
           >
-            JESA'23
+            Check JESA'23 Registration
           </a>
         )}
       </div>

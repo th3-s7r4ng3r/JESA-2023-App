@@ -22,7 +22,10 @@ const RegistrationDetails = ({ candidateDetails }: any) => {
           Email : <div>{selectedCandidate.email}</div>
         </h3>
         <h3>
-          Faculty : <div>{selectedCandidate.faculty}</div>
+          {selectedCandidate.faculty.toLowerCase().includes("university")
+            ? "University"
+            : "Faculty"}
+          : <div>{selectedCandidate.faculty}</div>
         </h3>
         <div className="reg-details-row-tags">
           <h3>Tags :</h3>
