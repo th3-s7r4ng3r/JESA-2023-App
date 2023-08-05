@@ -8,7 +8,6 @@ const RegistrationDetails = ({ candidateDetails }: any) => {
   const [selectedCandidate, setSelectedCandidate] = useState(
     candidateDetails[0]
   );
-  setSelectedCandidate(candidateDetails[0]);
 
   // rendering the registration details component
   return (
