@@ -4,7 +4,7 @@
   width: 80vw;
   display: flex;
   flex-direction: column;
-  margin: 15vh auto 20vh;
+  margin: 12vh auto 20vh;
   align-items: center;
   justify-items: center;
 }
@@ -77,11 +77,43 @@
 .ar-check-btn:hover {
   background-color: #f4ce65;
   color: #000000;
-  padding: 10px 35px;
+  padding: 10px 40px;
 }
 .ar-footer-text {
   font-size: 1.25rem;
   color: #828282;
   font-weight: 400;
   margin: 2vh 0vw 2vh 0vw;
+}
+
+.ar-error-message {
+  position: fixed;
+  bottom: 3%;
+  color: #ededed;
+  background-color: #832a23;
+  border: 2px solid #832a23;
+  border-radius: 10px;
+  padding: 15px 10%;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
+.ar-error-hide {
+  animation: error-hide 4s ease-out;
+}
+
+/* animation used for registration button */
+@keyframes error-hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(+10px);
+  }
 }

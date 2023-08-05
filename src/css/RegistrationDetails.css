@@ -1,19 +1,20 @@
 /* RegistrationDetails Component */
 
 .reg-details {
-  margin: 15vh auto 5vh;
+  margin: 3vh auto 5vh;
   scroll-margin-top: 15vh;
 }
 
 .reg-details-container {
   width: 50vw;
   text-align: left;
+  margin: 0 auto;
   font-size: 1.2rem;
   padding: 3vh 3.5vw 7vh;
   border-radius: 1.5rem;
   background-color: #1e1e1e;
   box-shadow: 0 0 5rem #000000e7;
-  border: 3px solid #cbaa559c;
+  border: 3px solid #cbaa5595;
 }
 .reg-details-container h1 {
   text-align: center;
