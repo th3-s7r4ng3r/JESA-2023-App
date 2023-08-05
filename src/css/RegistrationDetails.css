@@ -40,6 +40,8 @@
   background-color: #121212;
   border-radius: 7px;
 }
+
+/* Tags area */
 .reg-details-row-tags {
   display: flex;
   flex-direction: row;
@@ -63,4 +65,50 @@
   margin-left: 5px;
   background-color: #cbaa55d3;
   color: #000000;
+}
+
+/* Making Responsive */
+@media all and (max-width: 810px) {
+  .reg-details {
+    margin: 5vh auto 5vh;
+  }
+  .reg-details-container {
+    width: 90vw;
+    margin: 0px;
+    padding: 3vh 5vw 5vh;
+    border-radius: 1.25rem;
+  }
+  .reg-details-container h1 {
+    font-size: 2rem;
+    margin: 1vh auto 4vh;
+    padding: 0px;
+  }
+  .reg-details-container h3 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 1.4rem;
+    width: 80vw;
+    margin: 0px;
+  }
+  .reg-details-container h3 div {
+    transform: translateY(0px);
+    margin: 5px auto 10px;
+    width: 75vw;
+    padding: 7px 15px;
+  }
+
+  /* Tags area */
+  .reg-details-row-tags {
+    flex-direction: column;
+    margin: 20px 0px 0px;
+  }
+  .candidate-tag,
+  .oc-tag {
+    margin: 3px 0px;
+    margin-left: 0px;
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
 }

@@ -41,3 +41,28 @@
   margin: auto;
   width: fit-content;
 }
+
+/* Making Responsive */
+@media all and (max-width: 810px) {
+  .applied-cards {
+    margin: 5vh auto 0vh;
+  }
+  .applied-cards h2 {
+    font-size: 2rem;
+  }
+  .applied-card-container {
+    flex-direction: column;
+    width: 70vw;
+    margin: 0px auto;
+    gap: 1rem;
+  }
+  .applied-card {
+    padding: 7px 20px 25px;
+  }
+  .applied-card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
+}

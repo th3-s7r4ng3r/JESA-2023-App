@@ -1,5 +1,6 @@
 /* AfterRegistration Component */
 
+/* Default styling */
 .ar-section {
   width: 80vw;
   display: flex;
@@ -86,6 +87,7 @@
   margin: 2vh 0vw 2vh 0vw;
 }
 
+/* Error message section */
 .ar-error-message {
   position: fixed;
   bottom: 3%;
@@ -97,7 +99,6 @@
   font-size: 1.5rem;
   opacity: 0;
 }
-
 .ar-error-hide {
   animation: error-hide 4s ease-out;
 }
@@ -116,4 +117,62 @@
     opacity: 0;
     transform: translateY(+10px);
   }
+}
+
+/* Making Responsive */
+@media all and (max-width: 810px) {
+  .ar-section {
+    margin: 10vh auto 15vh;
+    width: 90vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* Heading section */
+  .ar-headings h1 {
+    font-size: 3rem;
+    display: none;
+  }
+  .ar-description {
+    flex-wrap: wrap;
+    gap: 0rem;
+  }
+  .ar-description img {
+    width: 80vw;
+    height: 32vh;
+    margin: 0rem;
+  }
+  .ar-subtext {
+    width: 90vw;
+    font-size: 1.2rem;
+    padding: 2vh 1rem 3vh;
+    margin: 0px;
+    border-radius: 1.25rem;
+  }
+  .ar-check-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ar-check-container input {
+    margin: 1vh 0 1vh;
+  }
+  .ar-check-btn {
+    margin: 1vh 1vw 1vh 0.5vw;
+  }
+  .ar-footer-text {
+    font-size: 1.25rem;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  /* Error message section */
+  .ar-error-message {
+    width: 90%;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
 }
