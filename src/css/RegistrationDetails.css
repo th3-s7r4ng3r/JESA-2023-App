@@ -94,6 +94,7 @@
   .reg-details-container h3 div {
     transform: translateY(0px);
     margin: 5px auto 10px;
+    font-size: 1.2rem;
     width: 75vw;
     padding: 7px 15px;
   }
