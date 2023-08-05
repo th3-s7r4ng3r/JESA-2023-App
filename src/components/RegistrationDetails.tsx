@@ -1,13 +1,10 @@
 import "../css/RegistrationDetails.css";
 import AppliedAwardCard from "./AppliedAwardCard";
-import { useState } from "react";
 
 // declaring the registration details component
 const RegistrationDetails = ({ candidateDetails }: any) => {
   //declaring state vaiables
-  const [selectedCandidate, setSelectedCandidate] = useState(
-    candidateDetails[0]
-  );
+  const selectedCandidate = candidateDetails[0];
 
   // rendering the registration details component
   return (
