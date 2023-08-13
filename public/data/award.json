@@ -38,10 +38,10 @@
     "plat2021": "/images/companies/flexport.png",
     "plat2022": "/images/companies/wso2.png",
     "plat2023": "/images/companies/platinum-un.png",
-    "gold2023": "/images/companies/gold-un.png",
+    "gold2023": "/images/companies/wso2.png",
     "silv2023": "/images/companies/silver-un.png",
     "_plat2023link": "",
-    "_gold2023link": "",
+    "gold2023link": "https://wso2.com/",
     "_silv2023link": ""
   },
   {
@@ -84,10 +84,10 @@
     "plat2022": "/images/companies/alpha-apparels.png",
     "plat2023": "/images/companies/platinum-un.png",
     "gold2023": "/images/companies/gold-un.png",
-    "silv2023": "/images/companies/silver-un.png",
+    "silv2023": "/images/companies/cocodreams.png",
     "_plat2023link": "",
     "_gold2023link": "",
-    "_silv2023link": ""
+    "silv2023link": "https://cocodreamslanka.com/?v=2c16b194a0d9"
   },
   {
     "id": "6",
