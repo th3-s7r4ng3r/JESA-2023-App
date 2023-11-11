@@ -52,11 +52,11 @@
     "plat2019": "/images/companies/ceylon-guardian.png",
     "plat2021": "/images/companies/hirdaramani.png",
     "plat2022": "/images/companies/hirdaramani.png",
-    "plat2023": "/images/companies/platinum-un.png",
-    "gold2023": "/images/companies/gold-un.png",
+    "plat2023": "/images/companies/expert-education.png",
+    "gold2023": "/images/companies/british-council.png",
     "silv2023": "/images/companies/silver-un.png",
-    "_plat2023link": "",
-    "_gold2023link": "",
+    "plat2023link": "https://experteducation.lk/index.html",
+    "gold2023link": "https://www.britishcouncil.lk/",
     "_silv2023link": ""
   },
   {
@@ -67,10 +67,10 @@
     "plat2019": "/images/companies/morison.png",
     "plat2021": "/images/companies/alpha-apparels.png",
     "plat2022": "/images/companies/mas.png",
-    "plat2023": "/images/companies/platinum-un.png",
+    "plat2023": "/images/companies/teejay-lanka.png",
     "gold2023": "/images/companies/baurs.png",
     "silv2023": "/images/companies/araliyagroup.png",
-    "_plat2023link": "",
+    "plat2023link": "https://www.teejay.com/",
     "gold2023link": "https://www.baurs.lk/",
     "silv2023link": "https://araliya.lk/"
   },
@@ -214,10 +214,10 @@
     "plat2019": "/images/companies/csds.png",
     "plat2021": "/images/companies/morison.png",
     "plat2022": "/images/companies/csds.png",
-    "plat2023": "/images/companies/platinum-un.png",
+    "plat2023": "/images/companies/sunshine-holdings.png",
     "gold2023": "/images/companies/gold-un.png",
     "silv2023": "/images/companies/silver-un.png",
-    "_plat2023link": "",
+    "plat2023link": "https://www.sunshineholdings.lk/",
     "_gold2023link": "",
     "_silv2023link": ""
   }
