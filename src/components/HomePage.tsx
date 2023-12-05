@@ -6,9 +6,9 @@ import ThisYearJesa from "./ThisYearJesa";
 
 const HomePage = ({
   awardsData,
-  updateEachAwardClick,
-  updateRegistrationClick,
+  getToTop,
   isRegistrationClosed = 1,
+  updateEachAwardClick,
 }: any) => {
   return (
     <div className="container" id="home">
@@ -70,7 +70,7 @@ const HomePage = ({
 
       {/* This Year JESA section */}
       <ThisYearJesa
-        updateRegistrationClick={updateRegistrationClick}
+        scrollToTop={getToTop}
         isRegistrationClosed={isRegistrationClosed}
       />
     </div>

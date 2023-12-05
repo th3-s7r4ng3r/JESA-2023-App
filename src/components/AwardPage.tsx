@@ -3,13 +3,12 @@ import AwardDetails from "./AwardDetails";
 import BesaPartners from "./BesaPartners";
 import DefaultPartner from "./DefaultPartner";
 
-const AwardPage = ({ selectedAward, awardData, awardClickStatus }: any) => {
+const AwardPage = ({ selectedAward, awardData }: any) => {
   return (
     <div className="award-page">
       {/* Award description */}
       <AwardDetails
         currentAward={awardData[selectedAward]}
-        isFromAwardPage={awardClickStatus}
         awardData={awardData}
       />
 
