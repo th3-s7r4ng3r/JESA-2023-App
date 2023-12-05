@@ -6,12 +6,12 @@
   },
   "routes": [
     {
-      "route": "award/data/",
-      "rewrite": "/data/"
+      "route": "/award/data",
+      "rewrite": "/data"
     },
     {
-      "route": "award/images/",
-      "rewrite": "/images/"
+      "route": "/award/images",
+      "rewrite": "/images"
     }
   ],
   "responseOverrides": {
