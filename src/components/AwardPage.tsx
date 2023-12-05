@@ -2,8 +2,15 @@ import "../css/AwardPage.css";
 import AwardDetails from "./AwardDetails";
 import BesaPartners from "./BesaPartners";
 import DefaultPartner from "./DefaultPartner";
+import { useParams } from "react-router-dom";
 
 const AwardPage = ({ selectedAward, awardData }: any) => {
+  //getting the id of the award from the url
+  const uri = useParams();
+  //getting the award id from the awardData array using award params
+  const award = awardData.find((award: any) => award.uri === uri.award);
+  selectedAward = awardData.indexOf(award);
+
   return (
     <div className="award-page">
       {/* Award description */}

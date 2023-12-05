@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     const readAwardFile = async () => {
       try {
-        const awardConent = await fetch("./data/award.json");
+        const awardConent = await fetch("/data/award.json");
         const awardConentText = await awardConent.json();
         setAwardDetails(awardConentText);
       } catch (error) {

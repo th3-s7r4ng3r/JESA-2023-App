@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className="footer">
         <img
-          src="./images/footer-image-white.png"
+          src="/images/footer-image-white.png"
           alt="footer logo"
           className="footer-image"
         />

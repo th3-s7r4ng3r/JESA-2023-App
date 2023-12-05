@@ -4,16 +4,6 @@
     "rewrite": "/index.html",
     "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
   },
-  "routes": [
-    {
-      "route": "award/data/award.json",
-      "rewrite": "/data/award.json"
-    },
-    {
-      "route": "award/images/footer-image-white.png",
-      "rewrite": "/images/footer-image-white.png"
-    }
-  ],
   "responseOverrides": {
     "404": {
       "rewrite": "/index.html"
