@@ -1,11 +1,16 @@
 import "../css/ScrollToTop.css";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 // declaring scroll to top button's functionality
-const ScrollToTop = ({ isInRegistrationPage = 0 }: any) => {
+const ScrollToTop = ({}: any) => {
   //declaring the state variables
   const [isVisible, setIsVisible] = useState(false);
   const [isPartnershipBtnVisible, setIsPartnershipBtnVisible] = useState(false);
+
+  // getting the current path location
+  const currentLocation = useLocation();
+  const isInRegistrationPage = currentLocation.pathname === "/registration";
 
   // displaying the scroll to top button when the user scrolls down 400px
   const handleScroll = () => {
@@ -48,7 +53,7 @@ const ScrollToTop = ({ isInRegistrationPage = 0 }: any) => {
       </div>
       {/* Adding a fixed button to the partnership google form */}
       {/* Always visible except in student registration page */}
-      {isInRegistrationPage === 0 && (
+      {!isInRegistrationPage && (
         <div
           className={`partnership-button ${
             isPartnershipBtnVisible

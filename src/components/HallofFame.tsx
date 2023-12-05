@@ -35,7 +35,7 @@ const HallofFame = () => {
           {/* display hall of fame years as active if there's a link to the image. Otherwise display as disabled */}
           {hallOfFameDetails.map((item: any) => (
             <a
-              href={"#" + item.id}
+              href={"#" + item.year}
               className={item.image !== "" ? "hof-tag" : "hof-tag-disable"}
               key={item.id}
             >
@@ -50,7 +50,7 @@ const HallofFame = () => {
             (item: any) =>
               item.image !== "" && (
                 // attaching the id to the div to scroll to the image when the year is clicked
-                <div className="hof-section" id={item.id}>
+                <div className="hof-section" id={item.year}>
                   <h2>{item.year}</h2>
                   <img
                     src={item.image}

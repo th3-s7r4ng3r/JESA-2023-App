@@ -1,32 +1,32 @@
 import "../css/AwardDetails.css";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //declaring the award detail component
-const AwardDetails = ({
-  currentAward,
-  isFromAwardPage = 0,
-  awardData = 0,
-  handleClick,
-}: any) => {
+const AwardDetails = ({ currentAward, awardData = 0, handleClick }: any) => {
   //handling clicking on inventor award
   const handleAwardClick = () => {
     handleClick(4);
   };
+
+  // getting the current path location
+  const currentLocation = useLocation();
+  const isFromAwardPage = currentLocation.pathname === "/";
 
   //rendering the award details component
   return (
     // Selecting effects based on the section currently in
     <div className="award-card">
       {/* selecting the image of each award according to the input */}
-      <img
-        src={currentAward.image}
-        className={
-          isFromAwardPage === 0
-            ? "award-card-image"
-            : "award-card-image-award-page"
-        }
-        alt={currentAward.name}
-        onClick={handleAwardClick}
-      />
+      <Link to={`/award/${currentAward.uri}`} onClick={handleAwardClick}>
+        <img
+          src={currentAward.image}
+          className={
+            isFromAwardPage ? "award-card-image" : "award-card-image-award-page"
+          }
+          alt={currentAward.name}
+        />
+      </Link>
       {/* display the details of each selected award */}
       <div className="row">
         <div className="award-details">
@@ -43,17 +43,21 @@ const AwardDetails = ({
             <div className="innovator-class">
               {/* <div className="award-tag">UGC Approved</div> // Also update
               animation */}
-              {isFromAwardPage == 0 && (
-                <div className="become-partner" onClick={handleAwardClick}>
+              {isFromAwardPage && (
+                <Link
+                  to={`/award/${currentAward.uri}`}
+                  className="become-partner"
+                  onClick={handleAwardClick}
+                >
                   Become a partner
-                </div>
+                </Link>
               )}
             </div>
           )}
         </div>
 
         {/* Previous Partners section @ AwardPage */}
-        {isFromAwardPage === 1 &&
+        {!isFromAwardPage &&
           // Displaying previous partners section for all awards except BESA awards
           currentAward.id !== "7" && (
             <div className="prev-partners">

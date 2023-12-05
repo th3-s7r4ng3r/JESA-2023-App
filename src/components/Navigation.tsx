@@ -1,35 +1,16 @@
 import "../css/Navigation.css";
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 // declaring navigation component
-const Navigation = ({
-  updateNavAwardClick,
-  updateNavHomeClick,
-  updateNavHallOfFameClick,
-  updateRegistrationClick,
-  updateJesa23Click,
-  currentRegistrationPageStatus,
-  isRegistrationClosed = 1,
-}: any) => {
+const Navigation = ({ getToTop, isRegistrationClosed = 1 }: any) => {
   //declaring the state variables
   const [regIsVisible, setRegIsVisible] = useState(false);
 
-  //handling clicking the buttons
-  const handleHomeClick = () => {
-    updateNavHomeClick();
-  };
-  const handleAwardsClick = () => {
-    updateNavAwardClick();
-  };
-  const handleHallOfFameClick = () => {
-    updateNavHallOfFameClick();
-  };
-  const handleRegistrationClick = () => {
-    updateRegistrationClick();
-  };
-  const handleJesa23Click = () => {
-    updateJesa23Click();
-  };
+  // getting the current path location
+  const currentLocation = useLocation();
+  const currentRegistrationPageStatus =
+    currentLocation.pathname === "/registration";
 
   //displaying register button when scroll down 600px
   const updateregIsVisible = () => {
@@ -44,6 +25,15 @@ const Navigation = ({
     };
   }, []);
 
+  //making sure that the awards section is loaded before scrolling
+  const scrollToAwards = () => {
+    setTimeout(() => {
+      const awardsSection = document.getElementById("awards");
+      if (awardsSection != null)
+        awardsSection.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
   // rendering the navigation bar
   return (
     <>
@@ -51,49 +41,56 @@ const Navigation = ({
         // move the nav bar left except when the registration page is visible
         // also hides the register button when registration date is passed
         className={`header ${
-          regIsVisible && currentRegistrationPageStatus === 0
+          regIsVisible && !currentRegistrationPageStatus
             ? isRegistrationClosed === 0
               ? "nav-move"
               : "closed-nav-move"
             : ""
         }`}
       >
+        {/* Nav bar with using router */}
         <div className="nav-bar">
-          <a className="nav-btn" onClick={handleHomeClick}>
+          <Link to="/" onClick={() => getToTop()} className="nav-btn">
             Home
-          </a>
-          <a className="nav-btn" onClick={handleAwardsClick}>
+          </Link>
+          <Link to="/" onClick={() => scrollToAwards()} className="nav-btn">
             Awards
-          </a>
-          <a className="nav-btn" onClick={handleHallOfFameClick}>
+          </Link>
+          <Link
+            to="/hall-of-fame"
+            onClick={() => getToTop()}
+            className="nav-btn"
+          >
             Hall of Fame
-          </a>
+          </Link>
         </div>
 
         {/* Registration button visible except when the registration page is visible */}
         {/* also hides the register button when registration date is passed then display jesa23 button*/}
         {isRegistrationClosed === 0 ? (
-          <a
+          <Link
+            to="/registration"
             className={`reg-nav-btn ${
-              regIsVisible && currentRegistrationPageStatus === 0
+              regIsVisible && !currentRegistrationPageStatus
                 ? "show-reg-btn"
                 : ""
             }`}
-            onClick={handleRegistrationClick}
+            onClick={() => getToTop()}
           >
             Register for JESA'23
-          </a>
+          </Link>
         ) : (
-          <a
+          <Link
+            to="/registration"
             className={`jesa23-nav-btn ${
-              regIsVisible && currentRegistrationPageStatus === 0
+              regIsVisible && !currentRegistrationPageStatus
                 ? "show-jesa23-btn"
                 : ""
             }`}
-            onClick={handleJesa23Click}
+            onClick={() => getToTop()}
           >
             Check JESA'23 Registration
-          </a>
+          </Link>
         )}
       </div>
       {/* Spacer for the nav bar */}

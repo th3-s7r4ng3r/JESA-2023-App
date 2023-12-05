@@ -1,7 +1,8 @@
 import "../css/Registration.css";
+import { Link } from "react-router-dom";
 
 // declaring registration component
-const Registration = ({ handleClick, isRegistrationClosed = 1 }: any) => {
+const Registration = ({ getToTop, isRegistrationClosed = 1 }: any) => {
   // rendering registration component
   return (
     <div className="registration">
@@ -21,19 +22,27 @@ const Registration = ({ handleClick, isRegistrationClosed = 1 }: any) => {
       {/* Only display registration page */}
       <div className="registration-links">
         {/* Display each button if the registration date is closed */}
-        {isRegistrationClosed === 2 ? (
-          <button className="registration-btn" onClick={handleClick}>
+        {isRegistrationClosed === 0 ? (
+          <Link
+            to="/registration"
+            className="registration-btn"
+            onClick={() => getToTop()}
+          >
             REGISTER NOW
-          </button>
+          </Link>
         ) : (
           // <button className="registration-btn reg-closed">
           //   Registration Closed
           // </button>
 
           // Check registration event
-          <button className="registration-btn" onClick={handleClick}>
+          <Link
+            to="/registration"
+            className="registration-btn"
+            onClick={() => getToTop()}
+          >
             Check Registration
-          </button>
+          </Link>
         )}
         <h4>
           JESA'23 Registrations
