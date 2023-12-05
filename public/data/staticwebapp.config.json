@@ -6,8 +6,12 @@
   },
   "routes": [
     {
-      "route": "award/data/award.json",
-      "rewrite": "/data/award.json"
+      "route": "award/data/",
+      "rewrite": "/data/"
+    },
+    {
+      "route": "award/images/",
+      "rewrite": "/images/"
     }
   ],
   "responseOverrides": {
