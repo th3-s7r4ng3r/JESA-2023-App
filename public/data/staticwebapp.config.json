@@ -1,9 +1,15 @@
 {
-  "trailingSlash": "never",
+  "trailingSlash": "always",
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
   },
+  "routes": [
+    {
+      "route": "award/data/award.json",
+      "rewrite": "/data/award.json"
+    }
+  ],
   "responseOverrides": {
     "404": {
       "rewrite": "/index.html"
