@@ -1,15 +1,24 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 import "./css/App.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import HomePage from "./components/HomePage";
-import { useState, useEffect } from "react";
-import AwardPage from "./components/AwardPage";
 import ScrollToTop from "./components/ScrollToTop";
-import HallofFame from "./components/HallofFame";
-import RegistrationPage from "./components/RegistrationPage";
-import { Routes, Route } from "react-router-dom";
 import NotFoundPage from "./components/NotFoundPage";
-import InvitationPage from "./components/InvitationPage";
+import Loading from "./components/Loading";
+
+//lazy loading the components
+const LazyHomePage = React.lazy(() => import("./components/HomePage"));
+const LazyAwardPage = React.lazy(() => import("./components/AwardPage"));
+const LazyHallofFame = React.lazy(() => import("./components/HallofFame"));
+const LazyRegistrationPage = React.lazy(
+  () => import("./components/RegistrationPage")
+);
+const LazyInvitationPage = React.lazy(
+  () => import("./components/InvitationPage")
+);
 
 //main application
 function App() {
@@ -70,34 +79,57 @@ function App() {
           <Route
             path="/"
             element={
-              <HomePage
-                awardsData={awardDetails}
-                isRegistrationClosed={registrationClosed}
-                getToTop={scrollToTop}
-                updateEachAwardClick={handleAwardClick}
-              />
+              <React.Suspense fallback={<Loading />}>
+                <LazyHomePage
+                  awardsData={awardDetails}
+                  isRegistrationClosed={registrationClosed}
+                  getToTop={scrollToTop}
+                  updateEachAwardClick={handleAwardClick}
+                />
+              </React.Suspense>
             }
           />
           {/* display hall of fame page */}
-          <Route path="/hall-of-fame" element={<HallofFame />} />
+          <Route
+            path="/hall-of-fame"
+            element={
+              <React.Suspense fallback={<Loading />}>
+                <LazyHallofFame />
+              </React.Suspense>
+            }
+          />
           {/* display registration page */}
           <Route
             path="/registration"
             element={
-              <RegistrationPage isRegistrationClosed={registrationClosed} />
+              <React.Suspense fallback={<Loading />}>
+                <LazyRegistrationPage
+                  isRegistrationClosed={registrationClosed}
+                />
+              </React.Suspense>
             }
           />
           {/* display Awards page with the selected award */}
           <Route
             path="/award/:award"
             element={
-              <AwardPage
-                awardData={awardDetails}
-                selectedAward={selectedAward}
-              />
+              <React.Suspense fallback={<Loading />}>
+                <LazyAwardPage
+                  awardData={awardDetails}
+                  selectedAward={selectedAward}
+                />
+              </React.Suspense>
             }
           />
-          <Route path="/invitation" element={<InvitationPage />} />
+          <Route
+            path="/invitation"
+            element={
+              <React.Suspense fallback={<Loading />}>
+                <LazyInvitationPage />
+              </React.Suspense>
+            }
+          />
+          {/* <Route path="/loading" element={<Loading />} /> */}
           <Route path="/404" element={<NotFoundPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
