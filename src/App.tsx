@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import "./css/App.css";
+import HomePage from "./components/HomePage";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -10,7 +11,7 @@ import NotFoundPage from "./components/NotFoundPage";
 import Loading from "./components/Loading";
 
 //lazy loading the components
-const LazyHomePage = React.lazy(() => import("./components/HomePage"));
+// const LazyHomePage = React.lazy(() => import("./components/HomePage"));
 const LazyAwardPage = React.lazy(() => import("./components/AwardPage"));
 const LazyHallofFame = React.lazy(() => import("./components/HallofFame"));
 const LazyRegistrationPage = React.lazy(
@@ -79,14 +80,12 @@ function App() {
           <Route
             path="/"
             element={
-              <React.Suspense fallback={<Loading />}>
-                <LazyHomePage
-                  awardsData={awardDetails}
-                  isRegistrationClosed={registrationClosed}
-                  getToTop={scrollToTop}
-                  updateEachAwardClick={handleAwardClick}
-                />
-              </React.Suspense>
+              <HomePage
+                awardsData={awardDetails}
+                isRegistrationClosed={registrationClosed}
+                getToTop={scrollToTop}
+                updateEachAwardClick={handleAwardClick}
+              />
             }
           />
           {/* display hall of fame page */}
