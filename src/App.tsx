@@ -9,6 +9,7 @@ import HallofFame from "./components/HallofFame";
 import RegistrationPage from "./components/RegistrationPage";
 import { Routes, Route } from "react-router-dom";
 import NotFoundPage from "./components/NotFoundPage";
+import InvitationPage from "./components/InvitationPage";
 
 //main application
 function App() {
@@ -96,6 +97,7 @@ function App() {
               />
             }
           />
+          <Route path="/invitation" element={<InvitationPage />} />
           <Route path="/404" element={<NotFoundPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

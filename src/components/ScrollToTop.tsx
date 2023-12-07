@@ -10,7 +10,9 @@ const ScrollToTop = ({}: any) => {
 
   // getting the current path location
   const currentLocation = useLocation();
-  const isInRegistrationPage = currentLocation.pathname === "/registration";
+  const isInRegistrationPage =
+    currentLocation.pathname === "/registration" ||
+    currentLocation.pathname === "/invitation";
 
   // displaying the scroll to top button when the user scrolls down 400px
   const handleScroll = () => {
