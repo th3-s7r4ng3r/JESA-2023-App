@@ -1,5 +1,5 @@
 import "../css/Invitation.css";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // declaring the invitation component
 const InvitationPage = () => {

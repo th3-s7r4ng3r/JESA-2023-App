@@ -76,6 +76,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  filter: drop-shadow(0 0 2rem #000000bb);
 }
 .inv-countdown h2 {
   font-size: 1.8rem;
@@ -184,4 +185,11 @@
   to {
     transform: translateY(-0vh);
   }
+}
+
+/* Making Responsive */
+@media all and (max-width: 810px) {
+}
+
+@media all and (min-width: 811px) and (max-width: 1200px) {
 }
