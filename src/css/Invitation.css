@@ -189,7 +189,152 @@
 
 /* Making Responsive */
 @media all and (max-width: 810px) {
+  .inv-container {
+    margin: 15vh auto 15vh;
+    font-size: 1.2em;
+    width: 90vw;
+  }
+  .inv-header {
+    width: 90vw;
+    margin: 2vh 0 4vh;
+  }
+  .inv-header h3 {
+    font-size: 1.4rem;
+    margin-bottom: 4vh;
+  }
+  .inv-title {
+    font-size: 3.5rem;
+  }
+  .inv-header h2 {
+    margin: 0 0 1.5vh;
+    font-size: 1.3rem;
+    border-radius: 6px;
+  }
+  .inv-header-para {
+    font-size: 1em;
+  }
+
+  .inv-mid {
+    flex-direction: column;
+    gap: 15vw;
+    margin-bottom: 5vh;
+  }
+  .inv-body {
+    width: 90vw;
+    padding: 7vh 2.5vw 2vh;
+  }
+  .inv-countdown {
+    width: 90vw;
+  }
+  .inv-countdown h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 0 5px;
+  }
+  .inv-countdown-row {
+    display: flex;
+    gap: 0.8rem;
+  }
+  .inv-countdown-num {
+    font-size: 3rem;
+    font-weight: 800;
+    border-radius: 6px;
+    width: 17vw;
+    height: 16vw;
+  }
+  .inv-countdown-text {
+    width: 17vw;
+    font-size: 1.1rem;
+  }
+
+  .inv-footer {
+    flex-direction: column;
+    gap: 0vw;
+    margin-bottom: 3vh;
+  }
+  .inv-footer-para {
+    width: 90vw;
+    padding: 3.5vh 2.5vh;
+
+    border-radius: 1.25rem;
+  }
+  .inv-footer-details {
+    width: 90vw;
+    margin: 7vh 0 3vh;
+    border-radius: 1.25rem;
+  }
+  .inv-footer-details h2 {
+    margin: 0 auto;
+    padding: 0px 25px;
+  }
+  .inv-footer-details table {
+    margin: 5px auto;
+    width: 70vw;
+    font-size: 1.25rem;
+  }
+  .inv-footer-end {
+    width: 90vw;
+    margin: 0vh auto 7vh;
+  }
 }
 
 @media all and (min-width: 811px) and (max-width: 1200px) {
+  .inv-container {
+    font-size: 1.35em;
+  }
+  .inv-title {
+    margin: 0;
+    font-size: 3.75rem;
+  }
+  .inv-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .inv-mid {
+    gap: 2vw;
+  }
+  .inv-body {
+    width: 45vw;
+    border-radius: 1.25rem;
+  }
+
+  .inv-countdown {
+    width: 40vw;
+  }
+  .inv-countdown h2 {
+    font-size: 1.5rem;
+  }
+  .inv-countdown-num {
+    font-size: 2.8rem;
+    border-radius: 7px;
+    width: 7.5vw;
+    height: 7vw;
+  }
+  .inv-countdown-text {
+    width: 7.5vw;
+    font-size: 1.1rem;
+  }
+
+  .inv-footer {
+    gap: 2.5vw;
+    margin-bottom: 5vh;
+  }
+  .inv-footer-para {
+    width: 40vw;
+    padding: 5vh 4vh;
+    border-radius: 1.25rem;
+  }
+  .inv-footer-details {
+    width: 40vw;
+    margin: 0vh;
+    padding: 0rem 1.5rem 2rem;
+    border-radius: 1.25rem;
+  }
+  .inv-footer-details h2 {
+    font-size: 1.7rem;
+  }
+
+  .inv-footer-end {
+    width: 75vw;
+  }
 }
