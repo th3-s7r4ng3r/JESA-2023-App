@@ -162,15 +162,35 @@
   font-size: 1.3rem;
   text-align: left;
 }
+.inv-footer-details td {
+  vertical-align: top;
+  padding: 5px;
+}
 .inv-footer-details span {
   font-weight: 700;
 }
 .location-btn {
   text-decoration: underline;
-  color: #ffffff;
+  color: #cbaa55;
 }
 .location-btn:hover {
-  color: #cacaca;
+  color: #ffda7d;
+}
+.map-btn {
+  background-color: #cbaa55;
+  width: fit-content;
+  border-radius: 7px;
+  margin: 10px 0 0;
+  padding: 3px 15px 5px;
+}
+.map-btn a {
+  text-decoration: none;
+  color: #191919;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.map-btn:hover {
+  background-color: #f8d06c;
 }
 
 .inv-footer-end {

@@ -67,8 +67,18 @@ const InvitationPage = () => {
         <div className="inv-body">
           We are thrilled to invite you to join us for the much awaited{" "}
           <span>JESA 2023</span> Awards ceremony, set to take place at the
-          opulent <span>Golden Rose Hotel</span> in Boralesgamuwa on the{" "}
-          <span>15th of December 2023</span>
+          opulent{" "}
+          <span>
+            {" "}
+            <a
+              className="location-btn"
+              href="https://maps.app.goo.gl/awz7hXzqRMEx74Gv9"
+              target="_blank"
+            >
+              Golden Rose Hotel
+            </a>
+          </span>{" "}
+          in Boralesgamuwa on the <span>15th of December 2023</span>
           <h3>Save the Date!</h3>
         </div>
 
@@ -117,13 +127,15 @@ const InvitationPage = () => {
                 </td>
                 <td>:</td>
                 <td>
-                  <a
-                    className="location-btn"
-                    href="https://maps.app.goo.gl/awz7hXzqRMEx74Gv9"
-                    target="_blank"
-                  >
-                    Golden Rose Hotel, Boralesgamuwa
-                  </a>
+                  Golden Rose Hotel, Boralesgamuwa
+                  <div className="map-btn">
+                    <a
+                      href="https://maps.app.goo.gl/awz7hXzqRMEx74Gv9"
+                      target="_blank"
+                    >
+                      Open in Maps
+                    </a>
+                  </div>
                 </td>
               </tr>
             </table>
