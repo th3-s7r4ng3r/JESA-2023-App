@@ -1,5 +1,5 @@
 {
-  "trailingSlash": "never",
+  "trailingSlash": "always",
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
