@@ -1,3 +1,4 @@
+//lazy loading this component to increase the speed
 import RegistrationForm from "./RegistrationForm";
 import AfterRegistration from "./AfterRegistration";
 
