@@ -1,4 +1,3 @@
-//lazy loading this component to increase the speed
 import "../css/AwardPage.css";
 import AwardDetails from "./AwardDetails";
 import BesaPartners from "./BesaPartners";

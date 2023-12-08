@@ -1,4 +1,3 @@
-//lazy loading this component to increase the speed
 import "../css/HomePage.css";
 import AwardDetails from "./AwardDetails";
 import AwardCard from "./AwardCard";

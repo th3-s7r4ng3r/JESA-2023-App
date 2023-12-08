@@ -1,4 +1,3 @@
-//lazy loading this component to increase the speed
 import "../css/HallofFame.css";
 import { useState, useEffect } from "react";
 
