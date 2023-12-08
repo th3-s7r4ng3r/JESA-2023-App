@@ -109,14 +109,22 @@ const InvitationPage = () => {
                   <span>Time</span>
                 </td>
                 <td>:</td>
-                <td>5pm Onwards</td>
+                <td>6pm Onwards</td>
               </tr>
               <tr>
                 <td>
                   <span>Venue</span>
                 </td>
                 <td>:</td>
-                <td>Golden Rose Hotel, Boralesgamuwa</td>
+                <td>
+                  <a
+                    className="location-btn"
+                    href="https://maps.app.goo.gl/awz7hXzqRMEx74Gv9"
+                    target="_blank"
+                  >
+                    Golden Rose Hotel, Boralesgamuwa
+                  </a>
+                </td>
               </tr>
             </table>
           </div>

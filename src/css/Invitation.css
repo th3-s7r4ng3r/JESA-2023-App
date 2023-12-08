@@ -135,6 +135,7 @@
   text-wrap: balance;
   padding: 6vh 5vh;
   border-radius: 1.5rem;
+  background-color: #1e1e1e;
   box-shadow: 0 0 5rem #0000007a;
 }
 .inv-footer-details {
@@ -163,6 +164,13 @@
 }
 .inv-footer-details span {
   font-weight: 700;
+}
+.location-btn {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.location-btn:hover {
+  color: #cacaca;
 }
 
 .inv-footer-end {
