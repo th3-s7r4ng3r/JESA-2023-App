@@ -133,7 +133,7 @@ const InvitationPage = () => {
                       href="https://maps.app.goo.gl/awz7hXzqRMEx74Gv9"
                       target="_blank"
                     >
-                      Open in Maps
+                      Open on Maps
                     </a>
                   </div>
                 </td>
