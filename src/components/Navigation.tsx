@@ -10,7 +10,8 @@ const Navigation = ({ getToTop, isRegistrationClosed = 1 }: any) => {
   // getting the current path location
   const currentLocation = useLocation();
   const currentRegistrationPageStatus =
-    currentLocation.pathname === "/registration";
+    currentLocation.pathname === "/registration" ||
+    currentLocation.pathname === "/invitation";
 
   //displaying register button when scroll down 600px
   const updateregIsVisible = () => {

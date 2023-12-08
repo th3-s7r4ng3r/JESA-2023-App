@@ -1,14 +1,29 @@
-import "./css/App.css";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import HomePage from "./components/HomePage";
+// import React from "react";
+import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+
+import "./css/App.css";
+import HomePage from "./components/HomePage";
 import AwardPage from "./components/AwardPage";
-import ScrollToTop from "./components/ScrollToTop";
 import HallofFame from "./components/HallofFame";
 import RegistrationPage from "./components/RegistrationPage";
-import { Routes, Route } from "react-router-dom";
+import InvitationPage from "./components/InvitationPage";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import NotFoundPage from "./components/NotFoundPage";
+// import Loading from "./components/Loading";
+
+//lazy loading the components to increase the speed (remvoed due to a bug)
+// const LazyHomePage = React.lazy(() => import("./components/HomePage"));
+// const LazyAwardPage = React.lazy(() => import("./components/AwardPage"));
+// const LazyHallofFame = React.lazy(() => import("./components/HallofFame"));
+// const LazyRegistrationPage = React.lazy(
+//   () => import("./components/RegistrationPage")
+// );
+// const LazyInvitationPage = React.lazy(
+//   () => import("./components/InvitationPage")
+// );
 
 //main application
 function App() {
@@ -69,6 +84,14 @@ function App() {
           <Route
             path="/"
             element={
+              // <React.Suspense fallback={<Loading />}>
+              //   <LazyHomePage
+              //     awardsData={awardDetails}
+              //     isRegistrationClosed={registrationClosed}
+              //     getToTop={scrollToTop}
+              //     updateEachAwardClick={handleAwardClick}
+              //   />
+              // </React.Suspense>
               <HomePage
                 awardsData={awardDetails}
                 isRegistrationClosed={registrationClosed}
@@ -96,6 +119,8 @@ function App() {
               />
             }
           />
+          <Route path="/invitation" element={<InvitationPage />} />
+          {/* <Route path="/loading" element={<Loading />} /> */}
           <Route path="/404" element={<NotFoundPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
