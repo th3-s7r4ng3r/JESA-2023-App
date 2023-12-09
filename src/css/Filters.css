@@ -1,0 +1,37 @@
+/* Filters component */
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 15vw;
+}
+.filters h3 {
+  font-size: 1.2rem;
+  margin: 0 0 5px;
+  padding: 0 0 0 15px;
+}
+.filter {
+  font-size: 1.15rem;
+  padding: 3px 12px 5px;
+  border-radius: 7px;
+  width: 100%;
+  cursor: pointer;
+  color: #cecece;
+  background-color: #252525;
+  transition: 0.2s;
+}
+.filter:hover {
+  background-color: #3d3d3d;
+  padding-left: 7px;
+}
+.filter-active {
+  color: #191919;
+  background-color: #cbaa55d3;
+}
+.filter-active:hover {
+  background-color: #cbaa55;
+}

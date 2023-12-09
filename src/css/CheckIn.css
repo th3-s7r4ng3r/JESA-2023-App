@@ -1,0 +1,83 @@
+/* Check in Componenet */
+
+.ap-check-in-section {
+  width: 75vw;
+}
+.ap-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  padding: 3vh 2.5vw;
+  margin: 0vh auto 5vh;
+  width: fit-content;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 50px 0 #0000001e;
+}
+
+.ap-inputs-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #bdbdbd;
+}
+.ap-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17vw;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+.ap-input-container input {
+  font-size: 1.1rem;
+  padding: 7px 15px;
+  border-radius: 7px;
+  background-color: #191919;
+  border: 2px solid #8a8a8a4f;
+  color: rgb(199, 199, 199);
+  width: 16vw;
+  transition: 0.2s;
+}
+.ap-input-container input:hover {
+  background-color: #252525;
+}
+.ap-input-container input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #8a8a8abd;
+}
+.ap-button-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ap-form-btn,
+.ap-clear-btn {
+  font-size: 1.2rem;
+  padding: 10px 25px;
+  border-radius: 7px;
+  width: fit-content;
+  cursor: pointer;
+  color: rgb(228, 228, 228);
+  border: none;
+  background-color: #333333;
+  margin: 15px 10px 0;
+  transition: 0.2s;
+}
+.ap-form-btn:hover {
+  background-color: #d8d8d834;
+}
+
+/* Attendees section */
+.ap-attendees-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+}

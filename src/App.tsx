@@ -12,6 +12,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import NotFoundPage from "./components/NotFoundPage";
+import AttendancePage from "./components/AttendancePage";
 // import Loading from "./components/Loading";
 
 //lazy loading the components to increase the speed (remvoed due to a bug)
@@ -120,6 +121,7 @@ function App() {
             }
           />
           <Route path="/invitation" element={<InvitationPage />} />
+          <Route path="/attendance" element={<AttendancePage />} />
           {/* <Route path="/loading" element={<Loading />} /> */}
           <Route path="/404" element={<NotFoundPage />} />
           <Route path="*" element={<NotFoundPage />} />
