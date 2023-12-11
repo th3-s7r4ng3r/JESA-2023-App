@@ -1,31 +1,41 @@
 import "../css/Filters.css";
 
-const Filters = () => {
+const Filters = ({
+  filterData,
+  updateFilter,
+  currentFilter,
+  searchText,
+}: any) => {
   // an array to define the available filters
   // TODO: get the filters from the award field in the users collection
-  const filterSet = [
-    "Deans",
-    "Best Innovator",
-    "Best Communicator",
-    "Best Leader",
-    "Best Team Player",
-    "Best Young Entrepreneur",
-    "Best CSR",
-    "BESA FHSS",
-    "BESA FAS",
-    "BESA FAHS",
-    "BESA FMS",
-    "BESA FMSC",
-    "BESA FOT",
-    "BESA FOE",
-  ];
 
   return (
     <div className="filters">
-      <h3>Filters</h3>
+      <div className="filter-title">
+        <h3>Filters</h3>
+        {currentFilter !== "" ? (
+          <i
+            className="fa fa-times fil-clear"
+            onClick={() => {
+              updateFilter("");
+            }}
+          ></i>
+        ) : null}
+      </div>
       {/*mapping filter set */}
-      {filterSet.map((filter) => (
-        <div className="filter">{filter}</div>
+      {filterData.map((filter: any) => (
+        <div
+          className={
+            currentFilter === filter ? "filter filter-active" : "filter"
+          }
+          key={filter}
+          onClick={() => {
+            updateFilter(filter);
+            searchText("");
+          }}
+        >
+          {filter}
+        </div>
       ))}
     </div>
   );

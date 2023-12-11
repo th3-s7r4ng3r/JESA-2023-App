@@ -3,17 +3,17 @@
 .ap-list-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: baseline;
   align-items: baseline;
   width: 17vw;
   padding: 10px 10px;
   border-radius: 15px;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   background-color: #a9a9a92a;
   box-shadow: 0 0 40px 0 #00000060;
 }
 .apc-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   width: 100%;
   padding: 5px 10px 7px;
@@ -26,14 +26,15 @@
   margin: 7px 0 0;
 }
 .apc-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   width: 100%;
   color: rgb(221, 221, 221);
   padding: 0 7px;
   margin: 0 0 5px;
 }
-.apc-attendee {
+.apc-attendee,
+.apc-attendee-clicked {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -50,7 +51,12 @@
 .apc-attendee:hover {
   background-color: #0000007c;
 }
-.ap-status {
+.apc-attendee-clicked {
+  background-color: #000000cc;
+  outline: 1px solid #636363e5;
+}
+.ap-status,
+.apc-active {
   width: 15px;
   height: 15px;
   margin-right: 7px;
@@ -59,4 +65,15 @@
 }
 .apc-active {
   background-color: #009118e5;
+}
+
+/* Making Responsive */
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  .ap-list-card {
+    width: 23vw;
+    font-size: 1rem;
+  }
+  .apc-title {
+    font-size: 1.25rem;
+  }
 }

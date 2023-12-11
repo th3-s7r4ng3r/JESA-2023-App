@@ -81,3 +81,92 @@
   align-items: stretch;
   gap: 1.25rem;
 }
+.apc-no-data {
+  color: #bdbdbd;
+  font-size: 1.8rem;
+  margin: 5vh auto;
+  font-weight: 200;
+}
+
+/* handling output messages */
+.apc-message-failed,
+.apc-message-success,
+.apc-sms-failed,
+.apc-sms-success {
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+  transform: translateX(-20px) translateY(+90px);
+  padding: 7px 25px 10px;
+  border-radius: 7px;
+  background-color: #7b1a1a;
+  opacity: 0;
+}
+.apc-message-success,
+.apc-sms-success {
+  background-color: #198419;
+}
+.apc-sms-failed,
+.apc-sms-success {
+  transform: translateX(-20px) translateY(+140px);
+}
+.apc-msg-hide {
+  animation: hide-msg 7s ease-out;
+}
+.apc-sms-hide {
+  animation: hide-sms 7s ease-out;
+}
+
+/* animation used for registration button */
+@keyframes hide-msg {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(+90px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-20px) translateY(+90px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-20px) translateY(+90px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px) translateY(+90px);
+  }
+}
+@keyframes hide-sms {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(+140px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-20px) translateY(+140px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-20px) translateY(+140px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px) translateY(+140px);
+  }
+}
+
+/* Making Responsive */
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  .ap-input-container {
+    width: 18vw;
+    font-size: 1.1rem;
+  }
+  .ap-form-btn,
+  .ap-clear-btn {
+    font-size: 1.1rem;
+  }
+  .ap-check-in-section {
+    width: 80vw;
+  }
+}

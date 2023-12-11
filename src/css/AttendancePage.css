@@ -46,6 +46,9 @@
   transform: translateX(-20px) translateY(+10px);
   z-index: 5000;
 }
+.search-bar i {
+  cursor: pointer;
+}
 .search-box {
   font-size: 1.3rem;
   position: relative;
@@ -73,4 +76,21 @@
   flex-wrap: nowrap;
   gap: 1.5vw;
   width: 90vw;
+}
+
+/* Making Responsive */
+@media all and (min-width: 811px) and (max-width: 1200px) {
+  .ap-body {
+    width: 95vw;
+  }
+  .search-box {
+    font-size: 1.1rem;
+  }
+  .search-bar i {
+    position: absolute;
+    font-size: 1.1rem;
+  }
+  .attendance-page {
+    margin: 17vh 0vh;
+  }
 }
