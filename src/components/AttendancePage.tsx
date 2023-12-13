@@ -7,7 +7,7 @@ import Loading from "./Loading";
 
 const AttendancePage = () => {
   //defining state variables
-  const backendUrl = "https://jesa-backend.onrender.com:10000";
+  const backendUrl = "https://jesa-backend.onrender.com";
   const [userList, setUserList] = useState([]);
   const [filters, setFilters] = useState([]);
   const [currentFilter, setCurrentFilter] = useState("");
