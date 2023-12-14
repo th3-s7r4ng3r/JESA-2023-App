@@ -13,6 +13,8 @@ const CheckIn = ({
   resetSearch,
   getAllData,
   backendUrl,
+  isInOCMenu,
+  userPermission,
 }: any) => {
   //defining state variables
   const [attendeeName, setAttendeeName] = useState("");
@@ -23,6 +25,7 @@ const CheckIn = ({
   const [messageText, setMessageText] = useState("");
   const [smsText, setSmsText] = useState("");
   const [isloading, setIsLoading] = useState(false);
+  const [subCategories, setSubCategories] = useState([] as any);
 
   // clear the set values
   const clearValues = () => {
@@ -65,26 +68,37 @@ const CheckIn = ({
     setAttendeeCategory(selectedUser.category);
   }, [selectedUser]);
 
+  //clear the all values when toggle the menu
+  useEffect(() => {
+    clearValues();
+  }, [isInOCMenu]);
+
   // call the backend to add a new user
   const addNewUser = async () => {
     if (attendeeContactNo !== "" && attendeeName !== "") {
-      try {
-        setIsLoading(true);
-        const response = await axios.post(backendUrl + "/user/add", {
-          name: attendeeName,
-          contactNo: attendeeContactNo,
-          award: attendeeAward,
-          category: attendeeCategory,
-          attended: true,
-        });
-        clearValues();
-        console.log(response.data);
-        getOutput(response.data);
-      } catch (error) {
-        console.log(error);
-        alert(`Error: ${error}`);
-      } finally {
-        setIsLoading(false);
+      // check for valid contact number
+      const regex = /^\+947\d{8}$/;
+      if (regex.test(attendeeContactNo)) {
+        try {
+          setIsLoading(true);
+          const response = await axios.post(backendUrl + "/user/add", {
+            name: attendeeName,
+            contactNo: attendeeContactNo,
+            award: attendeeAward,
+            category: attendeeCategory,
+            attended: true,
+          });
+          clearValues();
+          console.log(response.data);
+          getOutput(response.data);
+        } catch (error) {
+          console.log(error);
+          alert(`Error: ${error}`);
+        } finally {
+          setIsLoading(false);
+        }
+      } else {
+        alert("Please enter a valid contact number!");
       }
     } else {
       alert("Please fill Name and ContactNo the fields!");
@@ -143,61 +157,96 @@ const CheckIn = ({
     }, 7000);
   };
 
+  // get the set of categories based on the award from userData
+  const getsubCategories = () => {
+    let categoryList: any = [];
+    userData.forEach((user: any) => {
+      if (user.award.includes(attendeeAward)) {
+        categoryList.push(user.category);
+      }
+    });
+    categoryList = [...new Set(categoryList)];
+    setSubCategories(categoryList);
+  };
+  useEffect(() => {
+    getsubCategories();
+    console.log(subCategories);
+  }, [attendeeAward]);
+
   return (
     // display loading when the data is processing
     <>
       {isloading ? <Loading /> : null}
       <div className="ap-check-in-section">
         {/* form section */}
-        <div className="ap-form">
-          <div className="ap-inputs-area">
-            <div className="ap-input-container">
-              <label>Name</label>
-              <input
-                type="text"
-                onChange={handleNameChange}
-                value={attendeeName}
-              ></input>
+        {userPermission === "editor" ? (
+          <div className="ap-form">
+            <div className="ap-inputs-area">
+              <div className="ap-input-container">
+                <label>Name</label>
+                <input
+                  type="text"
+                  onChange={handleNameChange}
+                  value={attendeeName}
+                ></input>
+              </div>
+              <div className="ap-input-container">
+                <label>Contact No</label>
+                <input
+                  type="text"
+                  value={attendeeContactNo}
+                  onChange={handleContactNoChange}
+                  placeholder="+947XXXXXXXX"
+                ></input>
+              </div>
+              <div className="ap-input-container">
+                <label>Category</label>
+                <select value={attendeeAward} onChange={handleAwardChange}>
+                  <option value={""} disabled></option>
+                  {filterData.map((category: any) => (
+                    <option value={category} key={category}>
+                      {category}
+                    </option>
+                  ))}
+                  <option value="Other" key="Other">
+                    Other
+                  </option>
+                </select>
+              </div>
+              <div className="ap-input-container">
+                <label>Sub Category</label>
+                <select
+                  value={attendeeCategory}
+                  onChange={handleCategoryChange}
+                >
+                  <option value={""} disabled></option>
+                  {subCategories.map((subcategory: any) => (
+                    <option value={subcategory} key={subcategory}>
+                      {subcategory}
+                    </option>
+                  ))}{" "}
+                  <option value="Other" key="Other">
+                    Other
+                  </option>
+                </select>
+              </div>
             </div>
-            <div className="ap-input-container">
-              <label>Contact No</label>
-              <input
-                type="text"
-                value={attendeeContactNo}
-                onChange={handleContactNoChange}
-                placeholder="+947XXXXXXXX"
-              ></input>
+            <div className="ap-button-area">
+              <button
+                className="ap-form-btn"
+                onClick={selectedUser.id === "" ? addNewUser : updateUser}
+              >
+                {selectedUser.id === "" ? "Add and Mark" : "Update and Mark"}
+              </button>
+              <button className="ap-form-btn" onClick={clearValues}>
+                Clear
+              </button>
             </div>
-            <div className="ap-input-container">
-              <label>Associated Award</label>
-              <input
-                type="text"
-                value={attendeeAward}
-                onChange={handleAwardChange}
-              ></input>
-            </div>
-
-            <div className="ap-input-container">
-              <label>Category</label>
-              <input
-                type="text"
-                value={attendeeCategory}
-                onChange={handleCategoryChange}
-              ></input>
+            <div className="ap-contactme">
+              Something is wrong? Call 076 688 5466!
             </div>
           </div>
-          <div className="ap-button-area">
-            <button
-              className="ap-form-btn"
-              onClick={selectedUser.id === "" ? addNewUser : updateUser}
-            >
-              {selectedUser.id === "" ? "Add and Mark" : "Update and Mark"}
-            </button>
-            <button className="ap-form-btn" onClick={clearValues}>
-              Clear
-            </button>
-          </div>
-        </div>
+        ) : null}
 
         {/* attendees list section */}
         <div className="ap-attendees-list">
@@ -210,9 +259,9 @@ const CheckIn = ({
               selectedUser={selectedUser}
             />
           ))}
-          {userData.length === 0 ? (
+          {userData.length === 0 && (
             <div className="apc-no-data">No attendees available</div>
-          ) : null}
+          )}
         </div>
 
         {/* error message section */}

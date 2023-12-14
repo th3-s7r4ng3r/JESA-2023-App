@@ -10,7 +10,7 @@ const AttendeesList = ({
   let attendeesList: any = [];
   if (userData.length > 0) {
     userData.forEach((user: any) => {
-      if (user.award === currentFilter) {
+      if (user.award.includes(currentFilter)) {
         attendeesList.push(user);
       }
     });
@@ -25,6 +25,16 @@ const AttendeesList = ({
     });
     partnerGroups = [...new Set(partnerGroups)];
   }
+  // getting a list of catergories for each award except deans
+  let otherCategories: any = [];
+  if (attendeesList.length > 0) {
+    attendeesList.forEach((attendee: any) => {
+      if (attendee.award === currentFilter && attendee.category !== "Deans") {
+        otherCategories.push(attendee.category);
+      }
+    });
+    otherCategories = [...new Set(otherCategories)];
+  }
 
   //filter based on the current filter
   return attendeesList.length !== 0 ? (
@@ -33,7 +43,7 @@ const AttendeesList = ({
       <div className="apc-title">{currentFilter}</div>
 
       {/* display the attendees list */}
-      {currentFilter !== "Deans" ? (
+      {currentFilter.includes("BESA") || currentFilter.includes("Best") ? (
         <>
           {/* section for nominees */}
           <div className="apc-subsection">
@@ -138,32 +148,41 @@ const AttendeesList = ({
           ) : null}
         </>
       ) : (
-        // display only for deans
+        // display cards for other categories
         <div className="apc-subsection">
-          {attendeesList.map((attendee: any) => {
-            if (attendee.award === "Deans") {
-              return (
-                <div
-                  // seleting style based on the selectedUser
-                  className={
-                    selectedUser === attendee
-                      ? "apc-attendee-clicked"
-                      : "apc-attendee"
+          {otherCategories.map((category: any) => {
+            return (
+              <>
+                <div className="apc-subtitle">{category}</div>
+                {attendeesList.map((attendee: any) => {
+                  if (attendee.category === category) {
+                    return (
+                      <div
+                        // selecting style based on the selectedUser
+                        className={
+                          selectedUser === attendee
+                            ? "apc-attendee-clicked"
+                            : "apc-attendee"
+                        }
+                        key={attendee.id}
+                        //update the selectedUser
+                        onClick={() => {
+                          updateSelectedUser(attendee);
+                        }}
+                      >
+                        {/* check and apply style if user attended */}
+                        <div
+                          className={
+                            !attendee.attended ? "ap-status" : "apc-active"
+                          }
+                        ></div>
+                        {attendee.name}
+                      </div>
+                    );
                   }
-                  key={attendee.id}
-                  //update the selectedUser
-                  onClick={() => {
-                    updateSelectedUser(attendee);
-                  }}
-                >
-                  {/* check and apply style if user attended */}
-                  <div
-                    className={!attendee.attended ? "ap-status" : "apc-active"}
-                  ></div>
-                  {attendee.name} - {attendee.category}
-                </div>
-              );
-            }
+                })}
+              </>
+            );
           })}
         </div>
       )}

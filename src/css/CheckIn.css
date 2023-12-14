@@ -32,7 +32,8 @@
   gap: 0.5rem;
   font-size: 1.2rem;
 }
-.ap-input-container input {
+.ap-input-container input,
+.ap-input-container select {
   font-size: 1.1rem;
   padding: 7px 15px;
   border-radius: 7px;

@@ -4,10 +4,12 @@ import Filters from "./Filters";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Loading from "./Loading";
+import AttendanceLogin from "./AttendanceLogin";
 
 const AttendancePage = () => {
   //defining state variables
-  const backendUrl = "https://jesa-backend.onrender.com";
+  // const backendUrl = "https://jesa-backend.onrender.com";
+  const backendUrl = "http://localhost:8080";
   const [userList, setUserList] = useState([]);
   const [filters, setFilters] = useState([]);
   const [currentFilter, setCurrentFilter] = useState("");
@@ -22,10 +24,14 @@ const AttendancePage = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [isloading, setIsLoading] = useState(true);
+  const [userPermission, setUserPermission] = useState("none");
+  const [inOCMenu, setInOCMenu] = useState(false);
+  const ocMenuFilters = ["JESA", "CSDS", "Crew"];
 
   //fetching data from backend
   const getUsers = async () => {
     try {
+      setIsLoading(true);
       const response = await axios.get(backendUrl + "/user/list");
       setUserList(response.data);
       setIsLoading(false);
@@ -34,25 +40,44 @@ const AttendancePage = () => {
       alert(`Error: ${error}`);
     }
   };
+  //get data from backend on page load using useEffect
   useEffect(() => {
     getUsers();
-  }, [currentFilter]);
+  }, [currentFilter, inOCMenu]);
 
-  //get data from backend on page load using useEffect
   useEffect(() => {
     const fetchData = async () => {
       // Getting filters from the userList award field and grouping them
       if (userList.length > 0) {
         let awardList: any = [];
+        let ocawardList: any = [];
         userList.forEach((user: any) => {
-          awardList.push(user.award);
+          // divide the filters into two groups
+          var isInOC = false;
+          ocMenuFilters.forEach((filter) => {
+            // for OC attendees
+            if (user.award.includes(filter)) {
+              ocawardList.push(user.award);
+              isInOC = true;
+            }
+          });
+          // for non OC attendees
+          if (!isInOC && !user.award.includes("/")) {
+            awardList.push(user.award);
+          }
         });
-        awardList = [...new Set(awardList)];
+
+        // remove duplicates based on if in the OC menu or not
+        if (inOCMenu) {
+          awardList = [...new Set(ocawardList)];
+        } else {
+          awardList = [...new Set(awardList)];
+        }
         setFilters(awardList);
       }
     };
     fetchData();
-  }, [userList]);
+  }, [userList, inOCMenu]);
 
   // get a set of users based on the selected filter
   useEffect(() => {
@@ -60,14 +85,14 @@ const AttendancePage = () => {
       let filteredAttendeesList: any = [];
       if (userList.length > 0) {
         userList.forEach((user: any) => {
-          if (user.award === currentFilter) {
+          if (user.award.includes(currentFilter)) {
             filteredAttendeesList.push(user);
           }
         });
       }
       setFilteredData(filteredAttendeesList);
     }
-  }, [currentFilter]);
+  }, [currentFilter, inOCMenu]);
 
   // getting changes from the search bar
   useEffect(() => {
@@ -97,8 +122,18 @@ const AttendancePage = () => {
     setFilteredData([]);
   };
 
+  //setting oc menu toggle
+  const toggleOCMenu = () => {
+    if (inOCMenu) {
+      setInOCMenu(false);
+    } else {
+      setInOCMenu(true);
+    }
+    clearSearch();
+  };
+
   //rendering the page
-  return (
+  return userPermission !== "none" ? (
     <>
       {isloading ? <Loading /> : null}
       <div className="attendance-page">
@@ -128,6 +163,32 @@ const AttendancePage = () => {
             )}
           </div>
         </div>
+        {/* Toggle menu for marking OC and Non OC */}
+        <div className="oc-menu-toggle">
+          <div className="toggle-holder">
+            <div
+              className={inOCMenu ? "oc-menu-off" : "oc-menu-on"}
+              onClick={toggleOCMenu}
+            >
+              Admins & Awards
+            </div>
+            <div
+              className={inOCMenu ? "oc-menu-on" : "oc-menu-off"}
+              onClick={toggleOCMenu}
+            >
+              OC
+            </div>
+          </div>
+
+          <h2>Attendees</h2>
+        </div>
+        {/* download button */}
+        <a
+          href={backendUrl + "/user/list-download"}
+          className="ap-download-btn"
+        >
+          Download Attendees List
+        </a>
 
         {/* Check in section */}
         <div className="ap-body">
@@ -150,11 +211,27 @@ const AttendancePage = () => {
             selectedUser={selectedUser}
             resetSearch={clearSearch}
             getAllData={getUsers}
+            isInOCMenu={inOCMenu}
+            userPermission={userPermission}
             backendUrl={backendUrl}
           />
         </div>
       </div>
     </>
+  ) : (
+    <div className="attendance-page">
+      {/* heading section */}
+      <div className="ap-heading">
+        <div className="ap-title">
+          <h1>JESA 2023</h1>
+          <h2>
+            <span>Attendance</span>Marking System
+          </h2>
+        </div>
+      </div>
+      <AttendanceLogin setUserPermission={setUserPermission} />
+      <div className="ap-contactme">Something is wrong? Call 076 688 5466!</div>
+    </div>
   );
 };
 
