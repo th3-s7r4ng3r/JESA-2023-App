@@ -183,12 +183,14 @@ const AttendancePage = () => {
           <h2>Attendees</h2>
         </div>
         {/* download button */}
-        <a
-          href={backendUrl + "/user/list-download"}
-          className="ap-download-btn"
-        >
-          Download Attendees List
-        </a>
+        {userPermission === "editor" ? (
+          <a
+            href={backendUrl + "/user/list-download"}
+            className="ap-download-btn"
+          >
+            Download Attendees List
+          </a>
+        ) : null}
 
         {/* Check in section */}
         <div className="ap-body">
