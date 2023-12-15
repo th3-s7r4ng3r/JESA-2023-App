@@ -7,7 +7,6 @@ const Filters = ({
   searchText,
 }: any) => {
   // an array to define the available filters
-  // TODO: get the filters from the award field in the users collection
 
   return (
     <div className="filters">

@@ -1,19 +1,21 @@
 import "../css/BulkMessage.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import AttendanceLogin from "./AttendanceLogin";
 
 const BulkMessage = () => {
   //defining state variables
-  const backendUrl = "http://localhost:8080";
+  const backendUrl = "https://jesa-23.azurewebsites.net";
   const [userList, setUserList] = useState([]);
   const [contactList, setContactList] = useState([]);
   const [messageContent, setMessageContent] = useState("");
-  const testcontactList = [
-    "+94766885466",
-    "+94711766662",
-    "+94718938256",
-    "+94763886390",
-  ];
+  const [isUserPermitted, setIsUserPermitted] = useState("none");
+  // const testcontactList = [
+  //   "+94766885466",
+  //   // "+94711766662",
+  //   // "+94718938256",
+  //   // "+94763886390",
+  // ];
 
   // event listeners for each input field
   const handleTextChange = (e: any) => {
@@ -49,8 +51,8 @@ const BulkMessage = () => {
     try {
       // configs for api call
       const apiUrl = "https://dashboard.smsapi.lk/api/v3/sms/send";
-      //   const apiToken = "41|GuVkuGRBlvf8AhMikKJcgXh8UYqMjPhfpiWARx4P";
-      const apiToken = "";
+      const apiToken = "41|GuVkuGRBlvf8AhMikKJcgXh8UYqMjPhfpiWARx4P";
+      //const apiToken = "";
       const senderId = "JESA 2023";
       const message = content;
 
@@ -85,42 +87,59 @@ const BulkMessage = () => {
   };
   //sending the message one by one
   const sendSMS = async () => {
-    var successCount = 0;
-    var failCount = 0;
-    var msgCount = 0;
-    for (let i = 0; i < testcontactList.length; i++) {
-      const response = await sendSMSrequest({
-        recipientNo: testcontactList[i],
-        content: messageContent,
+    if (messageContent !== "") {
+      var successCount = 0;
+      var failCount = 0;
+      var msgCount = 0;
+      for (let i = 0; i < contactList.length; i++) {
+        const response = await sendSMSrequest({
+          recipientNo: contactList[i],
+          content: messageContent,
+        });
+        if (response.status === "success") successCount++;
+        else failCount++;
+        msgCount++;
+      }
+      // send the summary message
+      sendSMSrequest({
+        recipientNo: "+94766885466",
+        content: `SMS Campaign Summary\n\nTotal : ${msgCount}\nSuccessful : ${successCount}\nFailed : ${failCount}`,
       });
-      if (response.status === "success") successCount++;
-      else failCount++;
-      msgCount++;
+      alert("Messages sent successfully!\nMessages count:" + msgCount);
+    } else {
+      alert("Please enter a message");
     }
-    // send the summary message
-    sendSMSrequest({
-      recipientNo: "+94766885466",
-      content: `Total ${msgCount} messages sent. ${successCount} messages sent successfully and ${failCount} messages failed.`,
-    });
-    alert("Messages sent successfully!" + msgCount + " messages sent");
   };
 
   // rendering the component
   return (
     <div className="bm-card">
-      <div className="bm-title">Bulk Message</div>
-      <div className="bm-subtitle">Send SMS to all attendees</div>
-      <div className="bm-input">
-        <textarea
-          className="bm-textarea"
-          placeholder="Enter your message here"
-          value={messageContent}
-          onChange={handleTextChange}
-        ></textarea>
-      </div>
-      <div className="bm-button" onClick={sendSMS}>
-        Send
-      </div>
+      {isUserPermitted === "superAdmin" ? (
+        <>
+          <div className="bm-title">Bulk Message</div>
+          <div className="bm-subtitle">Send SMS to all attendees</div>
+          <div className="bm-input">
+            <textarea
+              className="bm-textarea"
+              placeholder="Enter your message here"
+              value={messageContent}
+              onChange={handleTextChange}
+            ></textarea>
+            <a
+              className="bm-hint"
+              href="https://sms.cx/unicode-to-gsm-converter/"
+              target="_blank"
+            >
+              https://sms.cx/unicode-to-gsm-converter/
+            </a>
+          </div>
+          <div className="bm-button" onClick={sendSMS}>
+            Send
+          </div>
+        </>
+      ) : (
+        <AttendanceLogin setUserPermission={setIsUserPermitted} />
+      )}
     </div>
   );
 };

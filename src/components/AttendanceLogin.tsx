@@ -5,6 +5,7 @@ const AttendanceLogin = ({ setUserPermission }: any) => {
   const [enteredCode, setEnteredCode] = useState("");
   const viwerCode = "JESA@2023";
   const editorCode = "JESA@2023OC";
+  const superAdminCode = "JESA@2023.OC";
 
   // event listeners for password field
   const handleEnteredCode = (e: any) => {
@@ -17,6 +18,8 @@ const AttendanceLogin = ({ setUserPermission }: any) => {
       setUserPermission("viewer");
     } else if (enteredCode === editorCode) {
       setUserPermission("editor");
+    } else if (enteredCode === superAdminCode) {
+      setUserPermission("superAdmin");
     } else {
       setUserPermission("none");
       alert("Incorrect Code");

@@ -154,6 +154,54 @@
 }
 
 /* Making Responsive */
+@media all and (max-width: 810px) {
+  .attendance-page {
+    width: 100vw;
+  }
+  .ap-heading {
+    margin: 7vh 0 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+  }
+  .ap-heading h1 {
+    font-size: 3.2rem;
+  }
+  .ap-heading h2 {
+    font-size: 1.3rem;
+  }
+
+  /* search section */
+  .search-bar {
+    margin: 0;
+    transform: translateX(-20vw) translateY(+8.5vh);
+  }
+  .search-box {
+    font-size: 1.15rem;
+    width: 80vw;
+  }
+  .search-bar i {
+    font-size: 1.15rem;
+  }
+  .oc-menu-toggle h2 {
+    display: none;
+  }
+  /* OC Menu style */
+  .oc-menu-toggle {
+    transform: translateX(+25vw) translateY(+13.3vh);
+  }
+
+  .ap-body {
+    gap: 1.5vw;
+    width: 100vw;
+  }
+  /* download section */
+  .ap-download-btn {
+    display: none;
+  }
+}
 @media all and (min-width: 811px) and (max-width: 1200px) {
   .ap-body {
     width: 95vw;

@@ -49,3 +49,20 @@
   background-color: #eac462;
   padding: 7px 40px 10px;
 }
+
+/* Making Responsive */
+@media all and (max-width: 810px) {
+  .attendance-login {
+    width: 85vw;
+  }
+  .attendance-login h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    text-wrap: balance;
+  }
+  .attendance-login input {
+    font-size: 1.5rem;
+    width: 60vw;
+    margin-bottom: 3vh;
+  }
+}
