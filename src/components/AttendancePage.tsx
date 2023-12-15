@@ -108,6 +108,9 @@ const AttendancePage = () => {
           if (user.contactNo.toLowerCase().includes(searchText.toLowerCase())) {
             filteredAttendeesList.push(user);
           }
+          if (user.category.toLowerCase().includes(searchText.toLowerCase())) {
+            filteredAttendeesList.push(user);
+          }
         });
       }
       setFilteredData(filteredAttendeesList);

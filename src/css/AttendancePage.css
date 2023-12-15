@@ -159,7 +159,7 @@
     width: 100vw;
   }
   .ap-heading {
-    margin: 7vh 0 6vh;
+    margin: 2vh 0 2vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -176,6 +176,7 @@
   /* search section */
   .search-bar {
     margin: 0;
+    display: none;
     transform: translateX(-20vw) translateY(+8.5vh);
   }
   .search-box {
@@ -190,7 +191,7 @@
   }
   /* OC Menu style */
   .oc-menu-toggle {
-    transform: translateX(+25vw) translateY(+13.3vh);
+    transform: translateX(+25vw) translateY(+8.5vh);
   }
 
   .ap-body {
@@ -205,6 +206,7 @@
 @media all and (min-width: 811px) and (max-width: 1200px) {
   .ap-body {
     width: 95vw;
+    margin: 0 auto;
   }
   .search-box {
     font-size: 1.1rem;
