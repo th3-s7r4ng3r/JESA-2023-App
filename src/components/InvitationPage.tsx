@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 
 // declaring the invitation component
 const InvitationPage = () => {
+  // state variables
+  const [isTimePassed, setIsTimePassed] = useState(false);
   // counting down to the final day
   // Specify the target date and time in ISO format
   const targetDate = "2023-12-15T18:00:00";
@@ -13,6 +15,7 @@ const InvitationPage = () => {
 
     // If the target date has passed, return 0
     if (timeDifference <= 0) {
+      setIsTimePassed(true);
       return {
         days: "00",
         hours: "00",
@@ -84,7 +87,11 @@ const InvitationPage = () => {
 
         {/* Countdown section */}
         <div className="inv-countdown">
-          <h2>Countdown to the Final Day</h2>
+          <h2>
+            {isTimePassed
+              ? "It's time for the show! See you at there!"
+              : "Countdown to the Final Day"}
+          </h2>
           <div>
             <div className="inv-countdown-row inv-countdown-bg">
               <div className="inv-countdown-num">{timeLeft.days}</div>
