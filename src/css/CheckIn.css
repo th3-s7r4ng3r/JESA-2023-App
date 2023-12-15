@@ -158,6 +158,93 @@
 }
 
 /* Making Responsive */
+@media all and (max-width: 810px) {
+  .ap-check-in-section {
+    width: 100vw;
+  }
+  .ap-form {
+    padding: 2vh 2vw;
+    width: 90vw;
+  }
+  .ap-inputs-area {
+    flex-direction: column;
+  }
+  .ap-input-container {
+    width: 85vw;
+    gap: 0.5rem;
+    margin-top: 7px;
+  }
+  .ap-input-container input,
+  .ap-input-container select {
+    width: 75vw;
+  }
+
+  /* Attendees section */
+  .ap-attendees-list {
+    gap: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .apc-no-data {
+    margin: 7vh auto;
+  }
+
+  /* handling output messages */
+  .apc-message-failed,
+  .apc-message-success,
+  .apc-sms-failed,
+  .apc-sms-success {
+    font-size: 1.2rem;
+    transform: translateX(-20px) translateY(+150px);
+  }
+  .apc-sms-failed,
+  .apc-sms-success {
+    transform: translateX(-20px) translateY(+200px);
+  }
+  .apc-msg-hide {
+    animation: hide-msg-mobile 7s ease-out;
+  }
+  .apc-sms-hide {
+    animation: hide-sms-mobile 7s ease-out;
+  }
+}
+/* animation used for registration button */
+@keyframes hide-msg-mobile {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(+150px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-20px) translateY(+150px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-20px) translateY(+150px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px) translateY(+150px);
+  }
+}
+@keyframes hide-sms-mobile {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) translateY(+200px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-20px) translateY(+200px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-20px) translateY(+200px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0px) translateY(+200px);
+  }
+}
 @media all and (min-width: 811px) and (max-width: 1200px) {
   .ap-input-container {
     width: 18vw;

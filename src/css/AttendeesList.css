@@ -68,6 +68,18 @@
 }
 
 /* Making Responsive */
+/* Making Responsive */
+@media all and (max-width: 810px) {
+  .ap-list-card {
+    width: 80vw;
+  }
+  .apc-subsection {
+    margin: 7px 0 5px;
+  }
+  .apc-subtitle {
+    margin: 2px 0 5px;
+  }
+}
 @media all and (min-width: 811px) and (max-width: 1200px) {
   .ap-list-card {
     width: 23vw;
