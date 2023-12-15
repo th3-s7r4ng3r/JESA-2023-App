@@ -14,6 +14,7 @@ const AttendeesList = ({
         attendeesList.push(user);
       }
     });
+    attendeesList = [...new Set(attendeesList)];
   }
   //getting a list of partenr groups available
   let partnerGroups: any = [];
