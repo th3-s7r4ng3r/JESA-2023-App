@@ -5,6 +5,14 @@ import { useState, useEffect } from "react";
 const InvitationPage = () => {
   // state variables
   const [isTimePassed, setIsTimePassed] = useState(false);
+  // Set up the state to store the time left until the target date
+  const [timeLeft, setTimeLeft] = useState({
+    days: "",
+    hours: "",
+    minutes: "",
+    seconds: "",
+  });
+
   // counting down to the final day
   // Specify the target date and time in ISO format
   const targetDate = "2023-12-15T18:00:00";
@@ -41,9 +49,6 @@ const InvitationPage = () => {
       seconds: seconds.toString().padStart(2, "0"),
     };
   };
-
-  // Set up the state to store the time left until the target date
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   // Update the time left every second
   useEffect(() => {
@@ -89,23 +94,25 @@ const InvitationPage = () => {
         <div className="inv-countdown">
           <h2>
             {isTimePassed
-              ? "It's time for the show! See you at there!"
+              ? `It's time for the show! See you at there!`
               : "Countdown to the Final Day"}
           </h2>
-          <div>
-            <div className="inv-countdown-row inv-countdown-bg">
-              <div className="inv-countdown-num">{timeLeft.days}</div>
-              <div className="inv-countdown-num">{timeLeft.hours}</div>
-              <div className="inv-countdown-num">{timeLeft.minutes}</div>
-              <div className="inv-countdown-num">{timeLeft.seconds}</div>
+          {!isTimePassed && (
+            <div>
+              <div className="inv-countdown-row inv-countdown-bg">
+                <div className="inv-countdown-num">{timeLeft.days}</div>
+                <div className="inv-countdown-num">{timeLeft.hours}</div>
+                <div className="inv-countdown-num">{timeLeft.minutes}</div>
+                <div className="inv-countdown-num">{timeLeft.seconds}</div>
+              </div>
+              <div className="inv-countdown-row">
+                <div className="inv-countdown-text">Days</div>
+                <div className="inv-countdown-text">Hours</div>
+                <div className="inv-countdown-text">Mins</div>
+                <div className="inv-countdown-text">Secs</div>
+              </div>
             </div>
-            <div className="inv-countdown-row">
-              <div className="inv-countdown-text">Days</div>
-              <div className="inv-countdown-text">Hours</div>
-              <div className="inv-countdown-text">Mins</div>
-              <div className="inv-countdown-text">Secs</div>
-            </div>
-          </div>
+          )}
         </div>
       </div>
 
