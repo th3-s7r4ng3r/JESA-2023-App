@@ -8,9 +8,9 @@ import AttendanceLogin from "./AttendanceLogin";
 
 const AttendancePage = () => {
   //defining state variables
-  // const backendUrl = "https://jesa-backend.onrender.com";
+  const backendUrl = "https://jesa-backend.onrender.com";
   // const backendUrl = "http://localhost:8080";
-  const backendUrl = "https://jesa-23.azurewebsites.net";
+  // const backendUrl = "https://jesa-23.azurewebsites.net";
   const [userList, setUserList] = useState([]);
   const [filters, setFilters] = useState([]);
   const [currentFilter, setCurrentFilter] = useState("");

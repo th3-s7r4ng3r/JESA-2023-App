@@ -7,7 +7,8 @@ import Loading from "./Loading";
 const BulkMessage = () => {
   //defining state variables
   // const backendUrl = "http://localhost:8080";
-  const backendUrl = "https://jesa-23.azurewebsites.net";
+  // const backendUrl = "https://jesa-23.azurewebsites.net";
+  const backendUrl = "https://jesa-backend.onrender.com";
   const [userList, setUserList] = useState([]);
   const [contactList, setContactList] = useState([]);
   const [messageContent, setMessageContent] = useState("");
