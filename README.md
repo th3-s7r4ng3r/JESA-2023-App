@@ -6,7 +6,7 @@
 
 JESA, also known as J’pura Employability Skills Awards, is the grandest stage for the celebration of achievements of young talents with 13 outstanding awards reserved for undergraduates of the University of Sri Jayewardenepura. Organized by the Career Skills Development Society of the University of Sri Jayewardenepura under the Career Guidance unit.
 
-In this application, we are trying to provide information about awards, partnerships, registrations, and the legacy of previous years. This is an effort to encourage industry leading companies to join us with JESA 2023 to branch out to the grandest stage of recognition.
+In this application, we are trying to provide information about awards, partnerships, registrations, and the legacy of previous years. This is an effort to encourage industry leading companies to join us with JESA 2023 to branch out to the grandest stage of recognition. Within this application, we have implemented an attendance system to track the attendance of the participants of JESA 2023 to automate the manual process. (See the JESA-2023-Backend repository for more information)
 
 Live preview of the app @ [www.jesa.lk](https://www.jesa.lk).
 
